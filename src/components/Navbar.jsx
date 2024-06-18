@@ -17,7 +17,7 @@ const Navbar = () => {
   let Links = [
     { name: "About Us", link: "/aboutus" },
     { name: "Services", link: "/services" },
-    { name: "Industries", link: "/industries" },
+    { name: "Our Footprint", link: "/industries" },
     { name: "Case Studies", link: "/casestudies" },
     { name: "Contact Us  ➔", link: "/contact" },
   ];
@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex  w-40 pl-5 md:items-center mr-2 md:bg-transparent h-52 md:h-auto text-white  bg-gray-500 absolute ${
+          className={`md:flex  w-40 pl-5 md:items-center mr-2 md:bg-transparent h-52 md:h-auto text-  bg-gray-500 absolute ${
             show ? "absolute" : "hidden"
           }  md:pb-0 pb-12  md:static md:z-auto z-30 md:w-auto transition-all duration-500 ease-in ${
             isOpen ? "right-0" : "-right-full"
