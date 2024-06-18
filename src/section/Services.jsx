@@ -1,62 +1,61 @@
-import Navbar from "../components/Navbar";
-import MainServices from "../pages/Services";
-// import { IoIosArrowDown } from "react-icons/io";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 export default function Services() {
+  const [expandedSections, setExpandedSections] = useState({});
+
+  const toggleSection = (section) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
+
+  const sections = [
+    { title: "Corporates", content: "We work with corporations to solve their most pressing problems, from strategic planning to enhancing operational efficiency, helping them stay agile and competitive in today’s dynamic business landscape." },
+    { title: "Governments & SWF", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },  
+    { title: "Asset Management Firms", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },
+    { title: "HNIs", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },
+    { title: "PE & VC", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },
+    { title: "Investment Banks", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },
+    { title: "Real Estate Firms", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },
+    { title: "Hedge Funds", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" },
+    { title: "Startups", content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero voluptate quasi a eveniet eius alias quam nisi porro cumque! Ex amet quod nisi iste delectus eos autem nemo consequuntur!" }
+  ];
+
   return (
     <>
-      {/* <Navbar/> */}
-      <div className="max-w-6xl mt-0 mx-auto px-4 py-12">
-        <h2 className="text-2xl text-red-700 font-bold text-start mb-6">
-          SERVICES
-        </h2>
-        <h3 className="text-2xl font-semibold text-start mb-4">
-          Who do we cater to?
-        </h3>
-        <p className="text-center mb-10 md:mr-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1700s, ssss when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <div className="container mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold text-blue-900 mb-4">Who do we cater to?</h2>
+        <p className="text-zinc-600 mb-8">
+          At Artevis, we work with organisations of different size, complexity
+          and across industries. Our offerings are customised to meet the
+          specific requirements across the following and more.
         </p>
-        <div className="grid grid-cols-1  md:grid-cols-2 md:gap-8">
-          <div>
-            <div className="mb-4">
-              <button style={{color: "#03047B"}} className="w-full text-left text-lg font-medium py-2 border-b-2  border-zinc-300">
-                Corporates <span className="float-right">▼</span> 
-              </button>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sections.map((section, index) => (
+            <div key={index} className="border-b pb-4">
+              <h3 className="text-lg font-semibold text-blue-900 flex justify-between items-center">
+                {section.title}
+                <span
+                  className="cursor-pointer"
+                  onClick={() => toggleSection(index)}
+                >
+                  {expandedSections[index] ? (
+                    <IoIosArrowUp className="text-blue-900" />
+                  ) : (
+                    <IoIosArrowDown className="text-blue-900" />
+                  )}
+                </span>
+              </h3>
+              {expandedSections[index] && section.content && (
+                <p className="text-zinc-600 mt-2">{section.content}</p>
+              )}
             </div>
-            <div className="mb-4">
-              <button style={{color: "#03047B"}}  className="w-full text-left text-lg font-medium py-2 border-b-2  border-zinc-300">
-                Real Estate Firms <span className="float-right">▼</span>
-              </button>
-            </div>
-            <div className="mb-4">
-              <button style={{color: "#03047B"}}  className="w-full text-left text-lg font-medium py-2 border-b-2 border-zinc-300">
-                Asset Management Firms <span className="float-right">▼</span>
-              </button>
-            </div>
-          </div>
-          <div>
-            <div className="mb-4">
-              <button style={{color: "#03047B"}}  className="w-full text-left text-lg font-medium py-2 border-b-2  border-zinc-300">
-                Startups <span className="float-right">▼</span>
-              </button>
-            </div>
-            <div className="mb-4">
-              <button style={{color: "#03047B"}}  className="w-full text-left text-lg font-medium py-2 border-b-2  border-zinc-300">
-                Governments <span className="float-right">▼</span>
-              </button>
-            </div>
-            <div  className="mb-4">
-              <button style={{color: "#03047B"}}  className="w-full text-left text-lg font-medium py-2 border-b-2  border-zinc-300">
-                HNIs <span className="float-right">▼</span>
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
+       
       </div>
-      {/* <MainServices/> */}
     </>
   );
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import AboutUs from "../section/AboutUs";
 import ServiceCards from "../section/ServiceCards";
 import Contact from "../components/ContactUs";
@@ -12,30 +11,32 @@ import Navbar from "../components/Navbar";
 import Industries from "../section/Industries";
 import Work from "../section/Work";
 import RecentUpdates from "../section/RecentUpdates";
-import HomeImage from "../assets/home.png";
+import HomeImage from "../assets/bg.png";
+import HomeImage2 from "../assets/bg2.png";
+import HomeImage3 from "../assets/bg3.png";
 
 export default function Home() {
-  const [backgroundImage, setBackgroundImage] = useState(`url(${HomeImage})`);
+  const [backgroundImage, setBackgroundImage] = useState(HomeImage);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    arrows: false,
     afterChange: (current) => {
-      // Change the background image based on the current slide index
       switch (current) {
         case 0:
-          setBackgroundImage(`url(${HomeImage})`);
+          setBackgroundImage(HomeImage);
           break;
         case 1:
-          setBackgroundImage(HomeImage);
+          setBackgroundImage(HomeImage2);
           break;
         case 2:
-          setBackgroundImage(HomeImage);
+          setBackgroundImage(HomeImage3);
           break;
         default:
           setBackgroundImage(HomeImage);
@@ -46,60 +47,72 @@ export default function Home() {
   return (
     <>
       <div
-        className="h-3/4 text-white p-4"
+        className={`relative flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-8  xl:p-12 bg-cover bg-center transition duration-500`}
         style={{
-          backgroundImage: backgroundImage,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          minHeight: "40vh",
+          backgroundImage: `url(${backgroundImage})`,
+          minHeight: "",
         }}
       >
-        <Navbar />
-        <Slider {...settings} className="max-w-4xl mx-auto mb-20 pb-8 mt-32">
-          <div>
-            <h1
-              className="text-4xl font-bold mb-4"
-              style={{ color: "#ff6347" }}
+        <Navbar className="absolute top-0 left-0 right-0" />
+        <Slider
+          {...settings}
+          className="w-full max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-3 pb-8"
+        >
+          <div className="">
+            <div
+              style={{ backgroundColor: "#EDF5F5" }}
+              className=" opacity-85 p-8  md:p-16  "
             >
-            Thrive Ahead
-            </h1>
-            <p className="text-lg mb-8">
-            Elevate Your Business with Strategic and Financial Consulting
-            </p>
+              <span className="text-red-600 :text-red-500 font-medium">
+                Consulting
+              </span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900 :text-zinc-100">
+                Elevating Businesses through Strategic and Management Consulting
+              </h1>
+              <button className="bg-red-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-700 transition">
+                Get Consultation Today <span undefinedhidden="true">↗</span>
+              </button>
+            </div>
           </div>
-          <div>
-            <h1
-              className="text-4xl font-bold mb-4"
-              style={{ color: "#ff6347" }}
+          <div className="h-80 md:h-96">
+            <div
+              style={{ backgroundColor: "#EDF5F5" }}
+              className=" opacity-85 p-8  md:p-16  "
             >
-              Building Futures
-            </h1>
-            <p className="text-lg mb-8">
-            Consulting Solutions to Propel Your Business Forward
-            </p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900 :text-zinc-100">
+                Navigating Growth: Financial Expertise for Thriving Enterprises
+              </h1>
+              <button className="bg-red-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-700 transition">
+                Get Consultation Today <span undefinedhidden="true">↗</span>
+              </button>
+            </div>
           </div>
-          <div>
-            <h1
-              className="text-4xl font-bold mb-4"
-              style={{ color: "#ff6347" }}
+          <div className="h-80 md:h-96">
+            <div
+              style={{ backgroundColor: "#EDF5F5" }}
+              className=" opacity-85 p-8  md:p-16  "
             >
-              Elevate, Expand, Excel
-
-            </h1>
-            <p className="text-lg mb-8">
-            Financial Expertise for Your Business Journey
-            </p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900 :text-zinc-100">
+                Charting Success: Data Driven Strategies Tailored to your
+                Business
+              </h1>
+              <button className="bg-red-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-700 transition">
+                View Case Studies <span undefinedhidden="true">↗</span>
+              </button>
+            </div>
           </div>
         </Slider>
       </div>
 
-      <AboutUs />
-      <ServiceCards />
-      <Services />
-      <Industries />
-      <Work />
-      <RecentUpdates />
-      <Contact />
+      <div className="container mx-auto px-4">
+        <AboutUs />
+        <ServiceCards />
+        <Services />
+        <Industries />
+        <Work />
+        <RecentUpdates />
+        <Contact />
+      </div>
       <Footer />
     </>
   );
