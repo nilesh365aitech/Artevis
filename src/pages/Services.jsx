@@ -2,14 +2,50 @@ import Contact from "../components/ContactUs";
 import Footer from "../components/FooterSection";
 import Navbar from "../components/Navbar";
 // import Solutions from "../components/Solutions";
-import ServiceImage from "../assets/same.png";
-import bg from "../assets/Group 13.png";
-
+import ServiceImage from "../assets/servicesback.png";
+import ServiceBuilding from "../assets/ServiceBuilding.png";
+import { useState } from "react";
+import { FaCaretUp, FaCaretDown } from "react-icons/fa";
 export default function MainServices() {
+  const [expanded, setExpanded] = useState(null);
+
+  const handleToggle = (index) => {
+    setExpanded(expanded === index ? null : index);
+  };
+
+  const items = [
+    {
+      title: "Corporates",
+      color: "#EBF3FF",
+      description:
+        "We work with corporations to solve their most pressing problems, from strategic planning to enhancing operational efficiency, helping them stay agile and competitive in todays dynamic business landscape.",
+    },
+    {
+      title: "Real Estate Firms",
+      color: "#E2EBF9",
+      description: "Description for Real Estate Firms",
+    },
+    {
+      title: "Asset Mgmt. Firms",
+      color: "#F0F3F8",
+      description: "Description for Asset Mgmt. Firms",
+    },
+    {
+      title: "StartUps",
+      color: "#F6F9FF",
+      description: "Description for StartUps",
+    },
+    {
+      title: "Governments",
+      color: "#ECF3FF",
+      description: "Description for Governments",
+    },
+    { title: "HNIs", color: "#F6F9FF", description: "Description for HNIs" },
+  ];
   return (
     <>
       <div
-        className="bg-black text-white sm:h-96  p-4 pb-10 mb-4 relative"
+        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${ServiceImage})`,
           backgroundSize: "cover",
@@ -17,19 +53,25 @@ export default function MainServices() {
         }}
       >
         <Navbar />
-        <h1
-          className="text-4xl  mb-4 ml-14 pt-10"
-          style={{ color: "#FF6347" }}
-        >
-          Services
-        </h1>
-        <p className="ml-14">
-          At our consulting firm, our core service offerings are designed to
-          empower businesses to thrive in today's dynamic landscape.
-        </p>
+        <div className="sm:w-[50%] w-[70%] py-8 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
+          <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
+            Who we are
+          </p>
+          <h1 className="text-4xl font-bold  ml-4 sm:ml-14 ">
+            Empower Businesses through Expertise and Support
+          </h1>
+          <p className="ml-4 sm:ml-14 pr-10">
+            We deliver a spectrum of specialized services, including Investment
+            Advisory, Business Analytics, and Management Consultancy, designed
+            to foster robust growth and operational excellence, ensuring our
+            clients are well-equipped to meet their strategic objectives.
+          </p>
+        </div>
       </div>
-      <div className="max-w-4xl  mx-auto ml-4 md:ml-20 px-4 py-20">
-        <h2 className="text-3xl font-semibold">Core Service Offerings</h2>
+      <div className="max-w-5xl  mx-auto ml-4 md:ml-20 px-4 py-20">
+        <h2 className="text-3xl font-semibold text-[#1E227F]">
+          Core Service Offerings
+        </h2>
         <p className="mt-4 text--600 dark:text-zinc-600">
           At our consulting firm, our core service offerings are designed to
           empower businesses to thrive in today's dynamic landscape. From
@@ -42,94 +84,88 @@ export default function MainServices() {
         </p>
       </div>
       <div
-        style={{ backgroundColor: "#1E227F", backgroundImage: ` url(${bg})` }}
-        className="text-white p-10 bg-no-repeat bg-right-bottom"
+        style={{ backgroundImage: `url(${ServiceBuilding})` }}
+        className="bg-blue-600 text-white bg-no-repeat bg-right-bottom p-5"
       >
-        <h1 className="text-4xl md:mt-3 md:mb-8  md:ml-10 mb-4">
+        <h1 className="text-2xl md:text-4xl md:ml-10 md:mt-3 md:mb-5 mb-4">
           Management Consulting
         </h1>
-        <p className="mb-6 md:ml-10 md:mr-80">
-          In today's fast-paced business world, having a clear strategy and
-          effective operations is important for success. Artevis Consulting
-          offers Management Consulting services to help businesses thrive. We
-          work closely with clients to develop strategies for growth and create
-          practical plans to achieve their goals. From crafting Business Plans
-          to conducting studies that provide valuable insights, we're here to
-          support every step of the journey. Whether it's transforming your
-          business or preparing for important meetings, our team is dedicated to
-          helping you succeed. Choose Artevis Consulting for expert guidance and
-          practical solutions to drive your business forward.
+        <p className="text-sm md:text-base lg:text-lg mb-4 md:ml-10 md:mr-[33rem]">
+          Empower your business with our management consulting services,
+          designed to maximize value through in-depth financial, economic, and
+          strategic guidance. We specialize in crafting and implementing
+          corporate strategies, business planning, go-to-market strategies, and
+          strategy execution, ensuring your organization's objectives are met
+          with precision and insight.
         </p>
-
-        <div className="grid grid-cols-1 md:ml-10 md:mr-80  md:grid-cols-3 gap-4">
-          <ul>
-            <li className="pb-6">• Corporate & Business Strategy</li>
-            <li className="pb-6">• Business Plans</li>
-            <li className="pb-6">• Annual Operating Plans</li>
-            <li className="pb-6">• HBU & Feasibility Studies</li>
+        <div className="grid grid-cols-1 md:ml-10 md:mr-[33rem] md:grid-cols-3 gap-4">
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-2">• Corporate & Business Strategy</li>
+            <li className="pb-2">• Project Design & Development</li>
+            <li className="pb-2">• Transformation & Expansion Strategy</li>
+            <li className="pb-2">• Business Plans</li>
           </ul>
-          <ul>
-            <li className="pb-6">• Transformation & Expansion Strategy</li>
-            <li className="pb-6">• Board Meeting Readiness and Support</li>
-            <li className="pb-6">• Project Design & Development</li>
-            <li className="pb-6">• Business Process Consulting</li>
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-2">• Business Process Consulting</li>
+            <li className="pb-2">• Board Meeting Readiness and Support</li>
+            <li className="pb-2">• Annual Operating Plans</li>
+            <li className="pb-2">• HBU & Feasibility Studies</li>
           </ul>
-          <ul>
-            <li className="pb-4 ">• Strategy Implementation Support</li>
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-4">• Strategy Implementation Support</li>
             {/* <li className="pb-4">• Corporate & Business Strategy</li>
-            <li className="pb-4">• Corporate & Business Strategy</li>
-            <li className="pb-2">• Corporate & Business Strategy</li> */}
+      <li className="pb-4">• Corporate & Business Strategy</li>
+      <li className="pb-4">• Corporate & Business Strategy</li> */}
           </ul>
         </div>
       </div>
+
       <div
-      style={{ backgroundColor: "#1E1E1E", backgroundImage: ` url(${bg})` }}
-      className="bg-zinc-800 bg-no-repeat bg-right-bottom text-white p-10">
-        <h1 className="text-4xl md:mt-3 md:mb-8  md:ml-10 mb-4">
+        style={{ backgroundImage: `url(${ServiceBuilding})` }}
+        className="bg-white text-black bg-no-repeat bg-left-bottom py-10"
+      >
+        <h1 className="text-2xl md:text-4xl md:ml-[35rem] md:mt-3 md:mb-5 mb-4">
           Investment Advisory
         </h1>
-        <p className="mb-6 md:ml-10 md:mr-80">
-          Artevis Consulting offers comprehensive Investment Advisory services
-          tailored to meet the diverse needs of our clients. With a keen
-          understanding of market dynamics and investment strategies, our team
-          provides expert guidance to navigate complex investment landscapes.
-          From preparing detailed financial models and compelling pitch decks to
-          conducting thorough business and asset valuations, we equip our
-          clients with the tools and insights needed to make informed investment
-          decisions. Our proactive approach includes opportunity screening and
-          analysis, ensuring that potential investments align with our clients'
-          goals and risk tolerance. Whether you're raising capital or seeking
-          strategic partnerships, Artevis Consulting is dedicated to helping you
-          achieve your investment objectives with confidence and clarity.
+        <p className="text-sm md:text-base lg:text-lg mb-4 md:ml-[35rem]">
+          Our investment advisory services are tailored to enhance business
+          outcomes for Institutional Investors through an outsourced capacity
+          model, providing meticulous planning and execution of strategic
+          projects. We deliver end-to-end support across the deal cycle,
+          encompassing research, due diligence, financial modeling, and PPM
+          creation, ensuring comprehensive assistance through every facet of the
+          investment process.
         </p>
-        <div className="grid grid-cols-1 md:ml-10 md:mr-80  md:grid-cols-3 gap-4">
-          <ul className="list-disc pl-5">
-            <li className="pb-6">Transaction Support (IMs, Models)</li>
-            <li className="pb-6"> Pitch Decks & Internal Presentations</li>
-            <li className="pb-6">Business & Asset Valuation</li>
-            <li>Opportunity Screening and Analysis</li>
+        <div className="grid grid-cols-1 md:ml-[35rem] md:grid-cols-3 gap-4">
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-2">• Transaction Support (IMs, Models)</li>
+            <li className="pb-2">• Opportunity Screening and Analysis</li>
+            <li className="pb-2">• Portfolio Monitoring & Reporting</li>
+            <li className="pb-2">• Pitch Decks & Internal Presentations</li>
           </ul>
-          <ul className="list-disc pl-5">
-            <li className="pb-6">Investor Kit for fundraising</li>
-            <li className="pb-6">Company & Industry Research</li>
-            <li className="pb-6">Portfolio Monitoring & Reporting</li>
-            <li> Fund Modeling and Manager Screening</li>
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-2">• Investor Kit for fundraising</li>
+            <li className="pb-2">• Fund Modeling & Manager Screening</li>
+            <li className="pb-2">• Business & Asset Valuation</li>
+            <li className="pb-2">• Company & Industry Research</li>
           </ul>
-          <ul className="list-disc pl-5">
-            <li className="pb-4">Data Room Management</li>
-            {/* <li className="pb-4">Corporate & Business Strategy</li>
-            <li className="pb-4">Corporate & Business Strategy</li>
-            <li>Corporate & Business Strategy</li> */}
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-2">• Data Room Management</li>
+            {/* <li className="pb-4">• Corporate & Business Strategy</li>
+      <li className="pb-4">• Corporate & Business Strategy</li>
+      <li className="pb-4">• Corporate & Business Strategy</li> */}
           </ul>
         </div>
       </div>
+
       <div
-       style={{  backgroundImage: ` url(${bg})` }}
-      className="bg-red-600  text-white p-8 bg-no-repeat bg-right-bottom">
-        <h1 className="text-4xl md:ml-10 md:mt-3 md:mb-8  mb-4">
+        style={{ backgroundImage: `url(${ServiceBuilding})` }}
+        className="bg-red-600 text-white bg-no-repeat bg-right-bottom py-10"
+      >
+        <h1 className="text-2xl md:text-4xl md:ml-10 md:mt-3 md:mb-5 mb-4">
           Business Analytics
         </h1>
-        <p className="mb-6 md:ml-10 md:mr-80">
+        <p className="text-sm md:text-base lg:text-lg mb-4 md:ml-10 md:mr-[33rem]">
           Artevis Consulting specializes in Business Consultancy services
           tailored to meet the unique needs of each client. With a focus on
           delivering practical solutions and driving tangible results, we
@@ -142,60 +178,61 @@ export default function MainServices() {
           way. Choose Artevis Consulting as your trusted partner in achieving
           sustainable success and realizing your business objectives.
         </p>
-        <div className="grid grid-cols-1 md:ml-10 md:mr-80  md:grid-cols-3 gap-4">
-          <ul>
-            <li className="pb-6">• Data Engineering</li>
-            <li className="pb-6">• Data Mining</li>
-            <li className="pb-6">• Web Scraping</li>
-            <li className="pb-6">• Big Data Analytics</li>
+        <div className="flex flex-col md:flex-row md:ml-10 md:mr-[33rem] gap-4">
+          <ul className="text-sm md:text-base lg:text-lg mb-4 md:mb-0">
+            <li className="pb-2">• Data Engineering</li>
+            <li className="pb-2">• Data Mining</li>
+            <li className="pb-2">• Web Scraping</li>
+            <li className="pb-2">• Big Data Analytics</li>
           </ul>
-          <ul>
-            <li className="pb-6">• Descriptive Analytics</li>
-            <li className="pb-6">• Prescriptive Analytics</li>
-            <li className="pb-6">• Predictive Analytics</li>
-            <li className="pb-6">• Business Intelligence</li>
+          <ul className="text-sm md:text-base lg:text-lg mb-4 md:mb-0">
+            <li className="pb-2">• Descriptive Analytics</li>
+            <li className="pb-2">• Prescriptive Analytics</li>
+            <li className="pb-2">• Predictive Analytics</li>
+            <li className="pb-2">• Business Intelligence</li>
           </ul>
-          <ul>
-            <li className="pb-4">• Cloud Integration & Migration</li>
+          <ul className="text-sm md:text-base lg:text-lg">
+            <li className="pb-2">• Cloud Integration & Migration</li>
             {/* <li className="pb-4">• Corporate & Business Strategy</li>
-            <li className="pb-4">• Corporate & Business Strategy</li>
-            <li className="pb-4">• Corporate & Business Strategy</li> */}
+      <li className="pb-4">• Corporate & Business Strategy</li>
+      <li className="pb-4">• Corporate & Business Strategy</li> */}
           </ul>
         </div>
       </div>
+
       <div className="">
-        <div className="max-w-4xl ml-20 mx-auto  px-4 py-20">
+        <div className="max-w-7xl ml-20 mx-auto  px-4 py-20">
           <h2 className="text-3xl font-semibold text-zinc-900 ">
-            Who are we for?
+            Who do we cater to?
           </h2>
           <p className="mt-4 text-zinc-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            At Artevis, we work with organisations of different size, complexity
+            and across industries. Our offerings are customised to meet the
+            specific requirements across the following and more
           </p>
-          <div className="max-w-4xl  mx-auto p"></div>
         </div>
       </div>
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py- md:h-52 mb-14">
-        <div style={{backgroundColor: "#EBF3FF"}} className="  text-2xl   p-4 text-center">
-          Corporates
-        </div>
-        <div style={{backgroundColor: "#E2EBF9"}}  className="  text-2xl p-4 text-center">
-          Real Estate Firms
-        </div>
-        <div style={{backgroundColor: "#F0F3F8"}}  className=" p-4  text-2xl text-center">
-          Asset Mgmt. Firms
-        </div>
-        <div style={{backgroundColor: "#F6F9FF"}}   className="bg-zinc-200 p-4  text-2xl text-center">
-          StartUps
-        </div>
-        <div style={{backgroundColor: "#ECF3FF"}}   className="bg-zinc-300 p-4  text-2xl text-center">
-          Governments
-        </div>
-        <div style={{backgroundColor: "#F6F9FF"}}   className="bg-zinc-200 p-4  text-2xl text-center">
-          HNIs
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 mb-14 gap-4 max-w-7xl mx-auto">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            style={{ backgroundColor: item.color }}
+            className="relative text-2xl p-6 text-center cursor-pointer rounded-lg shadow-lg transition-transform duration-300 "
+            onClick={() => handleToggle(index)}
+          >
+            <div className="flex justify-between items-center">
+              <span>{item.title}</span>
+              <span>
+                {expanded === index ? <FaCaretUp /> : <FaCaretDown />}
+              </span>
+            </div>
+            {expanded === index && (
+              <div className="mt-4 text-lg transition-opacity duration-300 opacity-100">
+                {item.description}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
 
       <Footer />
