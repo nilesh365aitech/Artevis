@@ -11,25 +11,22 @@ import MainServices from "./pages/Services";
 import Contact from "./pages/Contact";
 import Industry from "./pages/Industries";
 import CaseStudies from "./pages/CaseStudies";
-import AboutUs from "./pages/AboutUs"
-
-
+import AboutUs from "./pages/AboutUs";
+import IndiAbout from "./pages/IndiAbout";
 
 const App = () => {
   return (
-    <main className="">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<MainServices />} />
-          <Route path="/industries" element={<Industry />} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="casestudies" element={<CaseStudies/>} />
-          <Route path="/aboutus" element={<AboutUs/>} />
-        </Routes>
-      </Router>
-   
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<MainServices />} />
+        <Route path="/industries" element={<Industry />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="casestudies" element={<CaseStudies />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/aboutus/:id" element={<IndiAbout />} />
+      </Routes>
+    </Router>
   );
 };
 
