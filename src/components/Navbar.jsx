@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: "About Us", link: "/aboutus" },
     { name: "Services", link: "/services" },
     { name: "Our Footprint", link: "/industries" },
-    { name: "Case Studies", link: "/casestudies" },
+    { name: "Insights & Media", link: "/casestudies" },
     { name: "Contact Us  ➔", link: "/contact" },
   ];
 
