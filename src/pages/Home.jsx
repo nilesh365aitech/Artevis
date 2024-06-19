@@ -47,14 +47,16 @@ export default function Home() {
 
   return (
     <>
+    
+    <Navbar />
       <div
-        className={`relative flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-8  xl:p-12 bg-cover bg-center transition duration-500`}
+        className={`relative flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-  xl:p-12 bg-cover bg-center transition duration-500`}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           minHeight: "",
         }}
       >
-        <Navbar className="absolute top-0 left-0 right-0" />
+        
         <Slider
           {...settings}
           className="w-full max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-3 pb-8"

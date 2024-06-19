@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/FooterSection";
 import CaseStudy1 from "../assets/Case Study 1.png";
@@ -10,7 +10,6 @@ import CaseStudy6 from "../assets/Case Study 6.png";
 import CaseStudy7 from "../assets/Case Study 7.png";
 import CaseStudy8 from "../assets/Case Study 8.png";
 import Insightbg from "../assets/insightbg.png";
-import { useState } from "react";
 import RecentUpdates from "../section/RecentUpdates";
 import ContactUs from "../components/ContactUs";
 
@@ -70,11 +69,11 @@ const CaseStudies = () => {
         }}
       >
         <Navbar />
-        <div className="sm:w-[50%] w-[70%] py-5 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[50%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
             What we think
           </p>
-          <h1 className="text-4xl font-semibold  ml-4 sm:ml-14 ">
+          <h1 className="text-4xl font-semibold ml-4 sm:ml-14">
             Insights, Media & Case Studies
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 mt-6 text-blue-800">
@@ -85,7 +84,7 @@ const CaseStudies = () => {
           </p>
         </div>
       </div>
-      <h2 className="text-blue-900 mt-9 font-semibold text-2xl ml-36 ">
+      <h2 className="text-blue-900 mt-9 font-semibold text-2xl ml-36">
         Insights
       </h2>
       <div className="grid ml-10 mr-10 grid-cols-1 md:grid-cols-2 md:ml-52 md:mr-52 mb-10 mt-8 gap-8">
@@ -122,7 +121,7 @@ const CaseStudies = () => {
             </a>
           </div>
         </div>
-        <div className=" mb-4">
+        <div className="mb-4">
           <img src={CaseStudy6} alt="Case Study 6" className="w-full" />
           <h2 className="text-xl font-bold mt-4">Case study 2</h2>
           <p>
@@ -188,7 +187,7 @@ const CaseStudies = () => {
             </a>
           </div>
         </div>
-        <div className=" mb-4">
+        <div className="mb-4">
           <img src={CaseStudy8} alt="Case Study 8" className="w-full" />
           <h2 className="text-xl font-bold mt-4">Case study 4</h2>
           <p>
@@ -222,7 +221,7 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-      <div className="slider-container  relative mt-20 max-w-7xl mx-auto pb-16">
+      <div className="slider-container relative mt-20 max-w-7xl mx-auto pb-16">
         <div className="slider overflow-hidden">
           <div
             className="slider-content flex transition-transform duration-500 ease-in-out"
@@ -256,12 +255,11 @@ const CaseStudies = () => {
             ))}
           </div>
         </div>
-
-        <div className="absolute top-[-3rem] right-0 left-0 flex items-center  justify-between px-3">
+        <div className="absolute top-[-3rem] right-0 left-0 flex items-center justify-between px-3">
           <h1 className="text-xl sm:text-2xl font-semibold text-blue-900">
             Success Stories
           </h1>
-          <div className="flex gap-3 ">
+          <div className="flex gap-3">
             <button
               className="bg-gray-400 px-3 py-1 rounded-full text-white"
               onClick={prevSlide}
@@ -281,7 +279,6 @@ const CaseStudies = () => {
         <RecentUpdates />
         <ContactUs />
       </div>
-
       <Footer />
     </>
   );
