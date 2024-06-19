@@ -14,6 +14,7 @@ import CaseStudies from "./pages/CaseStudies";
 import AboutUs from "./pages/AboutUs";
 import IndiAbout from "./pages/IndiAbout";
 import MidCaseStudies from "./pages/MidCaseStudies";
+import CaseStudiesBlog from "./pages/CaseStudiesBlog";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
         <Route path="insights" element={<CaseStudies />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/aboutus/:id" element={<IndiAbout />} />
-        <Route path="/casestudies" element={<MidCaseStudies/>} />
+        <Route path="/casestudies" element={<MidCaseStudies />} />
+        <Route path="/casestudieed" element={<CaseStudiesBlog />} />
       </Routes>
     </Router>
   );
