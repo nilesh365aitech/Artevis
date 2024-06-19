@@ -19,6 +19,7 @@ export default function ContactUs() {
                 </p>
             </div>
 
+
             <div className="md:w-1/2 p-6">
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input
@@ -46,6 +47,47 @@ export default function ContactUs() {
                         type="submit"
                         className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-between"
                         >
+
+            <div className="p-6">
+              
+            <form className="p-6 space-y-4">
+                <input
+                    type="text"
+                    placeholder="Name"
+                    className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+                />
+                <input
+                    type="text"
+                    placeholder="Phone number"
+                    className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+                />
+                <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+                />
+                <input
+                    type="text"
+                    placeholder="Location"
+                    className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+                />
+                <textarea
+                    placeholder="Tell us about your needs"
+                    className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+                ></textarea>
+                <button
+                    type="submit"
+                    className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-between"
+                >
+                    
+                    <svg
+                        className="w-4 h-4 ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    />
+
                         Submit
                         <svg
                             className="w-4 h-4 ml-1"
