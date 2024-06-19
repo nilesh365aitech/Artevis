@@ -93,7 +93,7 @@ export default function Widget() {
       <div className="max-w-4xl mx-auto ml-9 md:ml-36 py-24">
         <h2 className="text-3xl font-bold mb-4 text-[#1E227F]">Work with us</h2>
         <p className="text-zinc-700 mb-6">
-        Join our team of experts and contribute to the real world.
+          Join our team of experts and contribute to the real world.
         </p>
         <a
           href="#"
