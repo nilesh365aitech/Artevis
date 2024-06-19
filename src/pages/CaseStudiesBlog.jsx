@@ -31,8 +31,8 @@ const CaseStudiesBlog = () => {
           </h1>
         </div>
       </div>
-      <div className="flex ">
-        <div className="flex flex-col gap-5 w-[28%] p-4">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:flex md:flex-col gap-5 md:w-[28%] p-4 grid grid-cols-1 w-full">
           {/* //leftside */}
           <div className="flex flex-col gap-2">
             <img alt="pic" src={Case0}></img>
