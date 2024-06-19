@@ -14,6 +14,7 @@ import RecentUpdates from "../section/RecentUpdates";
 import HomeImage from "../assets/bg.png";
 import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
+import ContactUs from "../components/ContactUs";
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
@@ -111,7 +112,7 @@ export default function Home() {
         <Industries />
         <Work />
         <RecentUpdates />
-        <Contact />
+        <ContactUs/>
       </div>
       <Footer />
     </>
