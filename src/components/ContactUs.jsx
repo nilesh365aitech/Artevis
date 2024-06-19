@@ -19,6 +19,35 @@ export default function ContactUs() {
                 </p>
             </div>
 
+
+            <div className="md:w-1/2 p-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-900 placeholder-blue-900"
+                        style={{ backgroundColor: "#F0F3F8" }}
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-900 placeholder-blue-900"
+                        style={{ backgroundColor: "#F0F3F8" }}
+                    />
+                    <textarea
+                        name="message"
+                        rows="4"
+                        placeholder="Tell us about your company"
+                        className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-900 placeholder-blue-900"
+                        style={{ backgroundColor: "#F0F3F8" }}
+                    ></textarea>
+                    <button
+                        type="submit"
+                        className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-between"
+                        >
+
             <div className="p-6">
               
             <form className="p-6 space-y-4">
