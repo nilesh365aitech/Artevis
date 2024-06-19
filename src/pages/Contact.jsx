@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import wmapImg from "../assets/ContactMap.png";
 import Footer from "../components/FooterSection";
-import ContactImage from "../assets/contact.png";
+import ContactImage from "../assets/contactbg.png";
 
 export default function Widget() {
   const handleSubmit = (e) => {
@@ -11,7 +11,7 @@ export default function Widget() {
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] md:h-[80vh] pb-10 mb-4 relative"
+        className="bg-black text-white h-[] md:h-[80vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${ContactImage})`,
           backgroundSize: "cover",
@@ -19,24 +19,24 @@ export default function Widget() {
         }}
       >
         <Navbar />
-        <div></div>
-        <div className="sm:w-[50%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+        
+        <div className="sm:w-[50%] w-[90%] mx-auto md:ml-0 py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
             Connect with us
           </p>
           <h1 className="text-4xl font-bold ml-4 sm:ml-14">
             Have questions or need expert guidance?
           </h1>
-          <p className="ml-4 sm:ml-14 pr-10">
+          <p className="ml-4 sm:ml-14 pr-4 sm:pr-10">
             Reach out to us now at info@artevisconsulting.com today, and let's
             chart the path to your success together.
           </p>
         </div>
-        <div className="text--800 p-5 absolute right-16 top-20 border-2 w-[30%] h-fit rounded">
-          <h2 className="text-lg font-semibold mb-4">
+        <div className="p-5 md:absolute md:right-16 md:top-20 border-2  w-[90%] md:w-[30%] h-fit rounded mx-auto md:mx-0 mt-10 md:mt-0">
+          <h2 className="text-lg text-black font-semibold mb-4">
             Generate the master plan to fast track your product to launch
           </h2>
-          <form className=" p-6 space-y-4" onSubmit={handleSubmit}>
+          <form className="p-0 md:p-6 space-y-4" onSubmit={handleSubmit}>
             <div className="mb-3">
               <input
                 type="text"
@@ -74,8 +74,8 @@ export default function Widget() {
           </form>
         </div>
       </div>
-      <img className="w-4/5 md:h-auto h-60 mx-auto" src={wmapImg} alt="Map" />
-      <div className="max-w-4xl mx-auto ml-9 md:ml-36 py-24">
+      <img className="w-4/5 md:h-auto h-60 mx-auto mt-10 md:mt-0" src={wmapImg} alt="Map" />
+      <div className="max-w-4xl mx-auto ml-4 md:ml-36 py-24">
         <h2 className="text-3xl font-bold mb-4 text-[#1E227F]">Work with us</h2>
         <p className="text-zinc-700 mb-6">
           Join our team of experts and contribute to the real world.

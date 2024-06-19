@@ -29,7 +29,7 @@ const RecentUpdates = () => {
             </p>
             <div className="">
               <img src={BottomLeft} alt="Abstract Art" className="mt-8 " />
-              <div className="absolute inset-0 flex items-center md:mt-28 justify-center">
+              <div className="absolute  flex items-center md:mt-28 justify-center">
                 <p>
                   <h2 className="text-2xl font-bold mb-3 ml-10">
                     
