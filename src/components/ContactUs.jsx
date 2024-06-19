@@ -47,7 +47,8 @@ export default function ContactUs() {
                         type="submit"
                         className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-between"
                         >
-
+                            </button>
+</form>
             <div className="p-6">
               
             <form className="p-6 space-y-4">
@@ -95,7 +96,7 @@ export default function ContactUs() {
                             stroke="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
-                       / >
+                       />
                             
                             <svg
                                 className="w-4 h-4 ml-1"
@@ -113,7 +114,7 @@ export default function ContactUs() {
                             </svg>
                         </button>
                     </form>
-           
+           </div>
             </div>
         </div>
     );
