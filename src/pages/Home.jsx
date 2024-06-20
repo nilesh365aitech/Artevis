@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutUs from "../section/AboutUs";
 import ServiceCards from "../section/ServiceCards";
 import ContactUs from "../components/ContactUs";
@@ -18,6 +18,10 @@ import HomeImage3 from "../assets/bg3.png";
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
+
+ 
+
+  
 
   const settings = {
     dots: false,
@@ -55,6 +59,7 @@ export default function Home() {
   return (
     <>
       <Navbar  />
+
       <div
         className={`relative flex flex-col items-center justify-center text-white  bg-cover bg-center transition duration-500`}
         style={{
@@ -124,10 +129,54 @@ export default function Home() {
         <ServiceCards />
         <Services />
         <Industries />
+        <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {experience}+
+            </p>
+            <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+              Years of Experience
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {clients}+
+            </p>
+            <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+              Clients Empowered
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {countries}+
+            </p>
+            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+              Countries Served
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              ${clientAUM}Bn+
+            </p>
+            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+              Client AUM
+            </p>
+          </div>
+        </div>
         <Work />
+      </div>
+
+      <div className=" md:ml-20 ">
         <RecentUpdates />
+
+        <ContactUs />
+
+      </div>
+
+      <div className="container mx-auto px-4">
         <ContactUs />
       </div>
+
       <Footer />
     </>
   );
