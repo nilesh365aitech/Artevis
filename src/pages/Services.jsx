@@ -96,12 +96,12 @@ export default function MainServices() {
 
       <div
         style={{ backgroundImage: `url(${ServiceBuilding})` }}
-        className="bg-[#1E227F] text-white bg-no-repeat bg-right-bottom p-5"
+        className="bg-[#1E227F] text-white bg-no-repeat bg-right-bottom p-5 bg-cover lg:bg-contain"
       >
         <h1 className="text-[32px] font-[600] md:ml-10 md:mt-3 md:mb-5 mb-4">
           Management Consulting
         </h1>
-        <p className="text-[16px] mb-4 md:ml-10 md:mr-[33rem]">
+        <p className="text-[16px] mb-4 md:ml-10 lg:mr-[33rem] ">
           Empower your business with our management consulting services,
           designed to maximize value through in-depth financial, economic, and
           strategic guidance. We specialize in crafting and implementing
@@ -109,7 +109,7 @@ export default function MainServices() {
           strategy execution, ensuring your organization's objectives are met
           with precision and insight.
         </p>
-        <div className="grid grid-cols-1 md:ml-10 md:mr-[33rem] md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:ml-10 lg:mr-[33rem] md:grid-cols-3 gap-2">
           <ul className="text-sm lg:text-[16px]">
             <li className="pb-2">• Corporate & Business Strategy</li>
             <li className="pb-2">• Project Design & Development</li>
@@ -130,12 +130,12 @@ export default function MainServices() {
 
       <div
         style={{ backgroundImage: `url(${ServiceBuilding2})` }}
-        className="bg-white text-black bg-no-repeat bg-left-bottom py-10"
+        className="bg-white text-black bg-no-repeat bg-left-bottom py-10 bg-cover lg:bg-contain"
       >
-        <h1 className="text-[32px] md:text-4xl md:ml-[25rem] md:mt-3 md:mb-5 mb-4 text-[#1E227F] font-[600]">
+        <h1 className="text-[32px] lg:text-4xl lg:ml-[25rem] lg:mt-3 lg:mb-5 mb-4 text-[#1E227F] font-[600] mx-5">
           Investment Advisory
         </h1>
-        <p className="text-[18px] md:text-base mb-4 md:ml-[25rem]">
+        <p className="text-[18px] md:text-base mb-4 lg:ml-[25rem] mx-5">
           Our investment advisory services are tailored to enhance business
           outcomes for Institutional Investors through an outsourced capacity
           model, providing meticulous planning and execution of strategic
@@ -144,7 +144,7 @@ export default function MainServices() {
           creation, ensuring comprehensive assistance through every facet of the
           investment process.
         </p>
-        <div className="grid grid-cols-1 md:ml-[25rem] md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:ml-[25rem] md:grid-cols-3 gap-4 mx-5">
           <ul className="text-sm lg:text-[16px]">
             <li className="pb-2">• Transaction Support (IMs, Models)</li>
             <li className="pb-2">• Opportunity Screening and Analysis</li>
@@ -165,12 +165,12 @@ export default function MainServices() {
 
       <div
         style={{ backgroundImage: `url(${ServiceBuilding3})` }}
-        className="bg-red-600 text-white bg-no-repeat bg-right-bottom py-10"
+        className="bg-red-600 text-white bg-no-repeat bg-right-bottom py-10 bg-cover lg:bg-contain"
       >
-        <h1 className="text-[30px] md:ml-10 md:mt-3 md:mb-5 mb-4 font-[600]">
+        <h1 className="text-[30px] lg:ml-10 lg:mt-3 lg:mb-5 mb-4 font-[600] mx-5">
           Business Analytics
         </h1>
-        <p className="text-[16px] mb-4 md:ml-10 md:mr-[27rem]">
+        <p className="text-[16px] mb-4 lg:ml-10 lg:mr-[27rem] mx-5">
           Artevis Consulting specializes in Business Consultancy services
           tailored to meet the unique needs of each client. With a focus on
           delivering practical solutions and driving tangible results, we
@@ -183,14 +183,14 @@ export default function MainServices() {
           way. Choose Artevis Consulting as your trusted partner in achieving
           sustainable success and realizing your business objectives.
         </p>
-        <div className="grid grid-cols-1 md:ml-10 md:mr-[27rem] md:grid-cols-3 gap-2">
-          <ul className="text-sm lg:text-[16px] mb-4 md:mb-0">
+        <div className="grid grid-cols-3 lg:ml-10 lg:mr-[27rem] lg:grid-cols-3 gap-2 mx-5">
+          <ul className="text-sm lg:text-[16px] mb-4 lg:mb-0">
             <li className="pb-2">• Data Engineering</li>
             <li className="pb-2">• Data Mining</li>
             <li className="pb-2">• Web Scraping</li>
             <li className="pb-2">• Big Data Analytics</li>
           </ul>
-          <ul className="text-sm lg:text-[16px] mb-4 md:mb-0">
+          <ul className="text-sm lg:text-[16px] mb-4 lg:mb-0">
             <li className="pb-2">• Descriptive Analytics</li>
             <li className="pb-2">• Prescriptive Analytics</li>
             <li className="pb-2">• Predictive Analytics</li>
