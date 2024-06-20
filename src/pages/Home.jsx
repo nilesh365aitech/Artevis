@@ -14,7 +14,7 @@ import RecentUpdates from "../section/RecentUpdates";
 import HomeImage from "../assets/bg.png";
 import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
-
+import "./App.css"
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -94,15 +94,15 @@ export default function Home() {
       >
         <Slider
           {...settings}
-          className="w-full max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8"
+          className="w-full max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
         >
-          <div className="">
+          <div className="h-80 md:h-80 ">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-16 text-right md:text-right"
+              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left"
             >
               <span className="text-red-600 font-medium">Consulting</span>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
@@ -113,7 +113,7 @@ export default function Home() {
           <div className="h-80 md:h-80">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-16 text-right md:text-right"
+              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left"
             >
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
                 Navigating Growth: Financial Expertise for Thriving Enterprises
@@ -126,9 +126,9 @@ export default function Home() {
           <div className="h-80 md:h-96">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-16 text-right md:text-right"
+              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left"
             >
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Charting Success: Data Driven Strategies Tailored to your
                 Business
               </h1>
@@ -142,13 +142,14 @@ export default function Home() {
           {textItems.map((item, index) => (
             <div
               key={index}
-              className={`text-xs sm:text-lg ${activeSlide === index ? "underline text-red-600 font-bold" : ""
-                } ${index === 2 ? "" : "sm:border-r-2"} p-0 sm:pr-10 sm:pl-10 text-xs`}
+              className={`relative flex-1 text-center ${activeSlide === index ? "red-underline" : ""
+                } p-0 sm:px-10`}
             >
               {item}
             </div>
           ))}
         </div>
+      
       </div>
 
       <div className="container mx-auto px-4">

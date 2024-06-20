@@ -17,13 +17,13 @@ const ServiceCards = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Link to="/services" onClick={scrollToTop}>
-            <div className="group flex bg-gray-100 hover:bg-blue-900 flex-col items-center p-4 sm:p-6">
+            <div className="group flex bg-gray-100 hover:bg-blue-900 flex-col items-center ">
               <img
                 src={Service1}
                 alt="Service 1"
-                className="mx-auto mb-4 w-3/4"
+                className="mx-auto mb-4 w-full"
               />
-              <div className="text-center group-hover:text-white">
+              <div className=" group-hover:text-white px-4">
                 <h3 className="text-base sm:text-lg font-semibold mb-4">
                   Management Consulting
                 </h3>
@@ -33,7 +33,7 @@ const ServiceCards = () => {
                   business plans to insightful studies, guiding you through
                   every challenge.
                 </p>
-                <div className="text-right">
+                <div className="text-right px-4 pb-2">
                   <a
                     href="#"
                     className="inline-flex items-center text-red-600 font-medium group-hover:text-white"
@@ -59,9 +59,9 @@ const ServiceCards = () => {
             </div>
           </Link>
           <Link to="/services" onClick={scrollToTop}>
-            <div className="group flex bg-gray-100 hover:bg-red-700 flex-col items-center p-4 sm:p-6">
-              <img src={Service2} alt="Service 2" className="mx-auto mb-4 w-3/4" />
-              <div className="text-center group-hover:text-white">
+            <div className="group flex bg-gray-100 hover:bg-red-700 flex-col items-center ">
+              <img src={Service2} alt="Service 2" className="mx-auto mb-4 w-full" />
+              <div className=" group-hover:text-white px-4">
                 <h3 className="text-base sm:text-lg font-semibold mb-4">
                   Investment Advisory
                 </h3>
@@ -72,7 +72,7 @@ const ServiceCards = () => {
                   informed decisions, aligning investments with their
                   objectives.
                 </p>
-                <div className="text-right">
+                <div className="text-right px-4 pb-2">
                   <a
                     href="#"
                     className="inline-flex items-center text-red-600 font-medium group-hover:text-white"
@@ -98,9 +98,9 @@ const ServiceCards = () => {
             </div>
           </Link>
           <Link to="/services" onClick={scrollToTop}>
-            <div className="group flex bg-gray-100 hover:bg-blue-900 flex-col items-center p-4 sm:p-6">
-              <img src={Service3} alt="Service 3" className="mx-auto mb-4 w-3/4" />
-              <div className="text-center group-hover:text-white">
+            <div className="group flex bg-gray-100 hover:bg-blue-900 flex-col items-center ">
+              <img src={Service3} alt="Service 3" className="mx-auto mb-4 w-full" />
+              <div className=" group-hover:text-white px-4">
                 <h3 className="text-base sm:text-lg font-semibold mb-4">
                   Business Analytics
                 </h3>
@@ -111,7 +111,7 @@ const ServiceCards = () => {
                   growth, improve efficiency, and foster innovation to enable
                   your success.
                 </p>
-                <div className="text-right">
+                <div className="text-right px-4 pb-2">
                   <a
                     href="#"
                     className="inline-flex items-center text-red-600 font-medium group-hover:text-white"
