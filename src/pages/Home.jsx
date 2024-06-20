@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutUs from "../section/AboutUs";
 import ServiceCards from "../section/ServiceCards";
 import Contact from "../components/ContactUs";
@@ -18,6 +18,34 @@ import ContactUs from "../components/ContactUs";
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
+  const [experience, setExperience] = useState(0);
+  const [clients, setClients] = useState(0);
+  const [countries, setCountries] = useState(0);
+  const [clientAUM, setClientAUM] = useState(0);
+
+  useEffect(() => {
+    const incrementValues = (target, setter, incrementSpeed) => {
+      let value = 0;
+      const interval = setInterval(() => {
+        if (value < target) {
+          value += 1;
+          setter(value);
+        } else {
+          clearInterval(interval);
+        }
+      }, incrementSpeed);
+    };
+
+    incrementValues(10, setExperience, 100);
+    incrementValues(30, setClients, 50);
+    incrementValues(7, setCountries, 150);
+    incrementValues(100, setClientAUM, 30);
+
+    // Cleanup intervals on unmount
+    return () => {
+      clearInterval(incrementValues);
+    };
+  }, []);
 
   const settings = {
     dots: false,
@@ -47,8 +75,7 @@ export default function Home() {
 
   return (
     <>
-    
-    <Navbar />
+      <Navbar />
       <div
         className={`relative flex flex-col items-center justify-center text-white p-4 sm:p-6 md:p-  xl:p-12 bg-cover bg-center transition duration-500`}
         style={{
@@ -56,7 +83,6 @@ export default function Home() {
           minHeight: "",
         }}
       >
-        
         <Slider
           {...settings}
           className="w-full max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-3 pb-8"
@@ -112,10 +138,52 @@ export default function Home() {
         <ServiceCards />
         <Services />
         <Industries />
+        <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {experience}+
+            </p>
+            <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+              Years of Experience
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {clients}+
+            </p>
+            <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+              Clients Empowered
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {countries}+
+            </p>
+            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+              Countries Served
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              ${clientAUM}Bn+
+            </p>
+            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+              Client AUM
+            </p>
+          </div>
+        </div>
         <Work />
-        <RecentUpdates />
-        <ContactUs/>
       </div>
+
+      <div className="container mx-auto   md:pr-0">
+        <RecentUpdates />
+       
+      </div>
+
+<div className="container mx-auto px-4" >
+<ContactUs />
+</div>
+
       <Footer />
     </>
   );

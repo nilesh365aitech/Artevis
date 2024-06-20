@@ -62,39 +62,39 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
-  <div className="text-center mb-6 sm:mb-0">
-    <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-      {experience}+
-    </p>
-    <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
-      Years of Experience
-    </p>
-  </div>
-  <div className="text-center mb-6 sm:mb-0">
-    <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-      {clients}+
-    </p>
-    <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
-      Clients Empowered
-    </p>
-  </div>
-  <div className="text-center mb-6 sm:mb-0">
-    <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-      {countries}+
-    </p>
-    <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
-      Countries Served
-    </p>
-  </div>
-  <div className="text-center mb-6 sm:mb-0">
-    <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-      ${clientAUM}Bn+
-    </p>
-    <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
-      Client AUM
-    </p>
-  </div>
-</div>
+        <div className="text-center mb-6 sm:mb-0">
+          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+            {experience}+
+          </p>
+          <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+            Years of Experience
+          </p>
+        </div>
+        <div className="text-center mb-6 sm:mb-0">
+          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+            {clients}+
+          </p>
+          <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+            Clients Empowered
+          </p>
+        </div>
+        <div className="text-center mb-6 sm:mb-0">
+          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+            {countries}+
+          </p>
+          <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+            Countries Served
+          </p>
+        </div>
+        <div className="text-center mb-6 sm:mb-0">
+          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+            ${clientAUM}Bn+
+          </p>
+          <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+            Client AUM
+          </p>
+        </div>
+      </div>
 
       <img
         src={Illuminate}
@@ -107,115 +107,129 @@ const AboutUs = () => {
         </h1>
 
         <div className="w-full lg:grid-cols-2 grid mx-auto pl-3 grid-cols-1 gap-6">
-      <div
-        className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
-        onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
-      >
-        <div className="p-3">
-          <img
-            className="w-[160px] h-[160px] rounded-sm"
-            alt="Gautam Chhabra"
-            src={Gautam}
-          ></img>
+          <div
+            className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
+            onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
+          >
+            <div className="p-3">
+              <img
+                className="w-[160px] h-[160px] rounded-sm"
+                alt="Gautam Chhabra"
+                src={Gautam}
+              ></img>
+            </div>
+            <div className="flex flex-col w-3/4">
+              <p className="text-2xl md:text-3xl font-semibold">
+                Gautam Chhabra
+              </p>
+              <p className="font-semibold text-lg md:text-xl text-[#CC2027] my-1">
+                Founder and Managing Director
+              </p>
+              <p className="text-sm md:text-base">
+                Engineer and an MBA by education, Gautam has deep interest in
+                finance. He brings over a decade of global advisory experience
+                in offering strategic insights that drive growth, innovation,
+                and productivity for organizations.
+              </p>
+            </div>
+          </div>
+          <div
+            className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
+            onClick={() => navigate(`/aboutus/Suraj Nayak`)}
+          >
+            <div className="p-3">
+              <img
+                className="w-[160px] h-[160px] rounded-sm"
+                alt="Suraj Nayak"
+                src={SUraj}
+              ></img>
+            </div>
+            <div className="flex flex-col w-3/4">
+              <p className="text-2xl md:text-3xl font-semibold">Suraj Nayak</p>
+              <p className="font-semibold text-lg md:text-xl text-[#CC2027] my-1">
+                Director
+              </p>
+              <p className="text-sm md:text-base">
+                Suraj specializes in investment and transaction advisory,
+                offering strategic counsel on deal terms, valuations, and
+                overall opportunity analysis. He has a strong track record of
+                formulating and implementing strategies across various sectors.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col w-3/4">
-          <p className="text-2xl md:text-3xl font-semibold">Gautam Chhabra</p>
-          <p className="font-semibold text-lg md:text-xl text-[#CC2027] my-1">
-            Founder and Managing Director
-          </p>
-          <p className="text-sm md:text-base">
-            Engineer and an MBA by education, Gautam has deep interest in
-            finance. He brings over a decade of global advisory experience in
-            offering strategic insights that drive growth, innovation, and
-            productivity for organizations.
-          </p>
-        </div>
-      </div>
-      <div
-        className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
-        onClick={() => navigate(`/aboutus/Suraj Nayak`)}
-      >
-        <div className="p-3">
-          <img
-            className="w-[160px] h-[160px] rounded-sm"
-            alt="Suraj Nayak"
-            src={SUraj}
-          ></img>
-        </div>
-        <div className="flex flex-col w-3/4">
-          <p className="text-2xl md:text-3xl font-semibold">Suraj Nayak</p>
-          <p className="font-semibold text-lg md:text-xl text-[#CC2027] my-1">
-            Director
-          </p>
-          <p className="text-sm md:text-base">
-            Suraj specializes in investment and transaction advisory, offering
-            strategic counsel on deal terms, valuations, and overall opportunity
-            analysis. He has a strong track record of formulating and
-            implementing strategies across various sectors.
-          </p>
-        </div>
-      </div>
-    </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900 mb-6">
-    Our Expertise
-  </h1>
-  <p className="text-sm sm:text-base md:text-lg font-light mb-12">
-    Artevis Consulting boasts a team of seasoned experts with deep industry knowledge and diverse perspectives. We operate collaboratively across all levels of client organizations, dedicated to fostering success and driving positive change in the world.
-  </p>
-  <div className="grid md:grid-cols-2 gap-4">
-    <div className="w-full md:w-3/4 h-auto">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
-        Unparalleled Value
-      </h2>
-      <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
-        Our strategies are infused with unmatched value, crafted through collaborative efforts and a relentless pursuit of excellence.
-      </p>
-    </div>
-    <div className="w-full md:w-3/4 md:ml-10 h-auto">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
-        Business Acumen & Agile Adaptability
-      </h2>
-      <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
-        Our team possesses exceptional business acumen and sector-specific insights, enabling us to deliver tailored solutions with strategic impact from day one.
-      </p>
-    </div>
-    <div className="w-full md:w-3/4 h-auto">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
-        Geographical Expertise
-      </h2>
-      <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
-        With a profound understanding of the Saudi Arabian market and extensive Real Estate experience, we offer insights that lead to unparalleled success.
-      </p>
-    </div>
-    <div className="w-full md:w-3/4 md:ml-10 h-auto">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
-        Strategic Execution
-      </h2>
-      <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
-        We execute with precision and efficiency, ensuring optimal outcomes for every venture we undertake.
-      </p>
-    </div>
-    <div className="w-full md:w-3/4 h-auto">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
-        Exceptional Pedigree
-      </h2>
-      <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
-        Led by senior experts with over a decade of top-tier financial and business advisory experience, we consistently surpass industry benchmarks.
-      </p>
-    </div>
-    <div className="w-full md:w-3/4 md:ml-10 h-auto">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
-        Cost Efficiency & Operational Flexibility
-      </h2>
-      <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
-        Engage with us for cost-efficient offshore solutions and the flexibility to adapt the team according to your project needs, without compromising on quality or results.
-      </p>
-    </div>
-  </div>
-</div>
-
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900 mb-6">
+          Our Expertise
+        </h1>
+        <p className="text-sm sm:text-base md:text-lg font-light mb-12">
+          Artevis Consulting boasts a team of seasoned experts with deep
+          industry knowledge and diverse perspectives. We operate
+          collaboratively across all levels of client organizations, dedicated
+          to fostering success and driving positive change in the world.
+        </p>
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="w-full md:w-3/4 h-auto">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
+              Unparalleled Value
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
+              Our strategies are infused with unmatched value, crafted through
+              collaborative efforts and a relentless pursuit of excellence.
+            </p>
+          </div>
+          <div className="w-full md:w-3/4 md:ml-10 h-auto">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
+              Business Acumen & Agile Adaptability
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
+              Our team possesses exceptional business acumen and sector-specific
+              insights, enabling us to deliver tailored solutions with strategic
+              impact from day one.
+            </p>
+          </div>
+          <div className="w-full md:w-3/4 h-auto">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
+              Geographical Expertise
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
+              With a profound understanding of the Saudi Arabian market and
+              extensive Real Estate experience, we offer insights that lead to
+              unparalleled success.
+            </p>
+          </div>
+          <div className="w-full md:w-3/4 md:ml-10 h-auto">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
+              Strategic Execution
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
+              We execute with precision and efficiency, ensuring optimal
+              outcomes for every venture we undertake.
+            </p>
+          </div>
+          <div className="w-full md:w-3/4 h-auto">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
+              Exceptional Pedigree
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
+              Led by senior experts with over a decade of top-tier financial and
+              business advisory experience, we consistently surpass industry
+              benchmarks.
+            </p>
+          </div>
+          <div className="w-full md:w-3/4 md:ml-10 h-auto">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-red-600">
+              Cost Efficiency & Operational Flexibility
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-light">
+              Engage with us for cost-efficient offshore solutions and the
+              flexibility to adapt the team according to your project needs,
+              without compromising on quality or results.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </>

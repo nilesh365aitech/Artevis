@@ -6,9 +6,9 @@ import BottomRight from "../assets/bottom third.png";
 const RecentUpdates = () => {
   return (
     <>
-      <div className="  ml- mr-">
+      <div className="">
         <div className="pb-4">
-          <h1 className="text-3xl ml-3  font-bold pb-2 text-start">
+          <h1 className="text-3xl ml-3   font-bold pb-2 text-start">
             Recent Updates
           </h1>
         </div>
