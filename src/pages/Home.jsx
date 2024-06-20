@@ -19,7 +19,34 @@ export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
 
- 
+  const [experience, setExperience] = useState(0);
+  const [clients, setClients] = useState(0);
+  const [countries, setCountries] = useState(0);
+  const [clientAUM, setClientAUM] = useState(0);
+
+  useEffect(() => {
+    const incrementValues = (target, setter, incrementSpeed) => {
+      let value = 0;
+      const interval = setInterval(() => {
+        if (value < target) {
+          value += 1;
+          setter(value);
+        } else {
+          clearInterval(interval);
+        }
+      }, incrementSpeed);
+    };
+
+    incrementValues(10, setExperience, 100);
+    incrementValues(30, setClients, 50);
+    incrementValues(7, setCountries, 150);
+    incrementValues(100, setClientAUM, 30);
+
+    // Cleanup intervals on unmount
+    return () => {
+      clearInterval(incrementValues);
+    };
+  }, []);
 
   
 
@@ -129,7 +156,7 @@ export default function Home() {
         <ServiceCards />
         <Services />
         <Industries />
-        <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
+        {/* <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
           <div className="text-center mb-6 sm:mb-0">
             <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
               {experience}+
@@ -162,7 +189,7 @@ export default function Home() {
               Client AUM
             </p>
           </div>
-        </div>
+        </div> */}
         <Work />
       </div>
 
