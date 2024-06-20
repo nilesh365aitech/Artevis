@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/FooterSection";
 import CaseStudy1 from "../assets/Case Study 1.png";
-import CaseStudy2 from "../assets/Case Study 2.png";
-import CaseStudy3 from "../assets/Case Study 3.png";
-import CaseStudy4 from "../assets/Case Study 4.png";
+import CaseStudy2 from "../assets/insite2.png";
+import CaseStudy3 from "../assets/insite3.png";
+import CaseStudy4 from "../assets/insite4.png";
 import CaseStudy5 from "../assets/Case Study 5.png";
 import CaseStudy6 from "../assets/Case Study 6.png";
 import CaseStudy7 from "../assets/Case Study 7.png";
@@ -24,21 +24,21 @@ const CaseStudies = () => {
         "Formulated a feasibility model for a sports and event management company for launch of a greenfield ocean race initiative in Saudi Arabia...",
     },
     {
-      bgurl: CaseStudy2,
+      bgurl: CaseStudy6,
       title:
         "From Concept to Capital: How an Innovative F&B E-Commerce and FinTech Startup Raised $xxx Million",
       description:
         "Crafted an Investor Memorandum and Financial Model to propel Fundraising Efforts for an Innovative F&B E-Commerce and FinTech Startup in KSA",
     },
     {
-      bgurl: CaseStudy3,
+      bgurl: CaseStudy7,
       title:
         "Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar Reality, a Fund's Multifold Exit Triumph",
       description:
         "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
     },
     {
-      bgurl: CaseStudy4,
+      bgurl: CaseStudy8,
       title:
         "Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar Reality, a Fund's Multifold Exit Triumph",
       description:
@@ -122,7 +122,7 @@ const CaseStudies = () => {
           </div>
         </div>
         <div className="mb-4">
-          <img src={CaseStudy6} alt="Case Study 6" className="w-full" />
+          <img src={CaseStudy2} alt="Case Study 6" className="w-full" />
           <h2 className="text-xl font-bold mt-4">Case study 2</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -155,7 +155,7 @@ const CaseStudies = () => {
           </div>
         </div>
         <div className="mb-4">
-          <img src={CaseStudy7} alt="Case Study 7" className="w-full" />
+          <img src={CaseStudy3} alt="Case Study 7" className="w-full" />
           <h2 className="text-xl font-bold mt-4">Case study 3</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -188,7 +188,7 @@ const CaseStudies = () => {
           </div>
         </div>
         <div className="mb-4">
-          <img src={CaseStudy8} alt="Case Study 8" className="w-full" />
+          <img src={CaseStudy4} alt="Case Study 8" className="w-full" />
           <h2 className="text-xl font-bold mt-4">Case study 4</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

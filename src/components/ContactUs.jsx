@@ -7,12 +7,12 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center p-6">
-      <div className="md:w-1/2 p-6">
-        <h2 className="text-3xl font-semibold text-blue-800 mb-4">
+    <div className="flex flex-col lg:flex-row justify-center p-6">
+      <div className="lg:w-1/2 p-6">
+        <h2 className="text-3xl font-semibold text-blue-800 mb-4 text-center lg:text-left">
           Contact Us
         </h2>
-        <p>
+        <p className="text-center lg:text-left">
           Reach out to us at{" "}
           <a href="mailto:info@artevisconsulting.com" className="underline">
             info@artevisconsulting.com
@@ -21,70 +21,40 @@ export default function ContactUs() {
         </p>
       </div>
 
-      <div className="md:w-1/2 p-6">
-       
-        <div className="p-6">
-          <form className="p-6 space-y-4">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
-            />
-            <input
-              type="text"
-              placeholder="Phone number"
-              className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
-            />
-            <input
-              type="text"
-              placeholder="Location"
-              className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
-            />
-            <textarea
-              placeholder="Tell us about your needs"
-              className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-between"
-            >
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              />
-              Submit
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              />
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </button>
-          </form>
-        </div>
+      <div className="lg:w-1/2 p-6">
+        <form className="p-6 space-y-4" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+          />
+          <input
+            type="text"
+            placeholder="Phone number"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+          />
+          <input
+            type="text"
+            placeholder="Location"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+          />
+          <textarea
+            placeholder="Tell us about your needs"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+            rows="4"
+          ></textarea>
+          <button
+            type="submit"
+            className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-center"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
