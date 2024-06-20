@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import AboutUsbg from "../assets/AboutUsbg.png";
 import Navbar from "../components/Navbar";
 import Illuminate from "../assets/illuminate.png";
-import Gautam from "../assets/profile1.png";
-import SUraj from "../assets/profile2.png";
+import Suraj from "../assets/profile1.png";
+import Gautam from "../assets/profile2.png";
 import Footer from "../components/FooterSection";
 import { useNavigate } from "react-router-dom";
 
@@ -50,13 +50,16 @@ const AboutUs = () => {
       >
         <Navbar />
         <div className="sm:w-[50%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
-          <p className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl" style={{ color: "#FF6347" }}>
+          <p
+            className="ml-4 sm:ml-14 font-semibold t "
+            style={{ color: "red" }}
+          >
             Who we are
           </p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold ml-4 sm:ml-14">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold ml-4 sm:ml-14">
             About Artevis
           </h1>
-          <p className="ml-4 sm:ml-14 pr-10 text-base sm:text-lg md:text-xl">
+          <p className="ml-4 sm:ml-14 pr-10 text-base text-blue-900">
             Artevis Consulting is a pioneering offshore management consulting
             and investment advisory firm. Our mission is clear: to equip CXOs,
             Investment Teams, and board members with essential insights for
@@ -104,27 +107,26 @@ const AboutUs = () => {
         alt="Img"
         className="md:w-full h-64 md:h-full mx-auto "
       />
-      <div className="max-w-7xl mx-auto mt-10">
-        <h1 className="text-[32px] sm:text-3xl md:text-4xl text-blue-900 pl-6 font-semibold">
+
+      <div className="max-w-7xl mx-auto mt-10 px-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 font-semibold">
           Leadership
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 md:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
           <div
-            className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
+            className="flex items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
           >
-            <div className="p-3">
+            <div className="flex-shrink-0 p-3">
               <img
-                className="w-[160px] h-[160px] rounded-sm"
+                className="w-40 h-40 md:w-48 md:h-48 rounded-sm"
                 alt="Gautam Chhabra"
                 src={Gautam}
-              ></img>
+              />
             </div>
-            <div className="flex flex-col w-3/4">
-              <p className="text-lg md:text-xl font-semibold">
-                Gautam Chhabra
-              </p>
+            <div className="flex flex-col w-full ml-4">
+              <p className="text-lg md:text-xl font-semibold">Gautam Chhabra</p>
               <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1">
                 Founder and Managing Director
               </p>
@@ -137,17 +139,17 @@ const AboutUs = () => {
             </div>
           </div>
           <div
-            className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
+            className="flex items-center hover:cursor-pointer md:bg-white bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Suraj Nayak`)}
           >
-            <div className="p-3">
+            <div className="flex-shrink-0 p-3">
               <img
-                className="w-[160px] h-[160px] rounded-sm"
+                className="w-40 h-40 md:w-48 md:h-48 rounded-sm"
                 alt="Suraj Nayak"
-                src={SUraj}
-              ></img>
+                src={Suraj}
+              />
             </div>
-            <div className="flex flex-col w-3/4">
+            <div className="flex flex-col w-full ml-4">
               <p className="text-lg md:text-xl font-semibold">Suraj Nayak</p>
               <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1">
                 Director
@@ -162,6 +164,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900 mb-6">
           Our Expertise

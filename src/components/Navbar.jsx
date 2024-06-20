@@ -53,14 +53,14 @@ const Navbar = () => {
             <li key={index} className="md:mr-8 md:my-0 my-4 font-semibold">
               <NavLink
                 to={link.link}
-                className={`text-black hover:text-blue-700 duration-500 ${
+                className={`text-black hover:text-red-600 duration-500 ${
                   link.name === "Contact Us  ➔" ? "text-red-600" : ""
                 } ${
                   window.location.pathname === link.link
                     ? `${
                         navOpen
                           ? "py-4"
-                          : " pb-1 pl-2 pr-2 pt-14 text-white-700"
+                          : " text-red-800 pb-1 pl-2 pr-2 pt-14 text-white-700"
                       }`
                     : ""
                 }`}

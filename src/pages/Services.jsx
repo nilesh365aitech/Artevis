@@ -6,6 +6,7 @@ import ServiceImage from "../assets/servicesback.png";
 import ServiceBuilding from "../assets/ServiceBuilding.png";
 import { useState } from "react";
 import { FaCaretUp, FaCaretDown } from "react-icons/fa";
+
 export default function MainServices() {
   const [expanded, setExpanded] = useState(null);
 
@@ -42,10 +43,11 @@ export default function MainServices() {
     },
     { title: "HNIs", color: "#F6F9FF", description: "Description for HNIs" },
   ];
+
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${ServiceImage})`,
           backgroundSize: "cover",
@@ -53,11 +55,11 @@ export default function MainServices() {
         }}
       >
         <Navbar />
-        <div className="sm:w-[50%] w-[70%] py-8 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[50%] w-[70%] py-8 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
             Who we are
           </p>
-          <h1 className="text-4xl font-bold  ml-4 sm:ml-14 ">
+          <h1 className="text-2xl md:text-4xl font-bold ml-4 sm:ml-14">
             Empower Businesses through Expertise and Support
           </h1>
           <p className="ml-4 sm:ml-14 pr-10">
@@ -68,11 +70,11 @@ export default function MainServices() {
           </p>
         </div>
       </div>
-      <div className="max-w-5xl  mx-auto ml-4 md:ml-20 px-4 py-20">
-        <h2 className="text-3xl font-semibold text-[#1E227F]">
+      <div className="max-w-5xl mx-auto ml-4 md:ml-20 px-4 py-20">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#1E227F]">
           Core Service Offerings
         </h2>
-        <p className="mt-4 text--600 dark:text-zinc-600">
+        <p className="mt-4 text-zinc-600">
           At our consulting firm, our core service offerings are designed to
           empower businesses to thrive in today's dynamic landscape. From
           strategic planning and transformational leadership to market entry
@@ -87,7 +89,7 @@ export default function MainServices() {
         style={{ backgroundImage: `url(${ServiceBuilding})` }}
         className="bg-blue-600 text-white bg-no-repeat bg-right-bottom p-5"
       >
-        <h1 className="text-2xl md:text-4xl md:ml-10 md:mt-3 md:mb-5 mb-4">
+        <h1 className="text-xl md:text-2xl lg:text-4xl md:ml-10 md:mt-3 md:mb-5 mb-4">
           Management Consulting
         </h1>
         <p className="text-sm md:text-base lg:text-lg mb-4 md:ml-10 md:mr-[33rem]">
@@ -122,9 +124,9 @@ export default function MainServices() {
 
       <div
         style={{ backgroundImage: `url(${ServiceBuilding})` }}
-        className="bg-white text-black bg-no-repeat bg-left-bottom py-10"
+        className="bg-white text-black bg-no-repeat  bg-left-bottom py-10"
       >
-        <h1 className="text-2xl md:text-4xl md:ml-[35rem] md:mt-3 md:mb-5 mb-4">
+        <h1 className="text-xl md:text-2xl lg:text-4xl md:ml-[35rem] md:mt-3 md:mb-5 mb-4">
           Investment Advisory
         </h1>
         <p className="text-sm md:text-base lg:text-lg mb-4 md:ml-[35rem]">
@@ -160,9 +162,9 @@ export default function MainServices() {
 
       <div
         style={{ backgroundImage: `url(${ServiceBuilding})` }}
-        className="bg-red-600 text-white bg-no-repeat bg-right-bottom py-10"
+        className="bg-red-600 text-white m bg-no-repeat bg-right-bottom py-10"
       >
-        <h1 className="text-2xl md:text-4xl md:ml-10 md:mt-3 md:mb-5 mb-4">
+        <h1 className="text-xl md:text-2xl lg:text-4xl md:ml-10 md:mt-3 md:mb-5 mb-4">
           Business Analytics
         </h1>
         <p className="text-sm md:text-base lg:text-lg mb-4 md:ml-10 md:mr-[33rem]">
@@ -200,24 +202,22 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className="">
-        <div className="max-w-7xl ml-20 mx-auto  px-4 py-20">
-          <h2 className="text-3xl font-semibold text-zinc-900 ">
-            Who do we cater to?
-          </h2>
-          <p className="mt-4 text-zinc-600">
-            At Artevis, we work with organisations of different size, complexity
-            and across industries. Our offerings are customised to meet the
-            specific requirements across the following and more
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <h2 className="text-2xl md:text-3xl font-semibold text-zinc-900">
+          Who do we cater to?
+        </h2>
+        <p className="mt-4 text-zinc-600">
+          At Artevis, we work with organisations of different size, complexity
+          and across industries. Our offerings are customised to meet the
+          specific requirements across the following and more
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 mb-14 gap-4 max-w-7xl mx-auto">
         {items.map((item, index) => (
           <div
             key={index}
             style={{ backgroundColor: item.color }}
-            className="relative text-2xl p-6 text-center cursor-pointer rounded-lg shadow-lg transition-transform duration-300 "
+            className="relative text-lg md:text-2xl p-6 text-center cursor-pointer rounded-lg shadow-lg transition-transform duration-300"
             onClick={() => handleToggle(index)}
           >
             <div className="flex justify-between items-center">
@@ -227,14 +227,13 @@ export default function MainServices() {
               </span>
             </div>
             {expanded === index && (
-              <div className="mt-4 text-lg transition-opacity duration-300 opacity-100">
+              <div className="mt-4 text-base md:text-lg transition-opacity duration-300 opacity-100">
                 {item.description}
               </div>
             )}
           </div>
         ))}
       </div>
-
       <Footer />
     </>
   );
