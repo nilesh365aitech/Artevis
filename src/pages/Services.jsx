@@ -45,7 +45,26 @@ export default function MainServices() {
     },
     { title: "HNIs", color: "#F6F9FF", description: "Description for HNIs" },
   ];
-  const [expanded, setExpanded] = useState(Array(items.length).fill(false));
+
+
+  return (
+    <>
+      <div
+        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative"
+        style={{
+          backgroundImage: `url(${ServiceImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <Navbar />
+        <div className="sm:w-[50%] w-[70%] py-8 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
+          <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
+            Who we are
+          </p>
+          <h1 className="text-2xl md:text-4xl font-bold ml-4 sm:ml-14">
+            Empower Businesses through Expertise and Support
+
 
   return (
     <>
@@ -61,6 +80,7 @@ export default function MainServices() {
           </p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold ml-4 sm:ml-14">
             About Artevis
+
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 text-base sm:text-lg md:text-xl">
             Artevis Consulting is a pioneering offshore management consulting
@@ -71,10 +91,12 @@ export default function MainServices() {
         </div>
       </div>
       <div className="max-w-5xl mx-auto ml-4 md:ml-20 px-4 py-20">
+
         <h2 className="text-3xl font-semibold text-[#1E227F]">
+
           Core Service Offerings
         </h2>
-        <p className="mt-4 text--600 dark:text-zinc-600">
+        <p className="mt-4 text-zinc-600">
           At our consulting firm, our core service offerings are designed to
           empower businesses to thrive in today's dynamic landscape. From
           strategic planning and transformational leadership to market entry
@@ -85,8 +107,10 @@ export default function MainServices() {
           the competition.
         </p>
       </div>
+
       <div style={{ backgroundImage: `url(${ServiceBuilding})` }} className="bg-[#1E227F] text-white bg-no-repeat bg-right-bottom p-5">
         <h1 className="text-[32px] font-[600] md:ml-10 md:mt-3 md:mb-5 mb-4">
+
           Management Consulting
         </h1>
         <p className="text-[16px] mb-4 md:ml-10 md:mr-[33rem]">
@@ -116,8 +140,10 @@ export default function MainServices() {
         </div>
       </div>
 
+
       <div style={{ backgroundImage: `url(${ServiceBuilding2})` }} className="bg-white text-black bg-no-repeat bg-left-bottom py-10">
         <h1 className="text-[32px] md:text-4xl md:ml-[25rem] md:mt-3 md:mb-5 mb-4 text-[#1E227F] font-[600]">
+
           Investment Advisory
         </h1>
         <p className="text-[18px] md:text-base mb-4 md:ml-[25rem]">
@@ -148,8 +174,10 @@ export default function MainServices() {
         </div>
       </div>
 
+
       <div style={{ backgroundImage: `url(${ServiceBuilding3})` }} className="bg-red-600 text-white bg-no-repeat bg-right-bottom py-10">
         <h1 className="text-[30px] md:ml-10 md:mt-3 md:mb-5 mb-4 font-[600]">
+
           Business Analytics
         </h1>
         <p className="text-[16px] mb-4 md:ml-10 md:mr-[27rem]">
@@ -184,6 +212,7 @@ export default function MainServices() {
         </div>
       </div>
 
+
       <div className="max-w-7xl ml-20 mx-auto px-4 py-20">
         <h2 className="text-3xl font-semibold text-zinc-900">
           Who do we cater to?
@@ -200,13 +229,16 @@ export default function MainServices() {
           <div
             key={index}
             style={{ backgroundColor: item.color }}
+
             className="relative text-2xl p-6 text-center cursor-pointer rounded-lg shadow-lg transition-transform duration-300"
+
             onClick={() => handleToggle(index)}
           >
             <div className="flex justify-between items-center">
               <span>{item.title}</span>
               <span>{expanded[index] ? <FaCaretUp /> : <FaCaretDown />}</span>
             </div>
+
             {expanded[index] && (
               <div className="mt-4 text-lg transition-opacity duration-300 opacity-100">
                 {item.description}
@@ -215,7 +247,6 @@ export default function MainServices() {
           </div>
         ))}
       </div>
-
       <Footer />
     </>
   );
