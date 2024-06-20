@@ -1,7 +1,7 @@
 export default function AboutUs() {
   return (
     <div className=" py-4 px-2 sm:p-6 pt-6 ml-2 sm:max-w-4xl mx-auto">
-      <h2 className="text-xl sm:text-2xl md:text-3xl text-blue-400 font-semibold mb-4">
+      <h2 className="text-xl sm:text-2xl md:text-3xl text-blue-800 font-semibold mb-4">
         About Us
       </h2>
       <p className=" text-sm sm:text-base md:text-lg mb-4">
