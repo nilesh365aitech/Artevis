@@ -48,20 +48,20 @@ const CaseStudies = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 3 : prevIndex - 1
+      prevIndex === 0 ? items.length - 1 : prevIndex - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 3 ? 0 : prevIndex + 1
+      prevIndex === items.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${Insightbg})`,
           backgroundSize: "cover",
@@ -70,7 +70,7 @@ const CaseStudies = () => {
       >
         <Navbar />
         <div className="sm:w-[50%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
-          <p className="ml-4 sm:ml-14 font-bold text-red-700 " >
+          <p className="ml-4 sm:ml-14 font-bold text-red-700">
             What we think
           </p>
           <h1 className="text-4xl font-semibold ml-4 sm:ml-14">
@@ -84,7 +84,7 @@ const CaseStudies = () => {
           </p>
         </div>
       </div>
-      <h2 className="text-blue-900 mt-9 font-semibold text-2xl ml-36">
+      <h2 className="text-blue-900 mt-9 font-semibold text-2xl text-center md:text-left md:ml-36">
         Insights
       </h2>
       <div className="grid ml-10 mr-10 grid-cols-1 md:grid-cols-2 md:ml-52 md:mr-52 mb-10 mt-8 gap-8">
@@ -275,11 +275,10 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-     
-      <div className=" md:ml-20 ">
+      <div className="md:ml-20">
         <RecentUpdates />
         <div className="container mx-auto px-4">
-        <ContactUs />
+          <ContactUs />
         </div>
       </div>
       <Footer />

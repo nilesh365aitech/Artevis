@@ -5,12 +5,9 @@ import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
-import CaseStudy5 from "../assets/Case Study 5.png";
-import CaseStudy6 from "../assets/Case Study 6.png";
-import CaseStudy7 from "../assets/Case Study 7.png";
-import CaseStudy8 from "../assets/Case Study 8.png";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/FooterSection";
+import Media from "../assets/media.png"
 
 const MidCaseStudies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,7 +59,7 @@ const MidCaseStudies = () => {
       <div
         className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative "
         style={{
-          backgroundImage: `url(${Insightbg})`,
+          backgroundImage: `url(${Media})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -78,9 +75,9 @@ const MidCaseStudies = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between bg-white :bg-zinc-800 p-6 rounded-lg md:p-20 shadow-lg">
+      <div className="flex flex-col md:flex-row justify-between  p-6 rounded-lg md:p-20 ">
         <div className="md:w-2/3">
-          <h2 className="text-xl font-bold text-blue-800 :text-blue-400">
+          <h2 className="text-2xl font-semibold text-blue-900 :text-blue-400">
             Business Need
           </h2>
           <p className="mt-2 text-zinc-700 :text-zinc-300">
@@ -107,8 +104,11 @@ const MidCaseStudies = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap- mt-10">
-        <div className="bg-indigo-900  text-white p-12">
-          <h2 className="text-xl font-semibold mb-2">
+        <div
+          style={{ backgroundColor: "#151B8D" }}
+          className="  text-white p-12"
+        >
+          <h2 className="text-2xl font-semibold mb-2">
             Commercial Due Diligence
           </h2>
           <p>
@@ -119,8 +119,11 @@ const MidCaseStudies = () => {
             threats within the rapidly evolving e-betting industry.
           </p>
         </div>
-        <div className="bg-indigo-100 p-12 text-indigo-900 ">
-          <h2 className="text-xl font-semibold mb-2">
+        <div
+          style={{ backgroundColor: "#EDF5F5" }}
+          className=" p-12 text-indigo-900 "
+        >
+          <h2 className="text-2xl font-semibold mb-2">
             Financial Due Diligence
           </h2>
           <p>
@@ -131,8 +134,11 @@ const MidCaseStudies = () => {
             potential for sustainable growth.
           </p>
         </div>
-        <div className="bg-indigo-100 text-indigo-900 p-12">
-          <h2 className="text-xl font-semibold mb-2">Valuation Model</h2>
+        <div
+          style={{ backgroundColor: "#EDF5F5" }}
+          className=" text-indigo-900 p-12"
+        >
+          <h2 className="text-2xl font-semibold mb-2">Valuation Model</h2>
           <p>
             A comprehensive valuation model was developed, integrating
             Discounted Cash Flow (DCF) and relative valuation techniques. This
@@ -143,8 +149,11 @@ const MidCaseStudies = () => {
             ensuring a robust and flexible investment strategy.
           </p>
         </div>
-        <div className="bg-indigo-900 text-white p-12">
-          <h2 className="text-xl font-semibold mb-2">
+        <div
+          style={{ backgroundColor: "#151B8D" }}
+          className=" text-white p-12"
+        >
+          <h2 className="text-2xl font-semibold mb-2">
             Investment and Tracking
           </h2>
           <p>
@@ -157,7 +166,7 @@ const MidCaseStudies = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col py-24 md:flex-row justify-around items-center text-center space-y-4 md:space-y-0">
+      <div className="flex flex-col pt-20 md:flex-row justify-around items-center text-center space-y-4 md:space-y-0">
         <div className="text-center">
           <p className="text-red-600 text-3xl font-bold">USD 3 bn</p>
           <p className="text-zinc-700 :text-zinc-300">Fund Raised</p>
@@ -175,7 +184,7 @@ const MidCaseStudies = () => {
           <p className="text-zinc-700 :text-zinc-300">Client AUM</p>
         </div>
       </div>
-      <div className=" py-16 mb-20 :bg-zinc-800 p-6 rounded-lg max-w-5xl mx-auto">
+      <div className=" py-20 mb-20   p-6 rounded-lg max-w-5xl mx-auto">
         <h2 className="text-xl font-semibold text-blue-700 :text-blue-500">
           Outcome
         </h2>
@@ -204,7 +213,10 @@ const MidCaseStudies = () => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {items.map((item, index) => (
-              <div key={index} className="w-full lg:w-1/3 flex-shrink-0 mb-20 px-2">
+              <div
+                key={index}
+                className="w-full lg:w-1/3 flex-shrink-0 mb-20 px-2"
+              >
                 <div className="h-72 sm:h-96">
                   <div
                     className="bg-cover bg-center h-full"
@@ -252,7 +264,7 @@ const MidCaseStudies = () => {
         </div>
         <ContactUs />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
