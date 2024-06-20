@@ -26,26 +26,26 @@ export default function ContactUs() {
           <input
             type="text"
             placeholder="Name"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-500"
           />
           <input
             type="text"
             placeholder="Phone number"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-500"
           />
           <input
             type="email"
             placeholder="Email"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-500"
           />
           <input
             type="text"
             placeholder="Location"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-500"
           />
           <textarea
             placeholder="Tell us about your needs"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-blue-500"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-500"
             rows="4"
           ></textarea>
           <button

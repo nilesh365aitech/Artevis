@@ -1,10 +1,11 @@
+import FooterLogo from "../assets/footerlogo.png"
 export default function Footer() {
   return (
     <div style={{ backgroundColor: "#26283B" }} className="text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="col-span-1">
-            <h2 className="text-3xl font-bold mb-4">Logo</h2>
+            <img src={FooterLogo}></img>
             <p className="mb-6 text-sm">Delhi, India</p>
             <div className="mt-10 md:mt-24">
               <p className="text-sm">
