@@ -394,9 +394,12 @@ const Industries = () => {
           <div className="mt-10">{regionContent[selectedRegion]}</div>
         </div>
       )}
-      <div className="container mx-auto px-4">
+      
+      <div className=" mt-6 md:ml-20 ">
         <RecentUpdates />
+        <div className="container mx-auto px-4">
         <ContactUs />
+        </div>
       </div>
       <Footer />
     </>
