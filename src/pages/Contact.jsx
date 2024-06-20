@@ -11,7 +11,7 @@ export default function Widget() {
   return (
     <>
       <div
-        className="bg-black text-white h-[] md:h-[80vh] pb-10 mb-4 relative"
+        className="bg-black text-white  md:h-[90vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${ContactImage})`,
           backgroundSize: "cover",

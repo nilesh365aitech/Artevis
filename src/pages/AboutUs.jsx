@@ -13,6 +13,7 @@ const AboutUs = () => {
   const [countries, setCountries] = useState(0);
   const [clientAUM, setClientAUM] = useState(0);
   const navigate = useNavigate();
+
   useEffect(() => {
     const incrementValues = (target, setter, incrementSpeed) => {
       let value = 0;
@@ -48,12 +49,14 @@ const AboutUs = () => {
         }}
       >
         <Navbar />
-        <div className="sm:w-[50%] w-[70%] py-5 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
-          <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
+        <div className="sm:w-[50%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+          <p className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl" style={{ color: "#FF6347" }}>
             Who we are
           </p>
-          <h1 className="text-4xl font-bold  ml-4 sm:ml-14 ">About Artevis</h1>
-          <p className="ml-4 sm:ml-14 pr-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold ml-4 sm:ml-14">
+            About Artevis
+          </h1>
+          <p className="ml-4 sm:ml-14 pr-10 text-base sm:text-lg md:text-xl">
             Artevis Consulting is a pioneering offshore management consulting
             and investment advisory firm. Our mission is clear: to equip CXOs,
             Investment Teams, and board members with essential insights for
@@ -66,7 +69,7 @@ const AboutUs = () => {
           <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
             {experience}+
           </p>
-          <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
             Years of Experience
           </p>
         </div>
@@ -74,7 +77,7 @@ const AboutUs = () => {
           <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
             {clients}+
           </p>
-          <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
             Clients Empowered
           </p>
         </div>
@@ -82,7 +85,7 @@ const AboutUs = () => {
           <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
             {countries}+
           </p>
-          <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
             Countries Served
           </p>
         </div>
@@ -90,7 +93,7 @@ const AboutUs = () => {
           <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
             ${clientAUM}Bn+
           </p>
-          <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
             Client AUM
           </p>
         </div>
@@ -99,14 +102,14 @@ const AboutUs = () => {
       <img
         src={Illuminate}
         alt="Img"
-        className="md:w-full  h-64 md:h-full mx-auto "
+        className="md:w-full h-64 md:h-full mx-auto "
       />
       <div className="max-w-7xl mx-auto mt-10">
-        <h1 className="text-[32px] text-blue-900 pl-6 font-semibold">
+        <h1 className="text-[32px] sm:text-3xl md:text-4xl text-blue-900 pl-6 font-semibold">
           Leadership
         </h1>
 
-        <div className="w-full lg:grid-cols-2 grid mx-auto pl-3 grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 md:px-0">
           <div
             className="flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
@@ -119,10 +122,10 @@ const AboutUs = () => {
               ></img>
             </div>
             <div className="flex flex-col w-3/4">
-              <p className="text-2xl md:text-3xl font-semibold">
+              <p className="text-lg md:text-xl font-semibold">
                 Gautam Chhabra
               </p>
-              <p className="font-semibold text-lg md:text-xl text-[#CC2027] my-1">
+              <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1">
                 Founder and Managing Director
               </p>
               <p className="text-sm md:text-base">
@@ -145,8 +148,8 @@ const AboutUs = () => {
               ></img>
             </div>
             <div className="flex flex-col w-3/4">
-              <p className="text-2xl md:text-3xl font-semibold">Suraj Nayak</p>
-              <p className="font-semibold text-lg md:text-xl text-[#CC2027] my-1">
+              <p className="text-lg md:text-xl font-semibold">Suraj Nayak</p>
+              <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1">
                 Director
               </p>
               <p className="text-sm md:text-base">

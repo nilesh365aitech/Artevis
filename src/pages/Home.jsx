@@ -14,7 +14,7 @@ import RecentUpdates from "../section/RecentUpdates";
 import HomeImage from "../assets/bg.png";
 import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
-// import "./Home.css"
+
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -47,8 +47,6 @@ export default function Home() {
       clearInterval(incrementValues);
     };
   }, []);
-
-  
 
   const settings = {
     dots: false,
@@ -85,10 +83,10 @@ export default function Home() {
 
   return (
     <>
-      <Navbar  />
+      <Navbar />
 
       <div
-        className={`relative flex flex-col items-center justify-center text-white  bg-cover bg-center transition duration-500`}
+        className={`relative flex flex-col items-center justify-center text-white bg-cover bg-center transition duration-500`}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           // minHeight: "100vh",
@@ -101,26 +99,26 @@ export default function Home() {
           <div className="">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-8 md:p-16"
+              className="opacity-85 p-4 sm:p-8 md:p-16 text-right md:text-right"
             >
               <span className="text-red-600 font-medium">Consulting</span>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
-              <button className="bg-red-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-700 transition">
+              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
                 Get Consultation Today <span>↗</span>
               </button>
             </div>
           </div>
-          <div className="h-80 md:h-96">
+          <div className="h-80 md:h-80">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-8 md:p-16"
+              className="opacity-85 p-4 sm:p-8 md:p-16 text-right md:text-right"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
                 Navigating Growth: Financial Expertise for Thriving Enterprises
               </h1>
-              <button className="bg-red-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-700 transition">
+              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
                 Get Consultation Today <span>↗</span>
               </button>
             </div>
@@ -128,79 +126,41 @@ export default function Home() {
           <div className="h-80 md:h-96">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-8 md:p-16"
+              className="opacity-85 p-4 sm:p-8 md:p-16 text-right md:text-right"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
                 Charting Success: Data Driven Strategies Tailored to your
                 Business
               </h1>
-              <button className="bg-red-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-700 transition">
+              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
                 View Case Studies <span>↗</span>
               </button>
             </div>
           </div>
         </Slider>
-        <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white flex justify-between p-4">
+        <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white flex justify-between p-2 sm:p-4 text-xs">
           {textItems.map((item, index) => (
             <div
               key={index}
-              className={`text-lg ${activeSlide === index ? "underline text-red-600 font-bold" : ""} border-r-2 pr-40 py-2 pl-10`}
+              className={`text-xs sm:text-lg ${activeSlide === index ? "underline text-red-600 font-bold" : ""
+                } ${index === 2 ? "" : "sm:border-r-2"} p-0 sm:pr-10 sm:pl-10 text-xs`}
             >
               {item}
             </div>
           ))}
         </div>
       </div>
+
       <div className="container mx-auto px-4">
         <AboutUs />
         <ServiceCards />
         <Services />
         <Industries />
-        {/* <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
-          <div className="text-center mb-6 sm:mb-0">
-            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-              {experience}+
-            </p>
-            <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
-              Years of Experience
-            </p>
-          </div>
-          <div className="text-center mb-6 sm:mb-0">
-            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-              {clients}+
-            </p>
-            <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
-              Clients Empowered
-            </p>
-          </div>
-          <div className="text-center mb-6 sm:mb-0">
-            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-              {countries}+
-            </p>
-            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
-              Countries Served
-            </p>
-          </div>
-          <div className="text-center mb-6 sm:mb-0">
-            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-              ${clientAUM}Bn+
-            </p>
-            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
-              Client AUM
-            </p>
-          </div>
-        </div> */}
         <Work />
       </div>
 
-      <div className=" md:ml-20 ">
+      <div className="md:ml-20">
         <RecentUpdates />
-
-        <ContactUs />
-
-      </div>
-
-      <div className="container mx-auto px-4">
         <ContactUs />
       </div>
 
