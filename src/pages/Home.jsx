@@ -175,14 +175,13 @@ export default function Home() {
         <Work />
       </div>
 
-      <div className="container mx-auto   md:pr-0">
+      <div className=" md:ml-20 ">
         <RecentUpdates />
-       
       </div>
 
-<div className="container mx-auto px-4" >
-<ContactUs />
-</div>
+      <div className="container mx-auto px-4">
+        <ContactUs />
+      </div>
 
       <Footer />
     </>

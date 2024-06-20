@@ -275,9 +275,12 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4">
+     
+      <div className=" md:ml-20 ">
         <RecentUpdates />
+        <div className="container mx-auto px-4">
         <ContactUs />
+        </div>
       </div>
       <Footer />
     </>
