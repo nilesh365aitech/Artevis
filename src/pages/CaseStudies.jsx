@@ -70,7 +70,7 @@ const CaseStudies = () => {
       >
         <Navbar />
         <div className="sm:w-[50%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
-          <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
+          <p className="ml-4 sm:ml-14 font-bold text-red-700 " >
             What we think
           </p>
           <h1 className="text-4xl font-semibold ml-4 sm:ml-14">

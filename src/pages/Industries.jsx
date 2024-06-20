@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import bgOurFootprint from "../assets/bgOurFootprint.png";
 import Navbar from "../components/Navbar";
 import MapImage from "../assets/fp.png";
@@ -248,6 +248,35 @@ const Industries = () => {
     ),
   };
 
+  const [experience, setExperience] = useState(0);
+  const [clients, setClients] = useState(0);
+  const [countries, setCountries] = useState(0);
+  const [clientAUM, setClientAUM] = useState(0);
+
+  useEffect(() => {
+    const incrementValues = (target, setter, incrementSpeed) => {
+      let value = 0;
+      const interval = setInterval(() => {
+        if (value < target) {
+          value += 1;
+          setter(value);
+        } else {
+          clearInterval(interval);
+        }
+      }, incrementSpeed);
+    };
+
+    incrementValues(10, setExperience, 100);
+    incrementValues(30, setClients, 50);
+    incrementValues(7, setCountries, 150);
+    incrementValues(100, setClientAUM, 30);
+
+    // Cleanup intervals on unmount
+    return () => {
+      clearInterval(incrementValues);
+    };
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -255,7 +284,7 @@ const Industries = () => {
         className="bg-cover bg-center w-full h-80 md:h-96 lg:h-144 flex items-center justify-start"
         style={{ backgroundImage: `url(${bgOurFootprint})`, height: "34rem" }}
       >
-        <div className="relative p-4 sm:p-12 opacity-90 bg-gradient-to-r from-zinc-100 via-purple-100 to-pink-100 max-w-lg md:max-w-2xl lg:max-w-3xl mx-4">
+        <div className="relative p-4 sm:p-12 opacity-90 bg-gradient-to-r from-zinc-100 via-purple-100 to-pink-100 max-w-lg md:max-w-2xl lg:max-w-3xl ml-0 mx-4">
           <div className="text-red-600 text-lg font-semibold mb-2">
             Our Footprint
           </div>
@@ -269,6 +298,40 @@ const Industries = () => {
           <div className="absolute right-0 top-0 bottom-0 w-1 bg-red-600"></div>
         </div>
       </div>
+      <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {experience}+
+            </p>
+            <p className="text-xs ml-3 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+              Years of Experience
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {clients}+
+            </p>
+            <p className="text-xs ml-2 sm:ml-0 sm:text-lg md:text-xl lg:text-2xl">
+              Clients Empowered
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              {countries}+
+            </p>
+            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+              Countries Served
+            </p>
+          </div>
+          <div className="text-center mb-6 sm:mb-0">
+            <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
+              ${clientAUM}Bn+
+            </p>
+            <p className="text-xs mr-4 sm:mr-0 sm:text-lg md:text-xl lg:text-2xl">
+              Client AUM
+            </p>
+          </div>
+        </div>
       <div className="relative overflow-hidden bg-zinc-100 :bg-zinc-900">
         <img src={MapImage} alt="World Map" className="w-full h-auto" />
         <div
