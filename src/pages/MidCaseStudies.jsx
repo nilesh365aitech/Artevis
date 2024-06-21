@@ -88,19 +88,19 @@ const MidCaseStudies = () => {
             an informed investment decision.
           </p>
         </div>
-        <div className="md:w-1/3 mt-6 md:mt-0 md:pl-6 border-t md:border-t-0 md:border-l border-zinc-200 :border-zinc-600">
-          <h3 className="text-sm font-semibold text-red-600 :text-red-400">
+        <div className="md:w-1/3 mt-6 md:mt-0 md:pl-10 border-t md:border-t-0 md:border-l border-zinc-200 :border-zinc-600">
+          <h3 className="text-lg font-semibold text-red-600 :text-red-400">
             About the client
           </h3>
-          <p className="text-zinc-900 :text-zinc-100">
+          <p className="text-zinc-900 :text-zinc-100 font-semibold">
             Hedge fund for
             <br />
             E-betting platform
           </p>
-          <h3 className="mt-4 text-sm font-semibold text-red-600 :text-red-400">
+          <h3 className="mt-4 text-lg font-semibold text-red-600 :text-red-400">
             Location
           </h3>
-          <p className="text-zinc-900 :text-zinc-100">New York, USA</p>
+          <p className="text-zinc-900 :text-zinc-100 font-semibold">New York, USA</p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap- mt-10">
@@ -184,8 +184,8 @@ const MidCaseStudies = () => {
           <p className="text-zinc-700 :text-zinc-300">Client AUM</p>
         </div>
       </div>
-      <div className=" py-20 mb-20   p-6 rounded-lg max-w-5xl mx-auto">
-        <h2 className="text-xl font-semibold text-blue-700 :text-blue-500">
+      <div className=" py-20 mb-20   p-6 rounded-lg  mx-auto bg-[#F0F3F8] lg:px-28 mt-5">
+        <h2 className="text-xl font-semibold text-blue-900 :text-blue-500">
           Outcome
         </h2>
         <p className="mt-4 text-zinc-800 :text-zinc-200">
@@ -206,7 +206,7 @@ const MidCaseStudies = () => {
         </p>
       </div>
 
-      <div className="slider-container  relative mt-20 max-w-7xl mx-auto pb-16">
+      <div className="slider-container  relative mt-20  mx-auto pb-16 bg-[#F0F3F8] px-20">
         <div className="slider overflow-hidden">
           <div
             className="slider-content flex transition-transform duration-500 ease-in-out"
@@ -243,8 +243,8 @@ const MidCaseStudies = () => {
             ))}
           </div>
         </div>
-        <div className="absolute top-[-3rem] right-0 left-0 flex  items-center  justify-between px-3">
-          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900">
+        <div className="absolute top-[0rem] right-0 left-0 flex  items-center  justify-between px-3 bg-[#F0F3F8] py-3">
+          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900 px-20">
             Success Stories
           </h1>
           <div className="flex gap-3 ">

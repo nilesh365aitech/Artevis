@@ -7,7 +7,7 @@ export default function Work() {
   return (
     <div className="">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-semibold mb-7 ml-10 text-blue-900 md:ml-52 ">
+        <h1 className="text-3xl font-semibold mb-7  sm:ml-10 text-blue-900 md:ml-52 ">
           Our Work
         </h1>
 
@@ -23,24 +23,27 @@ export default function Work() {
               Arabia...
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Start Ups
               </button>
-              <a href="#" className="text-red-600 hover:text-blue-900 flex items-center mr-6">
+              <a
+                href="#"
+                className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
+              >
                 Read More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  ></path>
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
                 </svg>
               </a>
             </div>
@@ -57,24 +60,27 @@ export default function Work() {
               a, spanning multiple sectors (Read More….)
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Real Estate
               </button>
-              <a href="#" className="text-red-600 hover:text-blue-900 flex items-center mr-6">
+              <a
+                href="#"
+                className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
+              >
                 Read More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  ></path>
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
                 </svg>
               </a>
             </div>
@@ -91,24 +97,27 @@ export default function Work() {
               Startup in KSA
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Start Ups
               </button>
-              <a href="#" className="text-red-600 hover:text-blue-900 flex items-center mr-6">
+              <a
+                href="#"
+                className="text-red-600 hover:text-blue-900 flex items-center mr-6  py-1"
+              >
                 Read More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  ></path>
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
                 </svg>
               </a>
             </div>
@@ -125,24 +134,27 @@ export default function Work() {
               resulting in a multifold exit for the fund
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Hedge Fund
               </button>
-              <a href="#" className="text-red-600 hover:text-blue-900 flex items-center mr-6">
+              <a
+                href="#"
+                className="text-red-600 hover:text-blue-900 flex items-center mr-6"
+              >
                 Read More
                 <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  ></path>
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
                 </svg>
               </a>
             </div>

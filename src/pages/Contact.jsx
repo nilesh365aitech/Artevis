@@ -36,10 +36,10 @@ export default function Widget() {
           </p>
         </div>
         <div className="p-5 md:absolute md:right-16 md:top-20 w-[90%] md:w-[30%] h-fit rounded mx-auto md:mx-0 mt-10 bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg">
-          <h2 className="text-lg text-black font-semibold mb-4">
+          <h2 className="text-lg text-black font-semibold mb-2">
             Generate the master plan to fast track your product to launch
           </h2>
-          <form className="p-0 md:p-6 space-y-4" onSubmit={handleSubmit}>
+          <form className="p-0 md:py-6 space-y-4" onSubmit={handleSubmit}>
            
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
               <span className="material-icons text-red-500 dark:text-red-400">
@@ -48,12 +48,12 @@ export default function Widget() {
               <input
                 type="text"
                 placeholder="Add your full name"
-                className="ml-2 w-full bg-transparent focus:outline-none"
+                className="ml-2 w-full bg-transparent focus:outline-none placeholder:text-base placeholder:text-gray-600"
               />
             </div>
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
             <span className="material-icons text-red-500 dark:text-red-400"><EmailIcon/></span>
-            <input type="email" placeholder="youremailaddress@gmail.com" className="ml-2 w-full bg-transparent focus:outline-none" />
+            <input type="email" placeholder="youremailaddress@gmail.com" className="ml-2 w-full bg-transparent focus:outline-none placeholder:text-base placeholder:text-gray-600" />
           </div>
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
               <span className="material-icons text-red-500 dark:text-red-400">
@@ -62,14 +62,14 @@ export default function Widget() {
               <input
                 type="tel"
                 placeholder="Add your contact number"
-                className="ml-2 w-full bg-transparent focus:outline-none"
+                className="ml-2 w-full bg-transparent focus:outline-none placeholder:text-base placeholder:text-gray-600"
               />
             </div>
 
             <div className="mb-3">
               <textarea
                 placeholder="Tell us about your project"
-                className="w-full p-3 border placeholder-black border-zinc-300 rounded-md text-sm text-gray-500"
+                className="w-full p-3 border placeholder-black border-zinc-300 rounded-md text-sm text-gray-500 placeholder:text-base placeholder:text-gray-600 "
                 rows="4"
               ></textarea>
             </div>
