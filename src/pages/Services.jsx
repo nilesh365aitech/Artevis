@@ -1,12 +1,13 @@
 import Contact from "../components/ContactUs";
 import Footer from "../components/FooterSection";
 import Navbar from "../components/Navbar";
-import ServiceImage from "../assets/servicesback.png";
+import ServiceImage from "../assets/insite.png";
 import ServiceBuilding from "../assets/ServiceBuilding.png";
 import ServiceBuilding2 from "../assets/servicebuilding2.png";
 import ServiceBuilding3 from "../assets/servicebuilding3.png";
 import { useState } from "react";
 import { FaCaretUp, FaCaretDown } from "react-icons/fa";
+import ContactUs from "../components/ContactUs";
 
 export default function MainServices() {
   
@@ -62,7 +63,7 @@ export default function MainServices() {
         }}
       >
         <Navbar />
-        <div className="sm:w-[50%] w-[70%] py-8 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[50%] w-[70%] py-8 px-3 bg-gray-100 min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
             Who we are
           </p>
@@ -231,7 +232,7 @@ export default function MainServices() {
           </div>
         ))}
       </div>
-
+<ContactUs/>
       <Footer />
     </>
   );

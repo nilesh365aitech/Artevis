@@ -75,7 +75,7 @@ const IndiAbout = () => {
           <div
             className="bg-black text-white sm:h-[70vh] pb-10 mb-4 relative"
             style={{
-              backgroundImage: `url(${AboutUsbg})`,
+              backgroundImage: `url(${id=="Gautam Chhabra"?GautamChabra:SurajNayak})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
