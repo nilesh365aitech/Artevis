@@ -53,7 +53,7 @@ export default function Widget() {
             </div>
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
             <span className="material-icons text-red-500 dark:text-red-400"><EmailIcon/></span>
-            <input type="email" value="youremailaddress@gmail.com" className="ml-2 w-full bg-transparent focus:outline-none" />
+            <input type="email" placeholder="youremailaddress@gmail.com" className="ml-2 w-full bg-transparent focus:outline-none" />
           </div>
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
               <span className="material-icons text-red-500 dark:text-red-400">
