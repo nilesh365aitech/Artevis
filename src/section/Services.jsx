@@ -25,7 +25,8 @@ export default function Services() {
 
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
+    <div className="bg-[#F5F5F5]"  >
+      <div className="container  mx-auto px-4 py-16 pb-20">
         <h2 style={{color: "#000F89"}} className="text-2xl font-semibold text-blue-900 mb-4">Who do we cater to?</h2>
         <p className="text-zinc-600 mb-8">
           At Artevis, we work with organisations of different size, complexity
@@ -55,6 +56,7 @@ export default function Services() {
           ))}
         </div>
        
+      </div>
       </div>
     </>
   );

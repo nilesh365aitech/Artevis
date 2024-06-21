@@ -51,18 +51,15 @@ const AboutUs = () => {
         <Navbar />
 
         <div className="sm:w-[84%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[60%]">
-          <p className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl" style={{ color: "#FF6347" }}>
+          <p className="ml-4 sm:ml-14 font-bold  " style={{ color: "red" }}>
 
             Who we are
           </p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold ml-4 sm:ml-14">
+          <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-14">
             About Artevis
           </h1>
-          <p className="ml-4 sm:ml-14 pr-10 text-base text-blue-900">
-            Artevis Consulting is a pioneering offshore management consulting
-            and investment advisory firm. Our mission is clear: to equip CXOs,
-            Investment Teams, and board members with essential insights for
-            strategic decision-making and long-term value creation.
+          <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
+          We are dedicated to empowering businesses with tailored solutions that <br /> drive sustainable growth and operational excellence, ensuring our clients <br /> thrive in a competitive landscape. Our expertise spans across strategic <br /> planning, investment advisory, and management consultancy.
           </p>
         </div>
       </div>

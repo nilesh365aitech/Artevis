@@ -88,11 +88,11 @@ const MidCaseStudies = () => {
             an informed investment decision.
           </p>
         </div>
-        <div className="md:w-1/3 mt-6 md:mt-0 md:pl-6 border-t md:border-t-0 md:border-l border-zinc-200 :border-zinc-600">
+        <div className="md:w-1/3 mt-6 md:mt-0 md:pl-10 border-t md:border-t-0 md:border-l-4  border-zinc-300  ">
           <h3 className="text-sm font-semibold text-red-600 :text-red-400">
             About the client
           </h3>
-          <p className="text-zinc-900 :text-zinc-100">
+          <p className="text-zinc-900 font-semibold :text-zinc-100">
             Hedge fund for
             <br />
             E-betting platform
@@ -100,7 +100,7 @@ const MidCaseStudies = () => {
           <h3 className="mt-4 text-sm font-semibold text-red-600 :text-red-400">
             Location
           </h3>
-          <p className="text-zinc-900 :text-zinc-100">New York, USA</p>
+          <p className="text-zinc-900 font-semibold ">New York, USA</p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap- mt-10">
@@ -184,19 +184,19 @@ const MidCaseStudies = () => {
           <p className="text-zinc-700 :text-zinc-300">Client AUM</p>
         </div>
       </div>
-      <div className=" py-20 mb-20   p-6 rounded-lg max-w-5xl mx-auto">
-        <h2 className="text-xl font-semibold text-blue-700 :text-blue-500">
+      <div className=" py-24 mb-20  bg-[#F0F3F8] p-6  rounded-lg mt-20">
+        <h2 className="text-xl  md:ml-9 md:mr-52 font-semibold text-blue-700 :text-blue-500">
           Outcome
         </h2>
-        <p className="mt-4 text-zinc-800 :text-zinc-200">
+        <p className="mt-4  md:ml-9 md:mr-52 text-zinc-800 :text-zinc-200">
           Systematic evaluation of exit strategies and potential Return on
-          Investment (ROI) was conducted throughout the investment period. This
+          Investment (ROI) was conducted <br /> throughout the investment period. This
           process involved regular reassessment of market conditions,
           performance metrics, and potential exit opportunities. Ultimately,
           this led to a well-informed decision-making process that culminated in
           a profitable multifold exit post-IPO.
         </p>
-        <p className="mt-4 text-zinc-800 :text-zinc-200">
+        <p className="mt-4 md:ml-9 md:mr-52 text-zinc-800 :text-zinc-200">
           This case study highlights the importance of thorough due diligence,
           robust financial analysis, and continuous performance monitoring in
           achieving successful investment outcomes in emerging markets. The

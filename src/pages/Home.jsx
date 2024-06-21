@@ -14,7 +14,7 @@ import RecentUpdates from "../section/RecentUpdates";
 import HomeImage from "../assets/bg.png";
 import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
-import "./App.css"
+import "./App.css";
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -105,7 +105,7 @@ export default function Home() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
-              
+
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
                 Get Consultation Today <span>↗</span>
               </button>
@@ -143,21 +143,30 @@ export default function Home() {
           {textItems.map((item, index) => (
             <div
               key={index}
-              className={`relative flex-1 text-center ${activeSlide === index ? "red-underline" : ""
-                } p-0 sm:px-10`}
+              className={`relative flex-1 text-center ${
+                activeSlide === index ? "red-underline" : ""
+              } p-0 sm:px-10`}
             >
               {item}
             </div>
           ))}
         </div>
-      
       </div>
 
       <div className="container mx-auto px-4">
         <AboutUs />
+      </div>
+
+      <div className="container mx-auto px-4 mb-14">
         <ServiceCards />
+      </div>
+      <div  >
         <Services />
+      </div>
+      <div className="container mx-auto px-4">
         <Industries />
+      </div>
+      <div className="container mx-auto px-4">
         <Work />
       </div>
 

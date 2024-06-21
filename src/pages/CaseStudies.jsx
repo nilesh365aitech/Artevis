@@ -100,7 +100,7 @@ const CaseStudies = () => {
               #tag
             </button>
             <a
-              href="#"
+              href="/casestudies"
               className="text-red-600 hover:text-blue-900 flex items-center mr-6"
             >
               Read More
@@ -133,7 +133,7 @@ const CaseStudies = () => {
               #tag
             </button>
             <a
-              href="#"
+              href="/casestudieed"
               className="text-red-600 hover:text-blue-900 flex items-center mr-6"
             >
               Read More
