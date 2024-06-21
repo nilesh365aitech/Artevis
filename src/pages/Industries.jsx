@@ -441,8 +441,8 @@ GCC: (
     };
 
     incrementValues(10, setExperience, 100);
-    incrementValues(30, setClients, 50);
-    incrementValues(7, setCountries, 150);
+    incrementValues(50, setClients, 50);
+    incrementValues(10, setCountries, 150);
     incrementValues(100, setClientAUM, 30);
 
     // Cleanup intervals on unmount

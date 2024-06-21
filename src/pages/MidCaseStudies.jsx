@@ -174,11 +174,11 @@ const MidCaseStudies = () => {
           <p className="text-zinc-700 :text-zinc-300">Fund Raised</p>
         </div>
         <div className="text-center">
-          <p className="text-red-600 text-3xl font-bold">30+</p>
+          <p className="text-red-600 text-3xl font-bold">50+</p>
           <p className="text-zinc-700 :text-zinc-300">Clients Empowered</p>
         </div>
         <div className="text-center">
-          <p className="text-red-600 text-3xl font-bold">7+</p>
+          <p className="text-red-600 text-3xl font-bold">10+</p>
           <p className="text-zinc-700 :text-zinc-300">Countries served</p>
         </div>
         <div className="text-center">

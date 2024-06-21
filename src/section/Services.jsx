@@ -31,7 +31,7 @@ export default function Services() {
       <div className="  px-16 py-24 bg-[#F5F6F8]">
         <h2 style={{color: "#000F89"}} className="text-2xl font-semibold text-blue-900 mb-4">Who do we cater to?</h2>
         <p className="text-zinc-600 mb-8">
-          At Artevis, we work with organisations of different size, complexity
+          At Artevis, we work with organisations of different sizes, complexities
           and across industries. Our offerings are customised to meet the
           specific requirements across the following and more.
         </p>
