@@ -26,26 +26,26 @@ export default function ContactUs() {
           <input
             type="text"
             placeholder="Name"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-900 bg-blue-100"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-[#F0F3F8] placeholder-blue-900 bg-blue-100"
           />
           <input
             type="text"
             placeholder="Phone number"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-900 bg-blue-100"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-[#F0F3F8] placeholder-blue-900 bg-blue-100"
           />
           <input
             type="email"
             placeholder="Email"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-900 bg-blue-100"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-[#F0F3F8] placeholder-blue-900 bg-blue-100"
           />
           <input
             type="text"
             placeholder="Location"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-900 bg-blue-100"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-[#F0F3F8] placeholder-blue-900 bg-blue-100"
           />
           <textarea
             placeholder="Tell us about your needs"
-            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-blue-500 placeholder-blue-900 bg-blue-100"
+            className="w-full p-3 border border-zinc-200 rounded-md shadow-sm focus:outline-none focus:ring-2 ring-[#F0F3F8] placeholder-blue-900 bg-blue-100"
             rows="4"
           ></textarea>
           <div className="w-full p-3 bg-blue-900 text-white rounded-md flex items-center justify-between px-6">
