@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import CaseImage from "../assets/same.png";
+import icon from "../assets/icon.png"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
@@ -98,33 +99,11 @@ const IndiAbout = () => {
                     {indiResponse[0].position}
                   </p>
                   <div className="flex space-x-4 mt-2">
-                    <a
-                      href="mailto:example@example.com"
-                      className="block p-2 rounded-md bg-zinc-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 12.713L.015 6.011V18h23.97V6.011L12 12.713zM12 11.016l11.985-5.839H.015L12 11.016zM12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0z" />
-                      </svg>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com"
-                      target="_blank"
-                      className="block p-2 rounded-md bg-zinc-700"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M22.225 0H1.771C.792 0 0 .793 0 1.771v20.457C0 23.207.792 24 1.771 24h20.457C23.206 24 24 23.207 24 22.229V1.771C24 .793 23.207 0 22.225 0zM7.066 20.452H3.56V9h3.506v11.452zM5.313 7.506C4.048 7.506 3 6.457 3 5.192S4.048 2.879 5.313 2.879s2.313 1.049 2.313 2.314c0 1.265-1.048 2.313-2.313 2.313zM20.453 20.452h-3.507v-5.88c0-1.404-.027-3.21-1.957-3.21-1.96 0-2.259 1.53-2.259 3.11v5.98h-3.507V9h3.367v1.562h.049c.469-.89 1.615-1.828 3.326-1.828 3.554 0 4.207 2.34 4.207 5.383v6.335z" />
-                      </svg>
-                    </a>
+                    
+                    <div>
+                      <img src={icon} alt="" />
+                    </div>
+                    
                   </div>
                 </div>
               </div>
