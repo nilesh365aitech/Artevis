@@ -211,7 +211,7 @@ const MidCaseStudies = () => {
         </p>
       </div>
 
-      <div className="slider-container  relative mt-20  mx-auto pb-16 bg-[#F0F3F8] px-20">
+      <div className="slider-container  relative mt-20  mx-auto pb-16 bg-[#F0F3F8] px-4 md:px-20">
         <div className="slider overflow-hidden">
           <div
             className="slider-content flex transition-transform duration-500 ease-in-out"
@@ -249,7 +249,7 @@ const MidCaseStudies = () => {
           </div>
         </div>
         <div className="absolute top-[0rem] right-0 left-0 flex  items-center  justify-between px-3 bg-[#F0F3F8] py-3">
-          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900 px-20">
+          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900 md:px-20">
             Success Stories
           </h1>
           <div className="flex gap-3 ">

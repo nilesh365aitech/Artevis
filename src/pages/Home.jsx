@@ -198,7 +198,7 @@ export default function Home() {
         <AboutUs />
       </div>
 
-      <div className="container mx-auto px-4 mb-14">
+      <div className="container mx-auto px-4 mb-10">
         <ServiceCards />
       </div>
       <div  >
