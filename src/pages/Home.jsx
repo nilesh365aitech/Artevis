@@ -99,47 +99,88 @@ export default function Home() {
           <div className="h-80  md:h-80 ">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-12  text-left md:text-left"
+              className="opacity-85 p-4 sm:p-8 md:p-12  text-left md:text-left border-r-4 border-red-600"
             >
               <span className="text-red-600 font-medium">Consulting</span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
 
-              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
-                Get Consultation Today <span>↗</span>
+              
+              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
+                Get Consultation Today <span><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg></span>
+
               </button>
             </div>
           </div>
-          <div className="h-80 md:h-80">
+          <div className="h-80 md:h-80 ">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left"
+              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left border-r-4 border-red-600"
             >
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
                 Navigating Growth: Financial Expertise for Thriving Enterprises
               </h1>
-              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
-                Get Consultation Today <span>↗</span>
+              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
+                Get Consultation Today <span><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg></span>
               </button>
             </div>
           </div>
           <div className="h-80 md:h-96">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left"
+              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left border-r-4 border-red-600"
             >
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Charting Success: Data Driven Strategies Tailored to your
                 Business
               </h1>
-              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
-                View Case Studies <span>↗</span>
+              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
+                View Case Studies <span><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 ml-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg></span>
               </button>
             </div>
           </div>
         </Slider>
-        <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white flex justify-between p-2 sm:p-4 text-xs">
+        <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs">
           {textItems.map((item, index) => (
             <div
               key={index}

@@ -70,9 +70,24 @@ const RecentUpdates = () => {
               Navigating Growth in Challenging Times: Maximizing Shareholder
               Value for Industrial Companies
             </h2>
-            <p className="ml-10  mb-6">
+           
+            <p className="ml-10  mb-6 flex relative">
               Explore strategies for industrial companies to enhance shareholder
               value despite economic uncertainties and market challenges.
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4  absolute bottom-[-3px] right-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
             </p>
          
                <img style={{height: "400px"}}  src={BottomRight} alt="Building" className=" " />

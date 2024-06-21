@@ -34,8 +34,8 @@ const CaseStudiesBlog = () => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row">
-          <div className="md:flex md:flex-col gap-5 md:w-[28%] p-4 grid grid-cols-1 w-full">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:flex lg:flex-col gap-5 lg:w-[28%] p-4 grid grid-cols-1 w-full">
             {/* //leftside */}
             <div className="flex flex-col gap-2">
               <img alt="pic" src={Case0}></img>
@@ -65,7 +65,7 @@ const CaseStudiesBlog = () => {
               </a>
             </div>
           </div>
-          <div className="  w-full py-16 px-10">
+          <div className="  w-full py-16 lg:px-20 px-5">
             <p className="text-lg font-semibold ">
               Exploring the increasing importance of sustainability in the real
               estate sector, referencing examples from around the globe
@@ -239,7 +239,7 @@ const CaseStudiesBlog = () => {
                 <img
                   className="w-[160px] h-[160px] rounded-sm"
                   alt="Gautam Chhabra"
-                  src={Gautam}
+                  src={SUraj}
                 ></img>
               </div>
               <div className="flex flex-col w-3/4">
@@ -265,7 +265,7 @@ const CaseStudiesBlog = () => {
                 <img
                   className="w-[160px] h-[160px] rounded-sm"
                   alt="Suraj Nayak"
-                  src={SUraj}
+                  src={Gautam}
                 ></img>
               </div>
               <div className="flex flex-col w-3/4">
