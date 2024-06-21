@@ -86,7 +86,7 @@ export default function Home() {
       <Navbar />
 
       <div
-        className={`relative flex flex-col items-center justify-center text-white bg-cover bg-center transition duration-500`}
+        className={`relative flex flex-col  items-center justify-center text-white bg-cover bg-center transition duration-500`}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           // minHeight: "100vh",
@@ -94,17 +94,18 @@ export default function Home() {
       >
         <Slider
           {...settings}
-          className="w-full max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
+          className="w-full ml-0  max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
         >
-          <div className="h-80 md:h-80 ">
+          <div className="h-80  md:h-80 ">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left"
+              className="opacity-85 p-4 sm:p-8 md:p-12  text-left md:text-left"
             >
               <span className="text-red-600 font-medium">Consulting</span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
+              
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition">
                 Get Consultation Today <span>↗</span>
               </button>
