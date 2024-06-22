@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import icon from "../assets/icon.png"
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import icon from "../assets/icon.png";
 import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
 import { AboutUsData } from "../data/aboutusData";
-import AboutUsbg from "../assets/AboutUsbg.png";
 import Navbar from "../components/Navbar";
 import SurajNayak from "../assets/SurajNayak.png";
 import GautamChabra from "../assets/GautamChabra.png";
-import "./Slider.css";
 import ContactUs from "../components/ContactUs";
 
 const IndiAbout = () => {
@@ -76,7 +73,9 @@ const IndiAbout = () => {
           <div
             className="bg-black text-white sm:h-[70vh] pb-10 mb-4 relative"
             style={{
-              backgroundImage: `url(${id=="Gautam Chhabra"?GautamChabra:SurajNayak})`,
+              backgroundImage: `url(${
+                id == "Gautam Chhabra" ? GautamChabra : SurajNayak
+              })`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -99,20 +98,18 @@ const IndiAbout = () => {
                     {indiResponse[0].position}
                   </p>
                   <div className="flex space-x-4 mt-2">
-                    
                     <div>
                       <img src={icon} alt="" />
                     </div>
-                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="max-w-7xl mx-auto flex flex-col gap-8 mb-10">
-            <div className="ml-5 mr-5" >
+            <div className="ml-5 mr-5">
               <h1 className="text-[26px] font-[600] text-[#1E227F]">
-                About Gautam
+                About {$id == "Gautam Chhabra" ? "GautamChabra" : "SurajNayak"}
               </h1>
               <p>
                 {indiResponse[0].roles.map((e, index) => (
@@ -122,13 +119,13 @@ const IndiAbout = () => {
                 ))}
               </p>
             </div>
-            <div className="ml-5 mr-5" >
+            <div className="ml-5 mr-5">
               <h1 className="text-[21px] font-[600] text-[#000000]">
                 Educational Background
               </h1>
               <p className="my-3">{indiResponse[0].educationalbackground}</p>
             </div>
-            <div className="ml-5 mr-5" >
+            <div className="ml-5 mr-5">
               <h1 className="text-[21px] font-[600] text-[#000000]">
                 Global Impact
               </h1>

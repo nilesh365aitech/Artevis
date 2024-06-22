@@ -15,6 +15,7 @@ import HomeImage from "../assets/bg.png";
 import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
 import "./App.css";
+
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -51,29 +52,21 @@ export default function Home() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     arrows: false,
-    afterChange: (current) => {
-      setActiveSlide(current);
-      switch (current) {
-        case 0:
-          setBackgroundImage(HomeImage);
-          break;
-        case 1:
-          setBackgroundImage(HomeImage2);
-          break;
-        case 2:
-          setBackgroundImage(HomeImage3);
-          break;
-        default:
-          setBackgroundImage(HomeImage);
-      }
+    beforeChange: (current, next) => {
+      setActiveSlide(next);
     },
   };
+
+  useEffect(() => {
+    const images = [HomeImage, HomeImage2, HomeImage3];
+    setBackgroundImage(images[activeSlide]);
+  }, [activeSlide]);
 
   const textItems = [
     "Management Consulting",
@@ -86,43 +79,45 @@ export default function Home() {
       <Navbar />
 
       <div
-        className={`relative flex flex-col  items-center justify-center text-white bg-cover bg-center transition  duration-500`}
+
+        className={`relative flex flex-col items-center justify-center text-white bg-cover bg-center transition duration-500`}
+
         style={{
           backgroundImage: `url(${backgroundImage})`,
-          // minHeight: "100vh",
         }}
       >
         <Slider
           {...settings}
-          className="w-full ml-0  max-w-5xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
+          className="w-full ml-0 max-w-5xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
         >
           <div className="h-80 md:h-80 ">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
-              className="opacity-85 p-4 sm:p-8 md:p-12  text-left md:text-left border-r-4 border-red-600"
+              className="opacity-85 p-4 sm:p-8 md:p-12 text-left md:text-left border-r-4 border-red-600"
             >
               <span className="text-red-600 font-medium">Consulting</span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold my-4 text-zinc-900">
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
 
-              
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-                Get Consultation Today <span><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4 ml-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg></span>
-
+                Get Consultation Today{" "}
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="red"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-4 w-4 ml-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
@@ -135,20 +130,23 @@ export default function Home() {
                 Navigating Growth: Financial Expertise for Thriving Enterprises
               </h1>
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-                Get Consultation Today <span><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4 ml-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg></span>
+                Get Consultation Today{" "}
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="red"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-4 w-4 ml-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
@@ -162,30 +160,33 @@ export default function Home() {
                 Business
               </h1>
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-                View Case Studies
-                 <span><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4 ml-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg></span>
+
+                View Case Studies{" "}
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="red"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-4 w-4 ml-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
         </Slider>
-        <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs">
+        <div className="absolute bottom-0 w-full gap-2 bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs">
           {textItems.map((item, index) => (
             <div
               key={index}
-              className={`relative flex-1 text-center ${
+              className={`relative  text-center ${
                 activeSlide === index ? "red-underline" : ""
               } p-0 sm:px-10`}
             >
@@ -202,7 +203,7 @@ export default function Home() {
       <div className="container mx-auto px-4 mb-10">
         <ServiceCards />
       </div>
-      <div  >
+      <div>
         <Services />
       </div>
       <div className="container mx-auto px-4">

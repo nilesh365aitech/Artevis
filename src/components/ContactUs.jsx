@@ -7,12 +7,13 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center p-4 lg:p-6">
-      <div className="lg:w-1/2 p-4 lg:p-6">
-        <h2 className="text-2xl lg:text-3xl font-semibold text-blue-800 mb-4 text-center lg:text-left">
+
+    <div className="flex flex-col lg:flex-row justify-center ">
+      <div className="lg:w-1/2 pt-6">
+        <h2 className="text-3xl font-semibold text-blue-800 mb-2 text-center lg:text-left">
           Contact Us
         </h2>
-        <p className="text-center lg:text-left">
+        <p className="text-center lg:text-left text-sm px-3">
           Reach out to us at{" "}
           <a href="mailto:info@artevisconsulting.com" className="underline">
             info@artevisconsulting.com
@@ -20,8 +21,10 @@ export default function ContactUs() {
         </p>
       </div>
 
-      <div className="lg:w-1/2 p-4 lg:p-6">
-        <form className="p-4 lg:p-6 space-y-4" onSubmit={handleSubmit}>
+
+      <div className="lg:w-1/2 py-3">
+        <form className="p-6 space-y-4" onSubmit={handleSubmit}>
+
           <input
             type="text"
             placeholder="Name"
