@@ -15,10 +15,11 @@ export default function Footer() {
             <p className="mb-6 text-sm">Delhi, India</p>
             <div className="mt-10 md:mt-24">
               <p className="text-sm">
-                +91 7778889010
-                <span className="text-sm ml-9">+91 7778889010</span>
+              +91 9899169930
+                <span className="text-sm ml-9">+91 7900196968</span>
               </p>
               <p className="mt-4">gautam.chhabra@artevisconsulting.com</p>
+              <p className="mt-4">suraj.nayak@artevisconsulting.com</p>
             </div>
           </div>
           <div className="col-span-1 mt-10 md:mt-24">

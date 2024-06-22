@@ -10,11 +10,11 @@ export default function AboutUs() {
         investment advisory firm.
       </p>
       <p className=" text-sm sm:text-base md:text-lg mb-4">
-        Our mission is clear: to equip CXOs, Investment Teams, and board members
+        Our mission is clear: to equip CXOs, Investment Teams, and Board Members
         with essential insights for strategic decision-making and long-term
         value creation. <br />
         With nearly a decade of experience and a deep understanding of markets
-        in the Middle East, US, and India, we guide our clients towards growth
+        in the Middle East, US, Europe  and India, we guide our clients towards growth
         and innovation. At Artevis Consulting, we're not just advisors; we're
         committed partners dedicated to your success.
       </p>

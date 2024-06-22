@@ -11,6 +11,7 @@ import Stats from "../components/Stats";
 const AboutUs = () => {
   const navigate = useNavigate();
 
+
   return (
     <>
       <div
@@ -34,11 +35,10 @@ const AboutUs = () => {
             About Artevis
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
-            We are dedicated to empowering businesses with tailored solutions
-            that <br /> drive sustainable growth and operational excellence,
-            ensuring our clients <br /> thrive in a competitive landscape. Our
-            expertise spans across strategic <br /> planning, investment
-            advisory, and management consultancy.
+
+          We are dedicated to empowering businesses with tailored solutions that <br /> drive sustainable growth and operational excellence, ensuring our clients <br /> thrive in a competitive landscape. Our expertise spans across Strategic  Planning, <br /> Investment Advisory, and Management Consultancy.
+
+
           </p>
         </div>
       </div>
@@ -69,14 +69,12 @@ const AboutUs = () => {
             <div className="flex flex-col w-full ml-4">
               <p className="text-lg md:text-xl font-semibold">Gautam Chhabra</p>
               <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1 flex items-center">
-                Founder and Managing Director
+              Co-Founder and Managing Director
                 <img alt="1" src={LinkedInLogo} className="ml-5 h-4"></img>
               </p>
               <p className="text-sm md:text-base">
-                Engineer and an MBA by education, Gautam has deep interest in
-                finance. He brings over a decade of global advisory experience
-                in offering strategic insights that drive growth, innovation,
-                and productivity for organizations.
+              Engineer and an MBA by education, Gautam has deep interest in Strategy and Private Equity. He brings over a decade of global advisory experience in offering strategic insights that drive growth, innovation, and productivity for organizations. 
+
               </p>
             </div>
           </div>
@@ -94,14 +92,12 @@ const AboutUs = () => {
             <div className="flex flex-col w-full ml-4">
               <p className="text-lg md:text-xl font-semibold">Suraj Nayak</p>
               <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1 flex items-center">
-                Director
+              Co-Founder and Director
                 <img alt="1" src={LinkedInLogo} className="ml-5 h-4"></img>
               </p>
               <p className="text-sm md:text-base">
-                Suraj specializes in investment and transaction advisory,
-                offering strategic counsel on deal terms, valuations, and
-                overall opportunity analysis. He has a strong track record of
-                formulating and implementing strategies across various sectors.
+              Suraj specializes in investment and transaction advisory, offering strategic counsel on deal terms, valuations, and overall opportunity analysis. He has a strong track record of formulating and implementing strategies across various sectors. 
+
               </p>
             </div>
           </div>

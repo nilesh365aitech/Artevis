@@ -14,10 +14,10 @@ export default function ContactUs() {
         </h2>
         <p className="text-center lg:text-left">
           Reach out to us at{" "}
-          <a href="mailto:info@artevisconsulting.com" className="underline">
+          <a  className="underline">
             info@artevisconsulting.com
-          </a>{" "}
-          and we’ll share a customised plan to get you launched!
+          </a>
+
         </p>
       </div>
 

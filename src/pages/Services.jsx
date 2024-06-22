@@ -27,17 +27,17 @@ export default function MainServices() {
     {
       title: "Real Estate Firms",
       color: "#E2EBF9",
-      description: "Description for Real Estate Firms",
+      description: "Real Estate Firms require robust strategic insights to optimize their investments. Our expertise traverses the full real estate value chain, encompassing land acquisition, feasibility analysis, project development/investment, asset management, and strategic exits. Our intimate understanding of the real estate value chain positions us as the go-to resource for industry leaders.",
     },
     {
       title: "Asset Mgmt. Firms",
       color: "#F0F3F8",
-      description: "Description for Asset Mgmt. Firms",
+      description: "Asset Management Firms manage diverse portfolios requiring meticulous strategy and performance monitoring. Artevis Consulting offers portfolio monitoring, financial modelling, and investment strategy formulation.",
     },
     {
       title: "StartUps",
       color: "#F6F9FF",
-      description: "Description for StartUps",
+      description: "Startups need agile strategies and solid financial foundations to thrive in competitive markets. Artevis Consulting provides expert fundraising support, market strategies, business and financial planning, go to market strategies to drive growth and sustainability.",
     },
     {
       title: "Governments",
@@ -47,7 +47,7 @@ export default function MainServices() {
     {
       title: "HNIs",
       color: "#F6F9FF",
-      description: "Description for HNIs",
+      description: "High Net Worth Individuals seek personalized wealth management and investment strategies. Artevis Consulting offers tailored portfolio assessments, wealth preservation strategies, and real estate investment advisory.",
     },
   ];
   const [expanded, setExpanded] = useState(new Array(items.length).fill(false));
