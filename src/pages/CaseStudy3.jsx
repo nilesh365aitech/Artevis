@@ -3,8 +3,12 @@ import CaseStudy13 from "../assets/Case Study 3.png";
 import Footer from "../components/FooterSection";
 import Media from "../assets/media.png";
 import SucessStories from "../components/SucessStories";
+import { useEffect } from "react";
 
 const CaseStudy3 = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
   return (
     <>
       <div

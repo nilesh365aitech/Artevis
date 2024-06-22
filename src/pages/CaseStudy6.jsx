@@ -6,8 +6,12 @@ import CaseStudy4 from "../assets/Case Study 4.png";
 import Footer from "../components/FooterSection";
 import Media from "../assets/media.png";
 import SucessStories from "../components/SucessStories";
+import { useEffect } from "react";
 
 const CaseStudy6 = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
   const items = [
     {
       bgurl: CaseStudy1,
