@@ -197,9 +197,7 @@ const AboutUs = () => {
               Geographical Expertise
             </h2>
             <p className="mt-2 text-sm sm:text-base md:text-lg font-base">
-              With a profound understanding of the Saudi Arabian market and
-              extensive Real Estate experience, we offer insights that lead to
-              unparalleled success.
+            With profound knowledge of the US and Middle Eastern markets, particularly KSA and UAE, combined with extensive real estate and technology experience, we provide insights that drive unparalleled success.
             </p>
           </div>
           <div className="w-full md:w-3/4 md:ml-10 h-auto">
