@@ -182,7 +182,7 @@ export default function Home() {
             </div>
           </div>
         </Slider>
-        <div className="absolute bottom-0 w-full gap-2 bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs">
+        <div className="absolute bottom-0 w-full gap-2 bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs sm:text-base">
           {textItems.map((item, index) => (
             <div
               key={index}
