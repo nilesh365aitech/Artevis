@@ -71,7 +71,7 @@ const SucessStories = () => {
 
   return (
     <>
-      <div className="slider-container relative mt-20 max-w-7xl mx-auto pb-16 lg:hidden">
+      <div className="slider-container relative mt-20 max-w-7xl mx-auto pb-16 lg:hidden px-5">
         <div className="slider overflow-hidden">
           <div
             className="slider-content flex transition-transform duration-500 ease-in-out"
