@@ -458,7 +458,7 @@ GCC: (
         className="bg-cover bg-center w-full h-80 md:h-96 lg:h-144 flex items-center justify-start"
         style={{ backgroundImage: `url(${bgOurFootprint})`, height: "34rem" }}
       >
-        <div className="relative p-4 sm:p-12 opacity-90 bg-gradient-to-r from-zinc-100 via-purple-100 to-pink-100 max-w-lg md:max-w-2xl lg:max-w-3xl ml-0 mx-4">
+        <div className="relative p-4 sm:p-12 opacity-90 bg-gradient-to-r from-zinc-100 via-purple-100 to-pink-100 sm:w-[90%] xl:w-[70%] w-[80%] ml-0 mx-4">
           <div className="text-red-600 text-lg font-semibold mb-2">
             Our Footprint
           </div>

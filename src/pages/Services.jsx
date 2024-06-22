@@ -63,7 +63,7 @@ export default function MainServices() {
         }}
       >
         <Navbar />
-        <div className="sm:w-[50%] w-[70%] py-8 px-3 bg-gray-100 min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[90%] xl:w-[70%] w-[70%] py-8 px-3 bg-gray-100 min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
             Who we are
           </p>
