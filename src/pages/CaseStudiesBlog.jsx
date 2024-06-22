@@ -258,7 +258,7 @@ const CaseStudiesBlog = () => {
               </div>
             </div>
             <div
-              className="flex items-center justify-center mb-10 hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
+              className="flex items-center justify-center  hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
               onClick={() => navigate(`/aboutus/Suraj Nayak`)}
             >
               <div className="p-3  ">
