@@ -30,10 +30,22 @@ const SucessStories = () => {
     },
     {
       bgurl: CaseStudy4,
-      title:
-        "Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar Reality, a Fund's Multifold Exit Triumph",
+      title: "Feasibility Analysis for a one of its kind Ocean Race Event",
       description:
-        "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
+        "A prominent event and sports management company sought to explore the viability of initiating a greenfield ocean race in Saudi Arabia, requiring a detailed feasibility study and adaptable financial model to make critical planning and operating decisions",
+    },
+    {
+      bgurl: CaseStudy4,
+      title: "Strategic Transformation for a National Real Estate Firm",
+      description:
+        "Desiring a company transformation, the client, a real estate firm, sought a comprehensive strategy revamp across multiple sectors to enhance innovation, customer experience, and profitability",
+    },
+    {
+      bgurl: CaseStudy4,
+      title:
+        "Fundraising Support and Investor Kit Creation for F&B Fintech Startup",
+      description:
+        "An extensive evaluation of the F&B and FinTech sectors was conducted to determine the Total Addressable Market (TAM) in KSA,revealing the startup’s growth potential",
     },
   ];
 
