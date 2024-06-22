@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUsbg from "../assets/AboutUsbg.png";
+import ServiceImage from "../assets/insite.png";
 import Navbar from "../components/Navbar";
 import Case1 from "../assets/case1.png";
 import Case2 from "../assets/case2.png";
@@ -15,15 +15,15 @@ const CaseStudiesBlog = () => {
     <>
       <div>
         <div
-          className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative "
+          className="bg-black text-white h-[80vh] md:h-[70vh] pb-10 mb-4 relative "
           style={{
-            backgroundImage: `url(${AboutUsbg})`,
+            backgroundImage: `url(${ServiceImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
           <Navbar />
-          <div className="sm:w-[50%] w-[70%] py-5 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+          <div className="sm:w-[80%] w-[90%] xl:w-[70%] py-5 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
             <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
               Insights
             </p>

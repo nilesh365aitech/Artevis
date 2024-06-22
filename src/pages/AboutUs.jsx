@@ -24,7 +24,7 @@ const AboutUs = () => {
       >
         <Navbar />
 
-        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[60%]">
+        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[70%]">
           <p
             className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl"
             style={{ color: "red" }}
@@ -56,7 +56,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
           <div
-            className="flex items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
+            className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
           >
             <div className="flex-shrink-0 p-3">
@@ -79,7 +79,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div
-            className="flex items-center hover:cursor-pointer md:bg-white bg-gray-100 hover:bg-gray-200 transition-all p-4"
+            className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Suraj Nayak`)}
           >
             <div className="flex-shrink-0 p-3">
