@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Insightbg from "../assets/insightbg.png";
 import Navbar from "../components/Navbar";
 import CaseStudy1 from "../assets/Case Study 1.png";
@@ -40,7 +40,9 @@ const CaseStudy5 = () => {
         "Developed a comprehensive expansion strategy and financial framework for a renowned regional healthcare provider in Jeddah, Saudi Arabia...",
     },
   ];
-
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
   return (
     <>
       <div

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Insightbg from "../assets/insightbg.png";
 import Navbar from "../components/Navbar";
 import CaseStudy1 from "../assets/Case Study 1.png";
@@ -7,10 +7,13 @@ import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/FooterSection";
-import Media from "../assets/media.png"
+import Media from "../assets/media.png";
 import SucessStories from "../components/SucessStories";
 
 const MidCaseStudies = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const items = [
     {
       bgurl: CaseStudy1,
@@ -40,7 +43,6 @@ const MidCaseStudies = () => {
         "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
     },
   ];
-
 
   return (
     <>
@@ -90,7 +92,6 @@ const MidCaseStudies = () => {
             Location
           </h3>
           <p className="text-zinc-900 font-semibold ">New York, USA</p>
-
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap- mt-10">
@@ -177,17 +178,15 @@ const MidCaseStudies = () => {
 
       <div className=" py-24 mb-20  bg-[#F0F3F8] p-6  rounded-lg mt-20">
         <h2 className="text-xl  md:ml-9 md:mr-52 font-semibold text-blue-00 :text-blue-500">
-
-      
           Outcome
         </h2>
         <p className="mt-4  md:ml-9 md:mr-52 text-zinc-800 :text-zinc-200">
           Systematic evaluation of exit strategies and potential Return on
-          Investment (ROI) was conducted <br /> throughout the investment period. This
-          process involved regular reassessment of market conditions,
-          performance metrics, and potential exit opportunities. Ultimately,
-          this led to a well-informed decision-making process that culminated in
-          a profitable multifold exit post-IPO.
+          Investment (ROI) was conducted <br /> throughout the investment
+          period. This process involved regular reassessment of market
+          conditions, performance metrics, and potential exit opportunities.
+          Ultimately, this led to a well-informed decision-making process that
+          culminated in a profitable multifold exit post-IPO.
         </p>
         <p className="mt-4 md:ml-9 md:mr-52 text-zinc-800 :text-zinc-200">
           This case study highlights the importance of thorough due diligence,
@@ -199,7 +198,7 @@ const MidCaseStudies = () => {
         </p>
       </div>
 
-    <SucessStories/>
+      <SucessStories />
       <Footer />
     </>
   );

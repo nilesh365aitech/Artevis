@@ -6,6 +6,7 @@ import CaseStudy14 from "../assets/Case Study 4.png";
 import Footer from "../components/FooterSection";
 import Media from "../assets/media.png";
 import SucessStories from "../components/SucessStories";
+import { useEffect } from "react";
 
 const CaseStudy4 = () => {
   const items = [
@@ -37,7 +38,9 @@ const CaseStudy4 = () => {
         "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
     },
   ];
-
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
   return (
     <>
       <div
