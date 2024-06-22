@@ -51,7 +51,7 @@ export default function Home() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -86,7 +86,7 @@ export default function Home() {
       <Navbar />
 
       <div
-        className={`relative flex flex-col  items-center justify-center text-white bg-cover bg-center transition duration-500`}
+        className={`relative flex flex-col  items-center justify-center text-white bg-cover bg-center transition  duration-500`}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           // minHeight: "100vh",
@@ -162,7 +162,8 @@ export default function Home() {
                 Business
               </h1>
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-                View Case Studies <span><svg
+                View Case Studies
+                 <span><svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
