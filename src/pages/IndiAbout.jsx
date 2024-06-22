@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import icon from "../assets/icon.png";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
 import { AboutUsData } from "../data/aboutusData";
-import AboutUsbg from "../assets/AboutUsbg.png";
 import Navbar from "../components/Navbar";
 import SurajNayak from "../assets/SurajNayak.png";
 import GautamChabra from "../assets/GautamChabra.png";
-import "./Slider.css";
 import ContactUs from "../components/ContactUs";
 
 const IndiAbout = () => {

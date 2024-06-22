@@ -8,10 +8,9 @@ import CaseStudy4 from "../assets/Case Study 4.png";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/FooterSection";
 import Media from "../assets/media.png"
+import SucessStories from "../components/SucessStories";
 
 const MidCaseStudies = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const items = [
     {
       bgurl: CaseStudy1,
@@ -42,17 +41,6 @@ const MidCaseStudies = () => {
     },
   ];
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 3 : prevIndex - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 3 ? 0 : prevIndex + 1
-    );
-  };
 
   return (
     <>
@@ -211,64 +199,7 @@ const MidCaseStudies = () => {
         </p>
       </div>
 
-      <div className="slider-container  relative mt-20  mx-auto pb-16 bg-[#F0F3F8] px-4 md:px-20">
-        <div className="slider overflow-hidden">
-          <div
-            className="slider-content flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="w-full lg:w-1/3 flex-shrink-0 mb-20 px-2"
-              >
-                <div className="h-72 sm:h-96">
-                  <div
-                    className="bg-cover bg-center h-full"
-                    style={{ backgroundImage: `url(${item.bgurl})` }}
-                  ></div>
-                </div>
-                <div className="flex flex-col gap-3 mt-3">
-                  <p className="text-lg sm:text-xl font-semibold text-gray-900">
-                    {item.title}
-                  </p>
-                  <p className="text-sm sm:text-base font-normal text-gray-700">
-                    {item.description}
-                  </p>
-                </div>
-                <div className="flex justify-between items-center mt-2">
-                  <button className="rounded px-3 py-2 bg-red-200 text-xs text-red-600">
-                    Start Ups
-                  </button>
-                  <a href="#" className="text-red-600 text-xs font-semibold">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="absolute top-[0rem] right-0 left-0 flex  items-center  justify-between px-3 bg-[#F0F3F8] py-3">
-          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900 md:px-20">
-            Success Stories
-          </h1>
-          <div className="flex gap-3 ">
-            <button
-              className="bg-gray-400 px-3 py-1 rounded-full text-white"
-              onClick={prevSlide}
-            >
-              &#10094;
-            </button>
-            <button
-              className="bg-gray-400 px-3 py-1 rounded-full text-white"
-              onClick={nextSlide}
-            >
-              &#10095;
-            </button>
-          </div>
-        </div>
-        <ContactUs />
-      </div>
+    <SucessStories/>
       <Footer />
     </>
   );
