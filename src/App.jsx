@@ -23,15 +23,15 @@ const App = () => {
         <Route path="/services" element={<MainServices />} />
         <Route path="/industries" element={<Industry />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="insights" element={<CaseStudies />} />
+        <Route path="/insights" element={<CaseStudies />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/aboutus/:id" element={<IndiAbout />} />
-        <Route path="/casestudies" element={<MidCaseStudies />} />
-        <Route path="/casestudieed" element={<CaseStudiesBlog />} />
-        <Route path="/casestudy3" element={<CaseStudy3 />} />
-        <Route path="/casestudy4" element={<CaseStudy4 />} />
-        <Route path="/casestudy5" element={<CaseStudy5 />} />
-        <Route path="/casestudy6" element={<CaseStudy6 />} />
+        <Route path="/insights/casestudies" element={<MidCaseStudies />} />
+        <Route path="/insights/casestudieed" element={<CaseStudiesBlog />} />
+        <Route path="/insights/casestudy3" element={<CaseStudy3 />} />
+        <Route path="/insights/casestudy4" element={<CaseStudy4 />} />
+        <Route path="/insights/casestudy5" element={<CaseStudy5 />} />
+        <Route path="/insights/casestudy6" element={<CaseStudy6 />} />
       </Routes>
     </Router>
   );
