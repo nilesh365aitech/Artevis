@@ -15,7 +15,7 @@ const RecentUpdates = () => {
         <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5">
           <div
             style={{ backgroundColor: "#1E227F" }}
-            className="   md:h-46 text-white pt-11 md:ml-3 md:col-span-2 pb-4"
+            className="   md:h-34 text-white pt-11 md:ml-3 md:col-span-2 "
           >
             <h2 className="text-xl  font-semibold mb-3 ml-10">
               2024 Asset Management Trends:Future-Proofing Your Business and
@@ -45,7 +45,7 @@ const RecentUpdates = () => {
               <img
                 src={BottomLeft}
                 alt="Abstract Art"
-                className="mt-4 w-full "
+                className="mt-4 w-full  "
               />
               <div className="absolute  flex items-center md:mt-28 justify-center">
                 <p>
