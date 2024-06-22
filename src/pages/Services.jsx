@@ -5,52 +5,34 @@ import ServiceImage from "../assets/insite.png";
 import ServiceBuilding from "../assets/ServiceBuilding.png";
 import ServiceBuilding2 from "../assets/servicebuilding2.png";
 import ServiceBuilding3 from "../assets/servicebuilding3.png";
-import { useState } from "react";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FaCaretUp, FaCaretDown } from "react-icons/fa";
 import ContactUs from "../components/ContactUs";
+import Services from "../section/Services";
 
 export default function MainServices() {
-  
-  const handleToggle = (index) => {
-    const newExpanded = [...expanded];
-    newExpanded[index] = !newExpanded[index];
-    setExpanded(newExpanded);
+
+  const [expandedSections, setExpandedSections] = useState({});
+
+  const toggleSection = (section) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
   };
-  
-  const items = [
-    {
-      title: "Corporates",
-      color: "#EBF3FF",
-      description:
-      "We work with corporations to solve their most pressing problems, from strategic planning to enhancing operational efficiency, helping them stay agile and competitive in today's dynamic business landscape.",
-    },
-    {
-      title: "Real Estate Firms",
-      color: "#E2EBF9",
-      description: "Real Estate Firms require robust strategic insights to optimize their investments. Our expertise traverses the full real estate value chain, encompassing land acquisition, feasibility analysis, project development/investment, asset management, and strategic exits. Our intimate understanding of the real estate value chain positions us as the go-to resource for industry leaders.",
-    },
-    {
-      title: "Asset Mgmt. Firms",
-      color: "#F0F3F8",
-      description: "Asset Management Firms manage diverse portfolios requiring meticulous strategy and performance monitoring. Artevis Consulting offers portfolio monitoring, financial modelling, and investment strategy formulation.",
-    },
-    {
-      title: "StartUps",
-      color: "#F6F9FF",
-      description: "Startups need agile strategies and solid financial foundations to thrive in competitive markets. Artevis Consulting provides expert fundraising support, market strategies, business and financial planning, go to market strategies to drive growth and sustainability.",
-    },
-    {
-      title: "Governments",
-      color: "#ECF3FF",
-      description: "Description for Governments",
-    },
-    {
-      title: "HNIs",
-      color: "#F6F9FF",
-      description: "High Net Worth Individuals seek personalized wealth management and investment strategies. Artevis Consulting offers tailored portfolio assessments, wealth preservation strategies, and real estate investment advisory.",
-    },
+
+  const sections = [
+    { title: "Corporates", content: "We work with corporations to solve their most pressing problems, from strategic planning to enhancing operational efficiency, helping them stay agile and competitive in today’s dynamic business landscape." },
+    { title: "Sovereign Wealth Funds and Governments", content: " Sovereign Wealth Funds aim at economic development and diversification for the country while ensuring financial returns. Artevis Consulting understands these objectives and assists SWFs in creating investment strategies, conducting due diligence, providing fund support, and developing financial models. Governments focus on economic development and public infrastructure enhancement. We support these goals by delivering public policy advisory, infrastructure modelling, and urban development strategies." },  
+    { title: "Asset Management Firms", content: " Asset Management Firms manage diverse portfolios requiring meticulous strategy and performance monitoring. Artevis Consulting offers portfolio monitoring, financial modelling, and investment strategy formulation." },
+    { title: "HNIs", content: " High Net Worth Individuals seek personalized wealth management and investment strategies. Artevis Consulting offers tailored portfolio assessments, wealth preservation strategies, and real estate investment advisory." },
+    { title: "Private Equity & Venture Capital", content: " Private Equity and Venture Capital firms invest in high-growth potential ventures. Our advisory extends through the entire spectrum of the investment lifecycle, from deal origination and due diligence to portfolio management and exit strategies. With a granular understanding of the intricacies involved in Private Equity and Venture Capital, we position ourselves as a pivotal ally for financial leaders." },
+    { title: "Investment Banks", content: " Investment Banks facilitate complex financial transactions and provide advisory services. Artevis Consulting supports these efforts by offering industry research, valuation, M&A support, fundraising assistance, and strategic insights to drive successful financial operations." },
+    { title: "Real Estate Firms", content: " Real Estate Firms require robust strategic insights to optimize their investments. Our expertise traverses the full real estate value chain, encompassing land acquisition, feasibility analysis, project development/investment, asset management, and strategic exits. Our intimate understanding of the real estate value chain positions us as the go-to resource for industry leaders." },
+    { title: "Hedge Funds", content: " Hedge Funds need in-depth market analysis and strategic investment insights. Artevis Consulting provides valuation, due diligence, and opportunity screening to enhance investment decision-making." },
+    { title: "Startups", content: " Startups need agile strategies and solid financial foundations to thrive in competitive markets. Artevis Consulting provides expert fundraising support, market strategies, business and financial planning, go to market strategies to drive growth and sustainability." }
   ];
-  const [expanded, setExpanded] = useState(new Array(items.length).fill(false));
 
   return (
     <>
@@ -203,36 +185,45 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className="max-w-7xl md:ml-20 mx-auto px-4 py-10">
-        <h2 className="text-3xl font-semibold text-zinc-900">
-          Who do we cater to?
-        </h2>
-        <p className="mt-4 text-zinc-600">
-          At Artevis, we work with organisations of different size, complexity
-          and across industries. Our offerings are customised to meet the
-          specific requirements across the following and more
-        </p>
-      </div>
+      <div className=" pb-4">
 
-      <div className="grid grid-cols-1  py-4 mb-14 gap-4 max-w-7xl mx-auto px-5">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            style={{ backgroundColor: item.color }}
-            className="relative text-xl md:text-2xl p-4 md:p-6 text-center cursor-pointer rounded-lg shadow-lg transition-transform duration-300"
-            onClick={() => handleToggle(index)}
+<div className="  px-16 py-24 ">
+
+  <h2 style={{color: "#000F89"}} className="text-2xl font-semibold text-blue-900 mb-4">Who do we cater to?</h2>
+  <p className="text-zinc-600 mb-8">
+    At Artevis, we work with organisations of different sizes, complexities
+    and across industries. Our offerings are customised to meet the
+    specific requirements across the following and more.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {sections.map((section, index) => (
+      <div key={index} className="border-b pb-4">
+        <h3 className="text-lg font-semibold text-blue-900 flex justify-between items-center">
+          {section.title}
+          <span
+            className="cursor-pointer"
+            onClick={() => toggleSection(index)}
           >
-            <div className="flex justify-between items-center">
-              <span>{item.title}</span>
-              <span>{expanded[index] ? <FaCaretUp /> : <FaCaretDown />}</span>
-            </div>
-            {expanded[index] && (
-              <div className="mt-4 text-lg">{item.description}</div>
+            {expandedSections[index] ? (
+              <IoIosArrowUp className="text-blue-900" />
+            ) : (
+              <IoIosArrowDown className="text-blue-900" />
             )}
-          </div>
-        ))}
+          </span>
+        </h3>
+        {expandedSections[index] && section.content && (
+          <p className="text-zinc-600 mt-2">{section.content}</p>
+        )}
       </div>
-<ContactUs/>
+    ))}
+  </div>
+ 
+</div>
+</div>
+       
+  
+
+      <ContactUs />
       <Footer />
     </>
   );

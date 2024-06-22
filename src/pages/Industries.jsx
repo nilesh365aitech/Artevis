@@ -466,7 +466,7 @@ GCC: (
             Expanding Horizons Globally
           </h1>
           <p className="text-blue-800 text-lg">
-            We have created impact with 30+ clients across 4 continents, by
+            We have created impact with 50+ clients across 4 continents, by
             delivering services to customer delight.
           </p>
           <div className="absolute right-0 top-0 bottom-0 w-1 bg-red-600"></div>
