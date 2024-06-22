@@ -5,421 +5,614 @@ import MapImage from "../assets/fp.png";
 import RecentUpdates from "../section/RecentUpdates";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/FooterSection";
-import CaseStudy1 from "../assets/Case Study 1.png";
-import CaseStudy2 from "../assets/Case Study 2.png";
-import CaseStudy3 from "../assets/Case Study 3.png";
-import CaseStudy4 from "../assets/Case Study 4.png";
 import country1 from "../assets/country1.png";
 import country2 from "../assets/country2.png";
 import country3 from "../assets/country3.png";
 import country4 from "../assets/country4.png";
+import SucessStories from "../components/SucessStories";
 
 const Industries = () => {
   const [selectedRegion, setSelectedRegion] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const items = [
-    {
-      bgurl: CaseStudy1,
-      title: "Greenfield Ocean Race Project Achieves X% Feasibility Milestone",
-      description:
-        "Formulated a feasibility model for a sports and event management company for launch of a greenfield ocean race initiative in Saudi Arabia...",
-    },
-    {
-      bgurl: CaseStudy2,
-      title:
-        "From Concept to Capital: How an Innovative F&B E-Commerce and FinTech Startup Raised $xxx Million",
-      description:
-        "Crafted an Investor Memorandum and Financial Model to propel Fundraising Efforts for an Innovative F&B E-Commerce and FinTech Startup in KSA",
-    },
-    {
-      bgurl: CaseStudy3,
-      title:
-        "Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar Reality, a Fund's Multifold Exit Triumph",
-      description:
-        "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
-    },
-    {
-      bgurl: CaseStudy4,
-      title:
-        "Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar Reality, a Fund's Multifold Exit Triumph",
-      description:
-        "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
-    },
-  ];
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 3 : prevIndex - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 3 ? 0 : prevIndex + 1
-    );
-  };
 
   const regionContent = {
     "North America": (
       <div>
-        <h1 className="text-[#E84140] text-[20px] font-bold mb-1">North  America </h1>
-        <p className="text-[#1E227F] mb-4">Artevis Consulting has been instrumental in various high-impact ventures across diverse industries</p>
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">E-betting IPO Success:</h2>
-      <p>Advised a hedge fund on an e-betting IPO, resulting in a $3.0 billion success.</p>
-    </div>
-  </div>
+        <h1 className="text-[#E84140] text-[20px] font-bold mb-1">
+          North America{" "}
+        </h1>
+        <p className="text-[#1E227F] mb-4">
+          Artevis Consulting has been instrumental in various high-impact
+          ventures across diverse industries
+        </p>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">E-betting IPO Success:</h2>
+            <p>
+              Advised a hedge fund on an e-betting IPO, resulting in a $3.0
+              billion success.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Ride-Hailing Venture Expansion</h2>
-      <p>Developed expansion strategies and conducted valuations for a ride-hailing venture, contributing to its growth trajectory.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Ride-Hailing Venture Expansion</h2>
+            <p>
+              Developed expansion strategies and conducted valuations for a
+              ride-hailing venture, contributing to its growth trajectory.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Capital Raise Facilitation</h2>
-      <p>Facilitated a $50.0 million capital raise for the Chief Financial Officer of a ride-hailing company, enhancing its financial capabilities.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Capital Raise Facilitation</h2>
+            <p>
+              Facilitated a $50.0 million capital raise for the Chief Financial
+              Officer of a ride-hailing company, enhancing its financial
+              capabilities.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">SaaS M&A Oversight</h2>
-      <p>Provided due diligence and fund oversight for Software as a Service (SaaS) mergers and acquisitions, managing over $150 million in Assets Under Management (AUM).</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">SaaS M&A Oversight</h2>
+            <p>
+              Provided due diligence and fund oversight for Software as a
+              Service (SaaS) mergers and acquisitions, managing over $150
+              million in Assets Under Management (AUM).
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Investment Strategy in Shipping Sector</h2>
-      <p>Advised a New York hedge fund on investment strategies in the shipping sector in light of IMO 2020 regulations.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Investment Strategy in Shipping Sector
+            </h2>
+            <p>
+              Advised a New York hedge fund on investment strategies in the
+              shipping sector in light of IMO 2020 regulations.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">AI and ML Series C Diligence</h2>
-      <p>Conducted diligence for a Middle Market Private Equity firm's Series C investment in Artificial Intelligence and Machine Learning technologies.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">AI and ML Series C Diligence</h2>
+            <p>
+              Conducted diligence for a Middle Market Private Equity firm's
+              Series C investment in Artificial Intelligence and Machine
+              Learning technologies.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Pharma Valuation and Analysis</h2>
-      <p>Conducted valuation and analysis for an orphan drug company in the pharmaceutical sector.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Pharma Valuation and Analysis</h2>
+            <p>
+              Conducted valuation and analysis for an orphan drug company in the
+              pharmaceutical sector.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Middle Market PE Deal Support</h2>
-      <p>Provided support for technology and healthcare deals for a Middle Market Private Equity firm.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Middle Market PE Deal Support</h2>
+            <p>
+              Provided support for technology and healthcare deals for a Middle
+              Market Private Equity firm.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Financial Modeling for Cable Operator</h2>
-      <p>Developed financial models for equity assessment of a cable operator in the United States.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Financial Modeling for Cable Operator
+            </h2>
+            <p>
+              Developed financial models for equity assessment of a cable
+              operator in the United States.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Oil and Gas Investment Thesis</h2>
-      <p>Contributed to the development of a $100 billion investment thesis for an oil and gas company.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Oil and Gas Investment Thesis</h2>
+            <p>
+              Contributed to the development of a $100 billion investment thesis
+              for an oil and gas company.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Aquaculture and Shipping Due Diligence</h2>
-      <p>Conducted due diligence for a $30 million aquaculture investment and a $50 million credit facility for a shipping firm.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Aquaculture and Shipping Due Diligence
+            </h2>
+            <p>
+              Conducted due diligence for a $30 million aquaculture investment
+              and a $50 million credit facility for a shipping firm.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Solar Farm Transaction</h2>
-      <p>Provided M&A due diligence for a $125 million transaction involving a solar farm in Texas.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Solar Farm Transaction</h2>
+            <p>
+              Provided M&A due diligence for a $125 million transaction
+              involving a solar farm in Texas.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Healthcare Investment Monitoring</h2>
-      <p>Monitored healthcare investments for medical services in Michigan, ensuring optimal performance.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Healthcare Investment Monitoring</h2>
+            <p>
+              Monitored healthcare investments for medical services in Michigan,
+              ensuring optimal performance.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">Health-Focused PE Advisory</h2>
-      <p>Provided investment advisory services for a Private Equity firm focused on the healthcare sector.</p>
-    </div>
-  </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Health-Focused PE Advisory</h2>
+            <p>
+              Provided investment advisory services for a Private Equity firm
+              focused on the healthcare sector.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex flex-col text-md">
-    <div>
-      <h2 className="font-semibold">F&B Portfolio Monitoring</h2>
-      <p>Monitored the portfolio of franchise operations in the Food and Beverage sector across the United States, ensuring strategic alignment and performance optimization.</p>
-    </div>
-  </div>
-</div>
-
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">F&B Portfolio Monitoring</h2>
+            <p>
+              Monitored the portfolio of franchise operations in the Food and
+              Beverage sector across the United States, ensuring strategic
+              alignment and performance optimization.
+            </p>
+          </div>
+        </div>
+      </div>
     ),
     Europe: (
       <div>
         <h1 className="text-[#E84140] text-[20px] font-bold mb-1">Europe </h1>
-        <p className="text-[#1E227F] mb-4">Artevis Consulting has been instrumental in various high-impact ventures across diverse industries</p>
+        <p className="text-[#1E227F] mb-4">
+          Artevis Consulting has been instrumental in various high-impact
+          ventures across diverse industries
+        </p>
 
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">E-betting IPO Success:</h2>
-          <p>Advised a hedge fund on an e-betting IPO, resulting in a $3.0 billion success.</p>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">E-betting IPO Success:</h2>
+            <p>
+              Advised a hedge fund on an e-betting IPO, resulting in a $3.0
+              billion success.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Ride-Hailing Venture Expansion</h2>
+            <p>
+              Developed expansion strategies and conducted valuations for a
+              ride-hailing venture, contributing to its growth trajectory.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Capital Raise Facilitation</h2>
+            <p>
+              Facilitated a $50.0 million capital raise for the Chief Financial
+              Officer of a ride-hailing company, enhancing its financial
+              capabilities.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">SaaS M&A Oversight</h2>
+            <p>
+              Provided due diligence and fund oversight for Software as a
+              Service (SaaS) mergers and acquisitions, managing over $150
+              million in Assets Under Management (AUM).
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Investment Strategy in Shipping Sector
+            </h2>
+            <p>
+              Advised a New York hedge fund on investment strategies in the
+              shipping sector in light of IMO 2020 regulations.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">AI and ML Series C Diligence</h2>
+            <p>
+              Conducted diligence for a Middle Market Private Equity firm's
+              Series C investment in Artificial Intelligence and Machine
+              Learning technologies.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Pharma Valuation and Analysis</h2>
+            <p>
+              Conducted valuation and analysis for an orphan drug company in the
+              pharmaceutical sector.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Middle Market PE Deal Support</h2>
+            <p>
+              Provided support for technology and healthcare deals for a Middle
+              Market Private Equity firm.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Financial Modeling for Cable Operator
+            </h2>
+            <p>
+              Developed financial models for equity assessment of a cable
+              operator in the United States.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Oil and Gas Investment Thesis</h2>
+            <p>
+              Contributed to the development of a $100 billion investment thesis
+              for an oil and gas company.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Aquaculture and Shipping Due Diligence
+            </h2>
+            <p>
+              Conducted due diligence for a $30 million aquaculture investment
+              and a $50 million credit facility for a shipping firm.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Solar Farm Transaction</h2>
+            <p>
+              Provided M&A due diligence for a $125 million transaction
+              involving a solar farm in Texas.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Healthcare Investment Monitoring</h2>
+            <p>
+              Monitored healthcare investments for medical services in Michigan,
+              ensuring optimal performance.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Health-Focused PE Advisory</h2>
+            <p>
+              Provided investment advisory services for a Private Equity firm
+              focused on the healthcare sector.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">F&B Portfolio Monitoring</h2>
+            <p>
+              Monitored the portfolio of franchise operations in the Food and
+              Beverage sector across the United States, ensuring strategic
+              alignment and performance optimization.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">PE Portfolio Management</h2>
+            <p>
+              Provided portfolio management services for a London-based Private
+              Equity firm, specializing in the Pharmaceuticals sector, to
+              optimize their investment strategies and enhance returns.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Global Bank Valuation</h2>
+            <p>
+              Conducted comprehensive valuation and financial analysis of a
+              global bank for a hedge fund, facilitating informed investment
+              decisions and risk management strategies.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Credit Union Risk Planning</h2>
+            <p>
+              Advised Ireland's largest credit union on business model
+              optimization and risk planning, ensuring sustainable growth and
+              regulatory compliance amidst dynamic market conditions.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Aluminum Manufacturer Strategy</h2>
+            <p>
+              Conducted valuation and devised strategic initiatives for an
+              aluminum manufacturer on behalf of a hedge fund, enabling informed
+              investment decisions and value creation opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Diesel Gate Legal Claim Finance</h2>
+            <p>
+              Provided advisory services to a hedge fund on legal claim finance
+              related to the Dieselgate scandal, offering insights into
+              potential risks and opportunities associated with the litigation.
+            </p>
+          </div>
         </div>
       </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Ride-Hailing Venture Expansion</h2>
-          <p>Developed expansion strategies and conducted valuations for a ride-hailing venture, contributing to its growth trajectory.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Capital Raise Facilitation</h2>
-          <p>Facilitated a $50.0 million capital raise for the Chief Financial Officer of a ride-hailing company, enhancing its financial capabilities.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">SaaS M&A Oversight</h2>
-          <p>Provided due diligence and fund oversight for Software as a Service (SaaS) mergers and acquisitions, managing over $150 million in Assets Under Management (AUM).</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Investment Strategy in Shipping Sector</h2>
-          <p>Advised a New York hedge fund on investment strategies in the shipping sector in light of IMO 2020 regulations.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">AI and ML Series C Diligence</h2>
-          <p>Conducted diligence for a Middle Market Private Equity firm's Series C investment in Artificial Intelligence and Machine Learning technologies.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Pharma Valuation and Analysis</h2>
-          <p>Conducted valuation and analysis for an orphan drug company in the pharmaceutical sector.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Middle Market PE Deal Support</h2>
-          <p>Provided support for technology and healthcare deals for a Middle Market Private Equity firm.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Financial Modeling for Cable Operator</h2>
-          <p>Developed financial models for equity assessment of a cable operator in the United States.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Oil and Gas Investment Thesis</h2>
-          <p>Contributed to the development of a $100 billion investment thesis for an oil and gas company.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Aquaculture and Shipping Due Diligence</h2>
-          <p>Conducted due diligence for a $30 million aquaculture investment and a $50 million credit facility for a shipping firm.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Solar Farm Transaction</h2>
-          <p>Provided M&A due diligence for a $125 million transaction involving a solar farm in Texas.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Healthcare Investment Monitoring</h2>
-          <p>Monitored healthcare investments for medical services in Michigan, ensuring optimal performance.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Health-Focused PE Advisory</h2>
-          <p>Provided investment advisory services for a Private Equity firm focused on the healthcare sector.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">F&B Portfolio Monitoring</h2>
-          <p>Monitored the portfolio of franchise operations in the Food and Beverage sector across the United States, ensuring strategic alignment and performance optimization.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">PE Portfolio Management</h2>
-          <p>Provided portfolio management services for a London-based Private Equity firm, specializing in the Pharmaceuticals sector, to optimize their investment strategies and enhance returns.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Global Bank Valuation</h2>
-          <p>Conducted comprehensive valuation and financial analysis of a global bank for a hedge fund, facilitating informed investment decisions and risk management strategies.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Credit Union Risk Planning</h2>
-          <p>Advised Ireland's largest credit union on business model optimization and risk planning, ensuring sustainable growth and regulatory compliance amidst dynamic market conditions.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Aluminum Manufacturer Strategy</h2>
-          <p>Conducted valuation and devised strategic initiatives for an aluminum manufacturer on behalf of a hedge fund, enabling informed investment decisions and value creation opportunities.</p>
-        </div>
-      </div>
-    
-      <div className="flex flex-col text-md">
-        <div>
-          <h2 className="font-semibold">Diesel Gate Legal Claim Finance</h2>
-          <p>Provided advisory services to a hedge fund on legal claim finance related to the Dieselgate scandal, offering insights into potential risks and opportunities associated with the litigation.</p>
-        </div>
-      </div>
-    </div>
-    
     ),
-   "Saudi Arabia": (
-  <div>
-    <h1 className="text-[#E84140] text-[20px] font-bold mb-1">Saudi Arabia </h1>
-        <p className="text-[#1E227F] mb-4">Artevis Consulting has been instrumental in various high-impact ventures across diverse industries</p>
+    "Saudi Arabia": (
+      <div>
+        <h1 className="text-[#E84140] text-[20px] font-bold mb-1">
+          Saudi Arabia{" "}
+        </h1>
+        <p className="text-[#1E227F] mb-4">
+          Artevis Consulting has been instrumental in various high-impact
+          ventures across diverse industries
+        </p>
 
-    <div className="flex flex-col text-md gap-2">
-      <div>
-        <h2 className="font-semibold">Corporate Strategy and Transformation</h2>
-        <p>Crafted a visionary strategy for a Sovereign Wealth Fund (SWF) subsidiary managing a UNESCO site, preserving cultural heritage while ensuring financial sustainability.</p>
+        <div className="flex flex-col text-md gap-2">
+          <div>
+            <h2 className="font-semibold">
+              Corporate Strategy and Transformation
+            </h2>
+            <p>
+              Crafted a visionary strategy for a Sovereign Wealth Fund (SWF)
+              subsidiary managing a UNESCO site, preserving cultural heritage
+              while ensuring financial sustainability.
+            </p>
+          </div>
+          <div>
+            <p>
+              Revamped the 5-Year Strategic Plan of a prominent Riyadh-based
+              Real Estate Firm, optimizing operations and enhancing market
+              competitiveness.
+            </p>
+          </div>
+          <div>
+            <p>
+              Guided a client's evolution into a Real Estate (RE) developer
+              through strategic implementation support, facilitating seamless
+              transition and growth.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Investment and Financial Advisory</h2>
+            <p>
+              Executed Pre-IPO Planning and Valuation for a Riyadh Real Estate
+              Firm, optimizing capital structure and enhancing investor appeal.
+            </p>
+          </div>
+          <div>
+            <p>
+              Empowered a $700.0 billion SWF subsidiary to raise $1.2 billion
+              through strategic business planning, unlocking new avenues for
+              growth and investment.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col text-md gap-2">
+          <div>
+            <h2 className="font-semibold">Market Entry and Expansion</h2>
+            <p>
+              Formulated a comprehensive Market Entry Business Plan for a
+              PropTech Platform, securing CMA approval and facilitating
+              successful market penetration.
+            </p>
+          </div>
+          <div>
+            <p>
+              Designed a Nationwide Expansion and Financial Plan for a
+              burgeoning Healthcare Provider, enabling scalable growth and
+              enhanced service delivery.
+            </p>
+          </div>
+          <div>
+            <p>
+              Enabled the setup of a pivotal pharmaceutical plant worth $400
+              million by formulating strategic business plans and investment
+              collateral.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">Project and Operations Management</h2>
+            <p>
+              Managed an Enterprise Project Management Office (EPMO) for an $8.0
+              billion client, synchronizing projects with corporate goals and
+              enhancing operational efficiency.
+            </p>
+          </div>
+          <div>
+            <p>
+              Directed a Strategic Management Office (SMO) for a $5.0 billion
+              client, bolstering strategic frameworks and risk management
+              practices.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col text-md">
+          <div>
+            <h2 className="font-semibold">
+              Feasibility Studies and Business Planning
+            </h2>
+            <p>
+              Developed a robust Feasibility Model for a Greenfield Ocean Race
+              Sports Initiative, evaluating market potential and strategic
+              positioning.
+            </p>
+          </div>
+          <div>
+            <p>
+              Conducted a Financial Feasibility Study for the Redevelopment of a
+              UNESCO Heritage Site, ensuring viability and sustainability of the
+              project.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <p>Revamped the 5-Year Strategic Plan of a prominent Riyadh-based Real Estate Firm, optimizing operations and enhancing market competitiveness.</p>
-      </div>
-      <div>
-        <p>Guided a client's evolution into a Real Estate (RE) developer through strategic implementation support, facilitating seamless transition and growth.</p>
-      </div>
-    </div>
-    <div className="flex flex-col text-md">
-      <div>
-        <h2 className="font-semibold">Investment and Financial Advisory</h2>
-        <p>Executed Pre-IPO Planning and Valuation for a Riyadh Real Estate Firm, optimizing capital structure and enhancing investor appeal.</p>
-      </div>
-      <div>
-        <p>Empowered a $700.0 billion SWF subsidiary to raise $1.2 billion through strategic business planning, unlocking new avenues for growth and investment.</p>
-      </div>
-    </div>
-    <div className="flex flex-col text-md gap-2">
-      <div>
-        <h2 className="font-semibold">Market Entry and Expansion</h2>
-        <p>Formulated a comprehensive Market Entry Business Plan for a PropTech Platform, securing CMA approval and facilitating successful market penetration.</p>
-      </div>
-      <div>
-        <p>Designed a Nationwide Expansion and Financial Plan for a burgeoning Healthcare Provider, enabling scalable growth and enhanced service delivery.</p>
-      </div>
-      <div>
-        <p>Enabled the setup of a pivotal pharmaceutical plant worth $400 million by formulating strategic business plans and investment collateral.</p>
-      </div>
-    </div>
-    <div className="flex flex-col text-md">
-      <div>
-        <h2 className="font-semibold">Project and Operations Management</h2>
-        <p>Managed an Enterprise Project Management Office (EPMO) for an $8.0 billion client, synchronizing projects with corporate goals and enhancing operational efficiency.</p>
-      </div>
-      <div>
-        <p>Directed a Strategic Management Office (SMO) for a $5.0 billion client, bolstering strategic frameworks and risk management practices.</p>
-      </div>
-    </div>
-    <div className="flex flex-col text-md">
-      <div>
-        <h2 className="font-semibold">Feasibility Studies and Business Planning</h2>
-        <p>Developed a robust Feasibility Model for a Greenfield Ocean Race Sports Initiative, evaluating market potential and strategic positioning.</p>
-      </div>
-      <div>
-        <p>Conducted a Financial Feasibility Study for the Redevelopment of a UNESCO Heritage Site, ensuring viability and sustainability of the project.</p>
-      </div>
-    </div>
-  </div>
-),
+    ),
 
-GCC: (
-  <div>
-     <h1 className="text-[#E84140] text-[20px] font-bold mb-1">GCC </h1>
-        <p className="text-[#1E227F] mb-4">Artevis Consulting has been instrumental in various high-impact ventures across diverse industries</p>
+    GCC: (
+      <div>
+        <h1 className="text-[#E84140] text-[20px] font-bold mb-1">GCC </h1>
+        <p className="text-[#1E227F] mb-4">
+          Artevis Consulting has been instrumental in various high-impact
+          ventures across diverse industries
+        </p>
 
-    <div className="flex flex-col text-md gap-1">
-      <div>
-        <h2 className="font-semibold">UNESCO Site Financial Strategy</h2>
-        <p>Crafted a robust financial strategy for a subsidiary of a $700 billion Sovereign Wealth Fund (SWF), ensuring sustainable growth and preservation of cultural heritage at UNESCO sites.</p>
+        <div className="flex flex-col text-md gap-1">
+          <div>
+            <h2 className="font-semibold">UNESCO Site Financial Strategy</h2>
+            <p>
+              Crafted a robust financial strategy for a subsidiary of a $700
+              billion Sovereign Wealth Fund (SWF), ensuring sustainable growth
+              and preservation of cultural heritage at UNESCO sites.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">
+              Real Estate Firm Strategic Overhaul
+            </h2>
+            <p>
+              Led a comprehensive 5-year strategic overhaul for a $1.3 billion
+              real estate firm, optimizing operations and enhancing market
+              competitiveness.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">
+              Greenfield Ocean Race Initiative Feasibility
+            </h2>
+            <p>
+              Conducted feasibility analysis for a pioneering ocean race sports
+              initiative, evaluating market potential and strategic positioning
+              for successful implementation.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">
+              Healthcare Provider Expansion Strategy
+            </h2>
+            <p>
+              Developed expansion and financial strategies for a healthcare
+              provider, enabling seamless growth and enhanced service delivery
+              across diverse geographies.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">PropTech Platform Market Entry</h2>
+            <p>
+              Devised a market entry plan including CMA (Capital Market
+              Authority) approval for a PropTech platform, facilitating a smooth
+              entrance into the market and regulatory compliance.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">
+              Riyadh Real Estate Pre-IPO Planning
+            </h2>
+            <p>
+              Provided pre-IPO planning and valuation services for a
+              Riyadh-based real estate firm, optimizing capital structure and
+              enhancing investor appeal.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">
+              Enterprise Project Management Office (EPMO) Implementation
+            </h2>
+            <p>
+              Implemented an Enterprise Project Management Office (EPMO) for an
+              $8 billion client, ensuring alignment and efficiency in corporate
+              projects and initiatives.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-semibold">
+              Pharma Plant Setup and Funding Strategy
+            </h2>
+            <p>
+              Orchestrated the setup of a $400 million pharmaceutical plant,
+              including business plan development and funding strategy, enabling
+              seamless execution and sustainable growth in the pharmaceutical
+              sector.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2 className="font-semibold">Real Estate Firm Strategic Overhaul</h2>
-        <p>Led a comprehensive 5-year strategic overhaul for a $1.3 billion real estate firm, optimizing operations and enhancing market competitiveness.</p>
-      </div>
-      <div>
-        <h2 className="font-semibold">Greenfield Ocean Race Initiative Feasibility</h2>
-        <p>Conducted feasibility analysis for a pioneering ocean race sports initiative, evaluating market potential and strategic positioning for successful implementation.</p>
-      </div>
-      <div>
-        <h2 className="font-semibold">Healthcare Provider Expansion Strategy</h2>
-        <p>Developed expansion and financial strategies for a healthcare provider, enabling seamless growth and enhanced service delivery across diverse geographies.</p>
-      </div>
-      <div>
-        <h2 className="font-semibold">PropTech Platform Market Entry</h2>
-        <p>Devised a market entry plan including CMA (Capital Market Authority) approval for a PropTech platform, facilitating a smooth entrance into the market and regulatory compliance.</p>
-      </div>
-      <div>
-        <h2 className="font-semibold">Riyadh Real Estate Pre-IPO Planning</h2>
-        <p>Provided pre-IPO planning and valuation services for a Riyadh-based real estate firm, optimizing capital structure and enhancing investor appeal.</p>
-      </div>
-      <div>
-        <h2 className="font-semibold">Enterprise Project Management Office (EPMO) Implementation</h2>
-        <p>Implemented an Enterprise Project Management Office (EPMO) for an $8 billion client, ensuring alignment and efficiency in corporate projects and initiatives.</p>
-      </div>
-      <div>
-        <h2 className="font-semibold">Pharma Plant Setup and Funding Strategy</h2>
-        <p>Orchestrated the setup of a $400 million pharmaceutical plant, including business plan development and funding strategy, enabling seamless execution and sustainable growth in the pharmaceutical sector.</p>
-      </div>
-    </div>
-  </div>
-),
-
+    ),
   };
 
   const [experience, setExperience] = useState(0);
@@ -560,66 +753,7 @@ GCC: (
           <div className="mt-10">{regionContent[selectedRegion]}</div>
         </div>
       )}
-
-<div className="slider-container  relative mt-20 max-w-7xl mx-auto pb-16">
-        <div className="slider overflow-hidden">
-          <div
-            className="slider-content flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="w-full lg:w-1/3 flex-shrink-0 mb-20 px-2"
-              >
-                <div className="h-72 sm:h-96">
-                  <div
-                    className="bg-cover bg-center h-full"
-                    style={{ backgroundImage: `url(${item.bgurl})` }}
-                  ></div>
-                </div>
-                <div className="flex flex-col gap-3 mt-3">
-                  <p className="text-lg sm:text-xl font-semibold text-gray-900">
-                    {item.title}
-                  </p>
-                  <p className="text-sm sm:text-base font-normal text-gray-700">
-                    {item.description}
-                  </p>
-                </div>
-                <div className="flex justify-between items-center mt-2">
-                  <button className="rounded px-3 py-2 bg-red-200 text-xs text-red-600">
-                    Start Ups
-                  </button>
-                  <a href="#" className="text-red-600 text-xs font-semibold">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="absolute top-[-3rem] right-0 left-0 flex  items-center  justify-between px-3">
-          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900">
-            Success Stories
-          </h1>
-          <div className="flex gap-3 ">
-            <button
-              className="bg-gray-400 px-3 py-1 rounded-full text-white"
-              onClick={prevSlide}
-            >
-              &#10094;
-            </button>
-            <button
-              className="bg-gray-400 px-3 py-1 rounded-full text-white"
-              onClick={nextSlide}
-            >
-              &#10095;
-            </button>
-          </div>
-        </div>
-       
-      </div>
-
+<SucessStories/>
       <div className=" mt-6 md:ml-20 ">
         <RecentUpdates />
         <div className="container mx-auto px-4">

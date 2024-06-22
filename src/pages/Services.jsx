@@ -1,4 +1,3 @@
-import Contact from "../components/ContactUs";
 import Footer from "../components/FooterSection";
 import Navbar from "../components/Navbar";
 import ServiceImage from "../assets/insite.png";
