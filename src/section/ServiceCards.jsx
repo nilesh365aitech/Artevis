@@ -12,7 +12,7 @@ const ServiceCards = () => {
   return (
     <>
       <div className="py-8 mx-auto px-2">
-        <h1 className="text-xl sm:text-2xl md:text-3xl text-blue-800 font-semibold text-start mb-8 ml-3">
+        <h1 className="text-xl sm:text-2xl md:text-3xl text-blue-800 font-semibold text-start mb-8 ">
           Our Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

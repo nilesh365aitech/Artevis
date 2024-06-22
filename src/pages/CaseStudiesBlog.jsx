@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServiceImage from "../assets/insite.png";
 import Navbar from "../components/Navbar";
 import Case1 from "../assets/case1.png";
@@ -11,6 +11,9 @@ import SUraj from "../assets/profile2.png";
 import Footer from "../components/FooterSection";
 
 const CaseStudiesBlog = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
   return (
     <>
       <div>
@@ -258,7 +261,7 @@ const CaseStudiesBlog = () => {
               </div>
             </div>
             <div
-              className="flex items-center justify-center mb-10 hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
+              className="flex items-center justify-center  hover:cursor-pointer hover:bg-gray-100 transition-all p-4"
               onClick={() => navigate(`/aboutus/Suraj Nayak`)}
             >
               <div className="p-3  ">

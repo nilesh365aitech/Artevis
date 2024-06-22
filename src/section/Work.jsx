@@ -6,7 +6,7 @@ import CaseStudy4 from "../assets/Case Study 4.png";
 export default function Work() {
   return (
     <div className="">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-2  sm:px-4 py-8">
         <h1 className="text-3xl font-semibold mb-7  sm:ml-10 text-blue-900 md:ml-52 ">
           Our Work
         </h1>
