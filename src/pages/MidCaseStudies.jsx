@@ -188,7 +188,7 @@ const MidCaseStudies = () => {
       </div>
 
       <div className=" py-24 mb-20  bg-[#F0F3F8] p-6  rounded-lg mt-20">
-        <h2 className="text-xl  md:ml-9 md:mr-52 font-semibold text-blue-700 :text-blue-500">
+        <h2 className="text-xl  md:ml-9 md:mr-52 font-semibold text-blue-00 :text-blue-500">
 
       
           Outcome

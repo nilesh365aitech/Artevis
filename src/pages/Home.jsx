@@ -94,9 +94,9 @@ export default function Home() {
       >
         <Slider
           {...settings}
-          className="w-full ml-0  max-w-4xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
+          className="w-full ml-0  max-w-5xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
         >
-          <div className="h-80  md:h-80 ">
+          <div className="h-80 md:h-80 ">
             <div
               style={{ backgroundColor: "#EDF5F5" }}
               className="opacity-85 p-4 sm:p-8 md:p-12  text-left md:text-left border-r-4 border-red-600"
