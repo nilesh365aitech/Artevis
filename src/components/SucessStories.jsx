@@ -71,7 +71,7 @@ const SucessStories = () => {
 
   return (
     <>
-      <div className="slider-container relative mt-20 max-w-7xl mx-auto pb-16 lg:hidden px-5">
+      <div className="slider-container relative mt-20 max-w-7xl mx-auto  lg:hidden px-5">
         <div className="slider overflow-hidden">
           <div
             className="slider-content flex transition-transform duration-500 ease-in-out"
@@ -80,7 +80,7 @@ const SucessStories = () => {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0 mb-20 px-2 lg:w-1/3"
+                className="w-full flex-shrink-0  px-2 lg:w-1/3"
                 style={{ minWidth: "100%" }}
               >
                 <div className="h-72 sm:h-96">
@@ -133,7 +133,7 @@ const SucessStories = () => {
         </div>
       </div>
 
-      <div className="slider-container relative mt-20 max-w-7xl mx-auto pb-16 hidden lg:block">
+      <div className="slider-container relative mt-20 max-w-7xl mx-auto pb-4 hidden lg:block">
         <div className="slider overflow-hidden">
           <div
             className="slider-content flex transition-transform duration-500 ease-in-out"
@@ -142,7 +142,7 @@ const SucessStories = () => {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="w-full lg:w-1/3 flex-shrink-0 mb-20 px-2"
+                className="w-full lg:w-1/3 flex-shrink-0  px-2"
                 style={{ minWidth: "calc(100% / 3)" }}
               >
                 <div className="h-72 sm:h-96">
