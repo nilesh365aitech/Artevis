@@ -28,8 +28,6 @@ export const AboutUsData = [
     roles: [
       "Suraj Nayak is the Co-Founder who specializes in investment and transaction advisory, offering strategic counsel on deal terms, valuations, and overall opportunity analysis. He has a strong track record of formulating and implementing strategies across various sectors. ",
       "Some of his key achievements include redefining the strategy for a GCC-based Real Estate Conglomerate, supporting the expansion of a pharmaceutical manufacturer in KSA, and developing investment analysis frameworks for prominent investment funds. ",
-      "With a focus on Saudi Arabia, he has played a significant role in formulating strategies, leading investment ventures, and enhancing capabilities within the real estate sector and beyond. Some key milestones include spearheading initiatives for major subsidiaries, crafting corporate strategies for conglomerates, and directing strategic management functions for high-stakes markets. ",
-    
     ],
     educationalbackground:
       "Suraj has provided financial expertise to companies globally, including in the US, Ireland, and the UAE. His educational background includes a Bachelor of Arts with triple majors in Accounting, Finance, and Applied Economics from The College of St. Scholastica in Duluth, United States. ",
