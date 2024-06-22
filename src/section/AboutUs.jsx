@@ -21,8 +21,8 @@ export default function AboutUs() {
       </div>
     
       <div className="absolute lg:right-10 top-0 bottom-0 flex gap-10 items-center right-5">
-        <div className="w-1 lg:w-3 bg-purple-100 lg:h-[80%] h-[60%] mb-2 absolute lg:top-28 lg:right-32 right-14 bottom-5"></div>
-        <div className=" w-1 lg:w-3 bg-gray-100 lg:h-[80%] h-[60%] mb-2 lg:right-16 absolute right-6"></div>
+        <div className="w-1 lg:w-3 bg-purple-100 lg:h-[80%] h-[60%] mb-2 absolute lg:top-28 lg:right-28 right-14 bottom-5"></div>
+        <div className=" w-1 lg:w-3 bg-gray-100 lg:h-[80%] h-[60%] mb-2 lg:right-12 absolute right-6"></div>
         <div className=" w-1 lg:w-3 bg-red-100 lg:h-[80%] h-[60%] mb-2 lg:right-0 absolute lg:top-16"></div>
       </div>
     </div>

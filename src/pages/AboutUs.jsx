@@ -6,37 +6,11 @@ import Suraj from "../assets/profile1.png";
 import Gautam from "../assets/profile2.png";
 import Footer from "../components/FooterSection";
 import { useNavigate } from "react-router-dom";
-import LinkedInLogo from "../assets/linkedinlogo.png"
+import LinkedInLogo from "../assets/linkedinlogo.png";
+import Stats from "../components/Stats";
 const AboutUs = () => {
-  const [experience, setExperience] = useState(0);
-  const [clients, setClients] = useState(0);
-  const [countries, setCountries] = useState(0);
-  const [clientAUM, setClientAUM] = useState(0);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const incrementValues = (target, setter, incrementSpeed) => {
-      let value = 0;
-      const interval = setInterval(() => {
-        if (value < target) {
-          value += 1;
-          setter(value);
-        } else {
-          clearInterval(interval);
-        }
-      }, incrementSpeed);
-    };
-
-    incrementValues(10, setExperience, 100);
-    incrementValues(50, setClients, 50);
-    incrementValues(10, setCountries, 150);
-    incrementValues(100, setClientAUM, 30);
-
-    // Cleanup intervals on unmount
-    return () => {
-      clearInterval(incrementValues);
-    };
-  }, []);
 
   return (
     <>
@@ -50,57 +24,25 @@ const AboutUs = () => {
       >
         <Navbar />
 
-        <div className="sm:w-[84%] w-[70%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[60%]">
-
-          <p className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl" style={{ color: "red" }}>
-
-
+        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[70%]">
+          <p
+            className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl"
+            style={{ color: "red" }}
+          >
             Who we are
           </p>
           <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-14">
             About Artevis
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
+
           We are dedicated to empowering businesses with tailored solutions that <br /> drive sustainable growth and operational excellence, ensuring our clients <br /> thrive in a competitive landscape. Our expertise spans across Strategic  Planning, <br /> Investment Advisory, and Management Consultancy.
 
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-wrap justify-evenly items-center px-4 py-14 bg-white gap-5 sm:gap-0">
-        <div className="text-center mb-6 sm:mb-0">
-          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-            {experience}+
-          </p>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-            Years of Experience
-          </p>
-        </div>
-        <div className="text-center mb-6 sm:mb-0">
-          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-            {clients}+
-          </p>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-            Clients Empowered
-          </p>
-        </div>
-        <div className="text-center mb-6 sm:mb-0">
-          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-            {countries}+
-          </p>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-            Countries Served
-          </p>
-        </div>
-        <div className="text-center mb-6 sm:mb-0">
-          <p className="text-sm mb-3 font-bold text-red-600 sm:text-xl md:text-2xl lg:text-3xl">
-            ${clientAUM}Bn+
-          </p>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-            Client AUM
-          </p>
-        </div>
-      </div>
 
+          </p>
+        </div>
+      </div>
+<Stats/>
       <img
         src={Illuminate}
         alt="Img"
@@ -114,7 +56,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
           <div
-            className="flex items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
+            className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
           >
             <div className="flex-shrink-0 p-3">
@@ -137,7 +79,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div
-            className="flex items-center hover:cursor-pointer md:bg-white bg-gray-100 hover:bg-gray-200 transition-all p-4"
+            className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Suraj Nayak`)}
           >
             <div className="flex-shrink-0 p-3">

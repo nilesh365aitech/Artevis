@@ -57,7 +57,7 @@ const MidCaseStudies = () => {
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] md:h-[70vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[80vh] md:h-[70vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${Media})`,
           backgroundSize: "cover",
@@ -65,7 +65,7 @@ const MidCaseStudies = () => {
         }}
       >
         <Navbar />
-        <div className="sm:w-[50%] w-[70%] py-5 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[80%] w-[80%] lg:w-[70%] py-5 px-3  bg-white  min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
             Case Study
           </p>
@@ -188,7 +188,7 @@ const MidCaseStudies = () => {
       </div>
 
       <div className=" py-24 mb-20  bg-[#F0F3F8] p-6  rounded-lg mt-20">
-        <h2 className="text-xl  md:ml-9 md:mr-52 font-semibold text-blue-700 :text-blue-500">
+        <h2 className="text-xl  md:ml-9 md:mr-52 font-semibold text-blue-00 :text-blue-500">
 
       
           Outcome

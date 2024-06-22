@@ -4,7 +4,7 @@ import Footer from "../components/FooterSection";
 import ContactImage from "../assets/contactbg.png";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Widget() {
   const handleSubmit = (e) => {
@@ -23,7 +23,7 @@ export default function Widget() {
       >
         <Navbar />
 
-        <div className="sm:w-[50%] w-[90%] mx-auto md:ml-0 py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[50%] w-[90%] mx-auto md:ml-0 py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600  justify-center absolute top-28 lg:top-40">
           <p className="ml-4 sm:ml-14 font-bold text-red-700 ">
             Connect with us
           </p>
@@ -40,7 +40,6 @@ export default function Widget() {
             Generate the master plan to fast track your product to launch
           </h2>
           <form className="p-0 md:py-6 space-y-4" onSubmit={handleSubmit}>
-           
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
               <span className="material-icons text-red-500 dark:text-red-400">
                 <AccountCircleIcon />
@@ -52,9 +51,15 @@ export default function Widget() {
               />
             </div>
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
-            <span className="material-icons text-red-500 dark:text-red-400"><EmailIcon/></span>
-            <input type="email" placeholder="youremailaddress@gmail.com" className="ml-2 w-full bg-transparent focus:outline-none placeholder:text-base placeholder:text-gray-600" />
-          </div>
+              <span className="material-icons text-red-500 dark:text-red-400">
+                <EmailIcon />
+              </span>
+              <input
+                type="email"
+                placeholder="youremailaddress@gmail.com"
+                className="ml-2 w-full bg-transparent focus:outline-none placeholder:text-base placeholder:text-gray-600"
+              />
+            </div>
             <div className="flex items-center bg-white  p-2 rounded-lg shadow-md">
               <span className="material-icons text-red-500 dark:text-red-400">
                 <PhoneIphoneIcon />
