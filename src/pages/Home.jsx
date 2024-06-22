@@ -79,7 +79,9 @@ export default function Home() {
       <Navbar />
 
       <div
+
         className={`relative flex flex-col items-center justify-center text-white bg-cover bg-center transition duration-500`}
+
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
@@ -158,6 +160,7 @@ export default function Home() {
                 Business
               </h1>
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
+
                 View Case Studies{" "}
                 <span>
                   <svg

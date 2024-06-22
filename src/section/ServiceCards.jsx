@@ -27,46 +27,44 @@ const ServiceCards = () => {
                 <h3 className="text-base sm:text-lg font-semibold mb-4">
                   Management Consulting
                 </h3>
-                <p className="text-sm sm:text-base mb-6">
+                <p className="text-sm sm:text-base  mb-6">
                   Artevis Consulting crafts clear strategies and operational
                   plans for business success. We offer tailored solutions, from
                   business plans to insightful studies, guiding you through
                   every challenge.
                 </p>
-                <div className="text-right px-4 pb-8">
+                <div className="text-right px-4 pb-6">
                   <a
                     href="#"
-                    className="inline-flex items-center text-red-600 font-medium group-hover:text-white"
+                    className="inline-flex pt-6 items-center text-red-600 font-medium  group-hover:text-white"
                   >
                     Read More
                     <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4 ml-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="red"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
             </div>
           </Link>
           <Link to="/services" onClick={scrollToTop}>
-
             <div className="group flex bg-[#F5EDEF] hover:bg-red-700 flex-col items-center ">
               <img
                 src={Service2}
                 alt="Service 2"
                 className="mx-auto mb-4 w-full"
               />
-
 
               <div className=" group-hover:text-white px-4">
                 <h3 className="text-base sm:text-lg font-semibold mb-4">
@@ -79,26 +77,26 @@ const ServiceCards = () => {
                   informed decisions, aligning investments with their
                   objectives.
                 </p>
-                <div className="text-right px-4 pb-2">
+                <div className="text-right px-4  pb-6">
                   <a
                     href="#"
                     className="inline-flex items-center text-red-600 font-medium group-hover:text-white"
                   >
                     Read More
                     <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4 ml-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="red"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -112,7 +110,6 @@ const ServiceCards = () => {
                 className="mx-auto mb-4 w-full"
               />
 
-
               <div className=" group-hover:text-white px-4">
                 <h3 className="text-base sm:text-lg font-semibold mb-4">
                   Business Analytics
@@ -124,26 +121,26 @@ const ServiceCards = () => {
                   growth, improve efficiency, and foster innovation to enable
                   your success.
                 </p>
-                <div className="text-right px-4 pb-2">
+                <div className="text-right px-4 pb-6">
                   <a
                     href="#"
                     className="inline-flex items-center text-red-600 font-medium group-hover:text-white"
                   >
                     Read More
                     <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4 ml-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="red"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>

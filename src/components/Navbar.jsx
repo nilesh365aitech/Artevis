@@ -20,7 +20,6 @@ const Navbar = () => {
     { name: "Services", link: "/services" },
     { name: "Our Footprint", link: "/industries" },
     { name: "Insights & Media", link: "/insights" },
-   
     { name: "Contact Us  ➔", link: "/contact" },
    
   ];
