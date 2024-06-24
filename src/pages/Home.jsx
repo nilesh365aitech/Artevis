@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AboutUs from "../section/AboutUs";
 import ServiceCards from "../section/ServiceCards";
 import ContactUs from "../components/ContactUs";
@@ -16,12 +16,13 @@ import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
 import "./App.css";
 import Stats from "../components/Stats";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
-
-
+  const navigate = useNavigate();
+  const sliderRef = useRef(null); // Create a ref for the slider
 
   const settings = {
     dots: false,
@@ -61,6 +62,7 @@ export default function Home() {
         <Slider
           {...settings}
           className="w-full ml-0 max-w-5xl mx-auto mt-16 sm:mt-24 md:mt-32 pb-8 relative"
+          ref={sliderRef} // Attach the ref to the slider
         >
           <div className="h-80 md:h-80 ">
             <div
@@ -72,8 +74,11 @@ export default function Home() {
                 Elevating Businesses through Strategic and Management Consulting
               </h1>
 
-              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-                Get Consultation Today{" "}
+              <button
+                className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center"
+                onClick={() => navigate("/contact")}
+              >
+                Contact Us
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +106,11 @@ export default function Home() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-4 text-zinc-900">
                 Navigating Growth: Financial Expertise for Thriving Enterprises
               </h1>
-              <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-                Get Consultation Today{" "}
+              <button
+                className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center"
+                onClick={() => navigate("/contact")}
+              >
+                Contact Us
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -157,9 +165,10 @@ export default function Home() {
           {textItems.map((item, index) => (
             <div
               key={index}
-              className={`relative  text-center ${
+              className={`relative text-center cursor-pointer ${
                 activeSlide === index ? "red-underline" : ""
               } p-0 sm:px-10`}
+              onClick={() => sliderRef.current.slickGoTo(index)} // Navigate to the respective slide
             >
               {item}
             </div>
@@ -177,12 +186,12 @@ export default function Home() {
       <div>
         <Services />
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <Industries />
-        <Stats/>
+        <Stats />
       </div>
-      <Stats/>
-      <div className="container mx-auto px-4">
+
+      <div className="container mx-auto ">
         <Work />
       </div>
 
