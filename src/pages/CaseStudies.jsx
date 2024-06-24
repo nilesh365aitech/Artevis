@@ -18,7 +18,7 @@ const CaseStudies = () => {
         }}
       >
         <Navbar />
-        <div className="sm:w-[80%] xl:w-[70%] w-[80%] py-10 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[80%] xl:w-[70%] w-[80%] py-10 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 md:pl-[3.7rem]">
           <p className="ml-4 sm:ml-14 font-bold text-red-700">What we think</p>
           <h1 className="text-4xl font-semibold ml-4 sm:ml-14">
             Insights, Media & Case Studies
