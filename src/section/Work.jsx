@@ -1,13 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
 
 export default function Work() {
+  const navigate=useNavigate()
   return (
     <div className="">
-      <div className="container mx-auto px-2   py-8">
-        <h1 className="text-3xl font-semibold mb-10  sm:ml-[4.8rem] text-blue-900 ">
+      <div className="container mx-auto    py-8">
+        <h1 className="text-3xl font-semibold mb-10  sm:ml-[3rem] text-blue-900 ">
           Our Work
         </h1>
 
@@ -30,6 +32,7 @@ export default function Work() {
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
+                onClick={()=>navigate("/insights/casestudies")}
               >
                 Read More
                  <svg
@@ -67,6 +70,7 @@ export default function Work() {
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
+                onClick={()=>navigate("/insights/casestudieed")}
               >
                 Read More
                  <svg
@@ -104,6 +108,7 @@ export default function Work() {
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6  py-1"
+                onClick={()=>navigate("/insights/casestudy6")}
               >
                 Read More
                  <svg
@@ -141,6 +146,7 @@ export default function Work() {
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6"
+                onClick={()=>navigate("/insights/casestudy4")}
               >
                 Read More
                 <svg

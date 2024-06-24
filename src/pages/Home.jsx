@@ -186,7 +186,7 @@ export default function Home() {
       <div>
         <Services />
       </div>
-      <div className="container mx-auto ">
+      <div className=" ml-10">
         <Industries />
         <Stats />
       </div>
