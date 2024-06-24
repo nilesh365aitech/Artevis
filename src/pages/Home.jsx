@@ -161,7 +161,7 @@ export default function Home() {
             </div>
           </div>
         </Slider>
-        <div className="absolute bottom-0 w-full gap-2 px-3 bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs sm:text-base">
+        <div className="absolute bottom-0 w-full gap-2 px-3 sm:px-0 bg-black bg-opacity-70 text-white flex justify-between py-2 sm:py-4 text-xs sm:text-base">
           {textItems.map((item, index) => (
             <div
               key={index}
@@ -176,11 +176,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-9">
         <AboutUs />
       </div>
 
-      <div className="container mx-auto px-4 mb-10">
+      <div className="container mx-auto px-9 mb-10">
         <ServiceCards />
       </div>
       <div>
@@ -188,9 +188,10 @@ export default function Home() {
       </div>
       <div className=" ml-10">
         <Industries />
+      </div>
+      <div className=" ml-12 mr-32">
         <Stats />
       </div>
-
       <div className="container mx-auto ">
         <Work />
       </div>

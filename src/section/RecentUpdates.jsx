@@ -8,7 +8,7 @@ const RecentUpdates = () => {
     <>
       <div className="mx-[4rem] ">
         <div className="pb-4">
-          <h1 className="text-3xl font-semibold text-blue-900 pb-2 text-start">
+          <h1 className="text-3xl font-semibold text-blue-900 pb-2 text-start px-2">
             Recent Updates
           </h1>
         </div>

@@ -5,7 +5,7 @@ import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
 
 export default function Work() {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="">
       <div className="container mx-auto    py-8">
@@ -14,7 +14,6 @@ export default function Work() {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:ml-20 mb-10 mt-2 gap-8 sm:pr-32">
-
           <div className="mb-4">
             <img src={CaseStudy1} alt="Case Study 1" className="w-full" />
             <h2 className="text-xl font-semibold mt-4 ">
@@ -26,16 +25,19 @@ export default function Work() {
               Arabia...
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
+              <button
+                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
+                onClick={() => navigate("/insights/casestudies")}
+              >
                 Start Ups
               </button>
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
-                onClick={()=>navigate("/insights/casestudies")}
+                onClick={() => navigate("/insights/casestudies")}
               >
                 Read More
-                 <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
@@ -64,16 +66,19 @@ export default function Work() {
               a, spanning multiple sectors (Read More….)
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
+              <button
+                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
+                onClick={() => navigate("/insights/casestudieed")}
+              >
                 Real Estate
               </button>
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
-                onClick={()=>navigate("/insights/casestudieed")}
+                onClick={() => navigate("/insights/casestudieed")}
               >
                 Read More
-                 <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
@@ -102,16 +107,19 @@ export default function Work() {
               Startup in KSA
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
+              <button
+                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
+                onClick={() => navigate("/insights/casestudy6")}
+              >
                 Start Ups
               </button>
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6  py-1"
-                onClick={()=>navigate("/insights/casestudy6")}
+                onClick={() => navigate("/insights/casestudy6")}
               >
                 Read More
-                 <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
@@ -140,13 +148,16 @@ export default function Work() {
               resulting in a multifold exit for the fund
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
+              <button
+                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
+                onClick={() => navigate("/insights/casestudy4")}
+              >
                 Hedge Fund
               </button>
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6"
-                onClick={()=>navigate("/insights/casestudy4")}
+                onClick={() => navigate("/insights/casestudy4")}
               >
                 Read More
                 <svg
