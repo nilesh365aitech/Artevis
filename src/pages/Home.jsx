@@ -15,39 +15,13 @@ import HomeImage from "../assets/bg.png";
 import HomeImage2 from "../assets/bg2.png";
 import HomeImage3 from "../assets/bg3.png";
 import "./App.css";
+import Stats from "../components/Stats";
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState(HomeImage);
   const [activeSlide, setActiveSlide] = useState(0);
 
-  const [experience, setExperience] = useState(0);
-  const [clients, setClients] = useState(0);
-  const [countries, setCountries] = useState(0);
-  const [clientAUM, setClientAUM] = useState(0);
 
-  useEffect(() => {
-    const incrementValues = (target, setter, incrementSpeed) => {
-      let value = 0;
-      const interval = setInterval(() => {
-        if (value < target) {
-          value += 1;
-          setter(value);
-        } else {
-          clearInterval(interval);
-        }
-      }, incrementSpeed);
-    };
-
-    incrementValues(10, setExperience, 100);
-    incrementValues(30, setClients, 50);
-    incrementValues(7, setCountries, 150);
-    incrementValues(100, setClientAUM, 30);
-
-    // Cleanup intervals on unmount
-    return () => {
-      clearInterval(incrementValues);
-    };
-  }, []);
 
   const settings = {
     dots: false,
@@ -79,9 +53,7 @@ export default function Home() {
       <Navbar />
 
       <div
-
         className={`relative flex flex-col items-center justify-center text-white bg-cover bg-center transition duration-500`}
-
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
@@ -160,7 +132,6 @@ export default function Home() {
                 Business
               </h1>
               <button className="bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg mt-6 hover:bg-red-700 transition flex items-center">
-
                 View Case Studies{" "}
                 <span>
                   <svg
@@ -208,6 +179,7 @@ export default function Home() {
       </div>
       <div className="container mx-auto px-4">
         <Industries />
+        <Stats/>
       </div>
       <div className="container mx-auto px-4">
         <Work />
