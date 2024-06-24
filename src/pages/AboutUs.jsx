@@ -14,7 +14,7 @@ const AboutUs = () => {
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] sm:h-[90vh] md:h-[74vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[100vh] sm:h-[90vh] md:h-[84vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${AboutUsbg})`,
           backgroundSize: "cover",
@@ -23,7 +23,7 @@ const AboutUs = () => {
       >
         <Navbar />
 
-        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[70%]">
+        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[60%]">
           <p
             className="ml-4 sm:ml-[5.7rem] font-bold text-lg md:text-2xl lg:text-3xl"
             style={{ color: "#CC2027" }}
