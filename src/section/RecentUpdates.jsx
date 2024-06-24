@@ -21,7 +21,7 @@ const RecentUpdates = () => {
               2024 Asset Management Trends: Future-Proofing Your Business and
               Commercial Model
             </h2>
-            <p className="ml-10 pr-4">
+            <p className="ml-10 pr-16 relative">
               Examine important developments in asset management, provide
               insights into the key trends and derive recommendations on how
               asset managers need to position themselves to be successful and
@@ -32,7 +32,7 @@ const RecentUpdates = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-4 w-4 absolute bottom-3 right-5"
+                className="h-4 w-4 absolute bottom-1 hover:text-blue-800 right-5"
               >
                 <path
                   strokeLinecap="round"
@@ -50,7 +50,7 @@ const RecentUpdates = () => {
           <div>
             <div
               style={{ backgroundColor: "#262738" }}
-              className="text-white pb-6 h-full flex flex-col md:col-span-1"
+              className="text-white pb-6 h-full flex flex-col md:col-span-1 relative"
             >
               <img
                 src={MidImage}
@@ -70,7 +70,7 @@ const RecentUpdates = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-4 w-4 absolute bottom-3 right-5"
+                  className="h-4 w-4 absolute bottom-[-4.3rem] right-5 hover:text-blue-900"
                 >
                   <path
                     strokeLinecap="round"

@@ -7,7 +7,7 @@ export default function Work() {
   return (
     <div className="">
       <div className="container mx-auto px-2   py-8">
-        <h1 className="text-3xl font-semibold mb-10  sm:ml-20 text-blue-900 ">
+        <h1 className="text-3xl font-semibold mb-10  sm:ml-[4.8rem] text-blue-900 ">
           Our Work
         </h1>
 
