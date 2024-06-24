@@ -7,12 +7,12 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="flex flex-col md:ml-20 md:mr-60 mt-8 lg:flex-row justify-center  ">
+    <div className="flex flex-col md:mx-[5.5rem] md:mr-52 mt-8 lg:flex-row justify-center  ">
       <div className="lg:w-1/2 pt-6">
         <h2 className="text-3xl font-semibold  text-blue-800 mb-2 text-center lg:text-left">
           Contact Us
         </h2>
-        <p className="text-center lg:text-left text-sm px-3">
+        <p className="text-center lg:text-left text-sm ">
           Reach out to us at{" "}
           <a href="mailto:info@artevisconsulting.com" className="underline">
             info@artevisconsulting.com

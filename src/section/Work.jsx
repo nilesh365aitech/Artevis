@@ -6,12 +6,13 @@ import CaseStudy4 from "../assets/Case Study 4.png";
 export default function Work() {
   return (
     <div className="">
-      <div className="container mx-auto px-2  sm:px-4 py-8">
-        <h1 className="text-3xl font-semibold mb-7  sm:ml-10 text-blue-900 md:ml-52 ">
+      <div className="container mx-auto px-2   py-8">
+        <h1 className="text-3xl font-semibold mb-10  sm:ml-20 text-blue-900 ">
           Our Work
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-52 md:mr-52 mb-10 mt-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-20 mb-10 mt-2 gap-8 sm:pr-32">
+
           <div className="mb-4">
             <img src={CaseStudy1} alt="Case Study 1" className="w-full" />
             <h2 className="text-xl font-semibold mt-4 ">
