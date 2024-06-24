@@ -1,4 +1,6 @@
+
 import { useNavigate } from "react-router-dom";
+
 import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
@@ -17,12 +19,10 @@ export default function Work() {
           <div className="mb-4">
             <img src={CaseStudy1} alt="Case Study 1" className="w-full" />
             <h2 className="text-xl font-semibold mt-4 ">
-              Greenfield Ocean Race Project Achieves X% Feasibility Milestone
-            </h2>
+            Feasibility Analysis for a one of its kind Ocean Race Event            </h2>
             <p className="mt-4">
               Formulated a feasibility model for a sports and event management
-              company for launch of a greenfield ocean race initiative in Saudi
-              Arabia...
+              company for launch of a greenfield...
             </p>
             <div className="flex justify-between mt-8 items-center">
               <button
@@ -31,8 +31,8 @@ export default function Work() {
               >
                 Start Ups
               </button>
-              <a
-                href="#"
+              <Link
+                to={"/insights/casestudy3"}
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
                 onClick={() => navigate("/insights/casestudies")}
               >
@@ -51,19 +51,16 @@ export default function Work() {
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:mt-16 mb-4">
             <img src={CaseStudy2} alt="Case Study 2" className="w-full" />
             <h2 className="text-xl font-semibold mt-4">
-              Heritage Site Financial Feasibility Unveils Lucrative Potential:
-              Over 1,000 Real Estate Assets Spanning Multiple Sectors
+            Strategic Transformation for a National Real Estate Firm
             </h2>
             <p className="mt-4">
-              Engineered a Robust Financial Model for a UNESCO Heritage Site
-              through Feasibility Analysis of over 1,000 Real Estate Assets in
-              a, spanning multiple sectors (Read More….)
+            Desiring a company transformation, the client, a real estate firm, sought a comprehensive strategy revamp...
             </p>
             <div className="flex justify-between mt-8 items-center">
               <button
@@ -98,13 +95,10 @@ export default function Work() {
           <div className="mb-4">
             <img src={CaseStudy3} alt="Case Study 3" className="w-full" />
             <h2 className="text-xl font-semibold mt-4">
-              From Concept to Capital: How an Innovative F&B E-Commerce and
-              FinTech Startup Raised $xxx Million
+            Expansion Strategy and Financial Plan for Healthcare Provider
             </h2>
             <p className="mt-4">
-              Crafted an Investor Memorandum and Financial Model to propel
-              Fundraising Efforts for an Innovative F&B E-Commerce and FinTech
-              Startup in KSA
+            The client, a leading entity in healthcare and dermatology within KSA, sought a comprehensive expansion strategy...
             </p>
             <div className="flex justify-between mt-8 items-center">
               <button
@@ -113,8 +107,8 @@ export default function Work() {
               >
                 Start Ups
               </button>
-              <a
-                href="#"
+              <Link
+                to={"/insights/casestudy5"}
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6  py-1"
                 onClick={() => navigate("/insights/casestudy6")}
               >
@@ -133,19 +127,16 @@ export default function Work() {
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:mt-16 mb-4">
             <img src={CaseStudy4} alt="Case Study 4" className="w-full" />
             <h2 className="text-xl font-semibold mt-4">
-              Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar
-              Reality, a Fund's Multifold Exit Triumph
+            Enabling Investment in E-Betting Platform Leading to Multibillion-Dollar IPO
             </h2>
             <p className="mt-4">
-              Assisting a New York Hedge Fund in analyzing and investing in an
-              E-Betting Platform, leading to a multibillion-dollar IPO and
-              resulting in a multifold exit for the fund
+            The client, a New York-based hedge fund, required meticulous due diligence and a robust valuation model...
             </p>
             <div className="flex justify-between mt-8 items-center">
               <button
@@ -154,8 +145,8 @@ export default function Work() {
               >
                 Hedge Fund
               </button>
-              <a
-                href="#"
+              <Link
+              to={"/insights/casestudy3"}
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6"
                 onClick={() => navigate("/insights/casestudy4")}
               >
@@ -174,7 +165,7 @@ export default function Work() {
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

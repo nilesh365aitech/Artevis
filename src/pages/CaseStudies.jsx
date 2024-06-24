@@ -18,15 +18,15 @@ const CaseStudies = () => {
         }}
       >
         <Navbar />
-        <div className="sm:w-[80%] xl:w-[70%] w-[80%] py-10 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
+        <div className="sm:w-[80%] pl-16 xl:w-[70%] w-[80%] py-10 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600">
           <p className="ml-4 sm:ml-14 font-bold text-red-700">What we think</p>
           <h1 className="text-4xl font-semibold ml-4 sm:ml-14">
             Insights, Media & Case Studies
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 mt-6 text-blue-800">
             We combine sector expertise with extensive management competence to
-            offer solutions that are as unique as our clientele. Every strategy
-            applied and every recommendation made is customized to the
+            offer solutions <br /> that are as unique as our clientele. Every strategy
+            applied and every recommendation made <br /> is customized to the
             individual needs of our customers.
           </p>
         </div>
@@ -34,7 +34,7 @@ const CaseStudies = () => {
       
       <SucessStories />
      
-      <div className="md:ml-20">
+      <div className="md:ml-28 mt-6">
         <RecentUpdates />
         <div className="">
           <ContactUs />

@@ -73,7 +73,7 @@ export default function MainServices() {
   return (
     <>
       <div
-        className="bg-black text-white h-[80vh] md:h-[70vh] pb-10 mb-4 relative"
+        className="bg-black text-white h-[95vh] md:h-[70vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${servicesbg})`,
           backgroundSize: "cover",
@@ -221,8 +221,10 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className=" pb-4">
-        <div className="  px-[7rem] py-24 ">
+      <div className=" md:px-16 pb-4">
+        <div className="  px-16 py-24 ">
+
+
           <h2
             style={{ color: "#000F89" }}
             className="text-2xl font-semibold text-blue-900 mb-4"
