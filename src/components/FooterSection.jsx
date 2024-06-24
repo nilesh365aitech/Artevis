@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div style={{ backgroundColor: "#26283B" }} className="text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -18,32 +24,32 @@ export default function Footer() {
               <p className="mt-4">suraj.nayak@artevisconsulting.com</p>
             </div>
           </div>
-          <div className="col-span-1 mt-10 md:mt-32">
-            <h3 className="font-semibold mb-4">About Us</h3>
+          <div className="col-span-1 mt-10 md:mt-36">
+            <Link to={"/aboutus"} onClick={scrollToTop} className="font-semibold   ">About Us</Link>
             <ul>
               <li>
-                <a href="#" className="hover:text-zinc-300 mb-4 block">
+                <Link to={"/services"} onClick={scrollToTop} className="hover:text-zinc-300 mb-4 mt-4 block">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-zinc-300 block">
+                <Link to={"/industries"} onClick={scrollToTop} className="hover:text-zinc-300 block">
                   Our Footprint
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
-          <div className="col-span-1 mt-10 md:mt-32">
+          <div className="col-span-1 mt-10 md:mt-36">
             <ul>
               <li>
-                <a href="#" className="hover:text-zinc-300 mb-4 block">
+                <Link to={"/insights"} onClick={scrollToTop} className="hover:text-zinc-300 mb-4 block">
                   Insights & Media
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-zinc-300 block">
+                <Link to={"/contact"} onClick={scrollToTop} className="hover:text-zinc-300 block">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,7 +59,7 @@ export default function Footer() {
   <div className="border-t border-red-500 mx-4 md:mx-36"></div>
   <div className="flex flex-col sm:flex-row justify-between py-4 items-center mt-2 mx-4 md:mx-36">
     <span>All rights reserved.</span>
-    <span>Artemis Consulting 2024</span>
+    <span>Artevis Consulting 2024</span>
   </div>
 </div>
 

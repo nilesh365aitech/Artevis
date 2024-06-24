@@ -3,6 +3,8 @@ import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
+import CaseStudy5 from "../assets/Case Study 5.png"
+import CaseStudy6 from "../assets/Case Study 8.png"
 import "./Slider.css";
 import { useNavigate } from "react-router-dom";
 
@@ -41,14 +43,14 @@ const SucessStories = () => {
       navigate: "/insights/casestudy5",
     },
     {
-      bgurl: CaseStudy4,
+      bgurl: CaseStudy5,
       title: "Strategic Transformation for a National Real Estate Firm",
       description:
         "Desiring a company transformation, the client, a real estate firm, sought a comprehensive strategy revamp across multiple sectors to enhance innovation, customer experience, and profitability",
       navigate: "/insights/casestudy4",
     },
     {
-      bgurl: CaseStudy4,
+      bgurl: CaseStudy6,
       title:
         "Fundraising Support and Investor Kit Creation for F&B Fintech Startup",
       description:
@@ -113,7 +115,7 @@ const SucessStories = () => {
           </div>
         </div>
         <div className="absolute top-[-3rem] right-0 left-0 flex items-center justify-between px-3">
-          <h1 className="text-xl sm:text-2xl font-semibold text-blue-900">
+          <h1 className="text-xl sm:text-2xl font-semibold md:ml-0 ml-4c text-blue-900">
             Success Stories
           </h1>
           <div className="flex gap-3 ">

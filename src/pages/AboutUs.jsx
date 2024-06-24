@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AboutUsbg from "../assets/AboutUsbg.png";
 import Navbar from "../components/Navbar";
-import Illuminate from "../assets/illuminate.png";
+import Illuminate from "../assets/consultingaboutus.png";
 import Suraj from "../assets/profile1.png";
 import Gautam from "../assets/profile2.png";
 import Footer from "../components/FooterSection";
@@ -15,7 +15,7 @@ const AboutUs = () => {
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] md:h-[74vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[78vh] md:h-[74vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${AboutUsbg})`,
           backgroundSize: "cover",
