@@ -181,6 +181,7 @@ export default function Home() {
         <Industries />
         <Stats/>
       </div>
+      <Stats/>
       <div className="container mx-auto px-4">
         <Work />
       </div>

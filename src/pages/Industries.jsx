@@ -756,7 +756,7 @@ const Industries = () => {
 <SucessStories/>
       <div className=" mt-6 md:ml-20 ">
         <RecentUpdates />
-        <div className="container mx-auto px-4">
+        <div className="">
           <ContactUs />
         </div>
       </div>
