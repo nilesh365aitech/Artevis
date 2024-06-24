@@ -25,15 +25,15 @@ const AboutUs = () => {
 
         <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[70%]">
           <p
-            className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl"
+            className="ml-4 sm:ml-[5.7rem] font-bold text-lg md:text-2xl lg:text-3xl"
             style={{ color: "#CC2027" }}
           >
             Who we are
           </p>
-          <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-14">
+          <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-[5.7rem] ">
             About Artevis
           </h1>
-          <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
+          <p className="ml-4 sm:ml-[5.7rem] pr-10 text-base mt-5 mb-5 text-blue-900">
             We are dedicated to empowering businesses with tailored solutions
             that <br /> drive sustainable growth and operational excellence,
             ensuring our clients <br /> thrive in a competitive landscape. Our

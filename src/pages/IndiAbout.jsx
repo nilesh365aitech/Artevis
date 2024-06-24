@@ -41,7 +41,7 @@ const IndiAbout = () => {
             }}
           >
             <Navbar />
-            <div className="w-full md:w-1/2 bg-white text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 p-4 md:p-6">
+            <div className="w-full md:w-[60%] bg-white text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 p-4 md:p-6 md:pl-24">
               <div className="flex flex-col md:flex-row items-center justify-center">
                 <div className="p-3">
                   <img
