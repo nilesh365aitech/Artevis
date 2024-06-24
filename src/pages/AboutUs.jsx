@@ -54,7 +54,7 @@ const AboutUs = () => {
           Leadership
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 ml-[5.4rem]">
           <div
             className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
