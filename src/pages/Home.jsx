@@ -176,11 +176,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-9">
+      <div className="container mx-auto sm:px-9 px-3">
         <AboutUs />
       </div>
 
-      <div className="container mx-auto px-9 mb-10">
+      <div className="container mx-auto sm:px-9 mb-10 px-3">
         <ServiceCards />
       </div>
       <div>
@@ -189,18 +189,18 @@ export default function Home() {
       <div className=" ml-10">
         <Industries />
       </div>
-      <div className=" ml-12 mr-32">
+      <div className=" sm:ml-12 sm:mr-32">
         <Stats />
       </div>
-      <div className="container mx-auto ">
+      <div className="px-3 sm:px-0">
         <Work />
       </div>
 
-      <div className="md:ml-20">
+      <div className="md:ml-28">
         <RecentUpdates />
         <ContactUs />
       </div>
-      <div className="flex justify-end text-end mr-16 mb-3" >
+      <div className="flex sm:justify-end sm:text-end sm:mr-16 mb-3 pl-6 pr-3 sm:pl-0 sm:pr-0" >
       In some of these engagements, our senior team members were involved in their individual <br /> capacity or previous associations, not under the official umbrella of Artevis Consulting.
       </div>
 
