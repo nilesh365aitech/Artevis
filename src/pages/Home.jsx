@@ -216,6 +216,9 @@ export default function Home() {
         <RecentUpdates />
         <ContactUs />
       </div>
+      <div className="flex justify-end text-end mr-16 mb-3" >
+      In some of these engagements, our senior team members were involved in their individual <br /> capacity or previous associations, not under the official umbrella of Artevis Consulting.
+      </div>
 
       <Footer />
     </>

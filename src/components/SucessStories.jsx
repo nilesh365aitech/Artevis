@@ -14,39 +14,32 @@ const SucessStories = () => {
   const items = [
     {
       bgurl: CaseStudy1,
-      title: "Greenfield Ocean Race Project Achieves X% Feasibility Milestone",
+      title: "Feasibility Analysis for a one of its kind Ocean Race Event",
       description:
-        "Formulated a feasibility model for a sports and event management company for launch of a greenfield ocean race initiative in Saudi Arabia...",
+        "Formulated a feasibility model for a sports and event management company for launch of a greenfield...",
       navigate: "/insights/casestudy3",
     },
     {
       bgurl: CaseStudy2,
       title:
-        "From Concept to Capital: How an Innovative F&B E-Commerce and FinTech Startup Raised $xxx Million",
+        "Strategic Transformation for a National Real Estate Firm",
       description:
-        "Crafted an Investor Memorandum and Financial Model to propel Fundraising Efforts for an Innovative F&B E-Commerce and FinTech Startup in KSA",
+        "Desiring a company transformation, the client, a real estate firm, sought a comprehensive strategy revamp...",
       navigate: "/insights/casestudieed",
     },
-    {
-      bgurl: CaseStudy3,
-      title:
-        "Strategic Investment Spark: From IPO Dreams to Multibillion-Dollar Reality, a Fund's Multifold Exit Triumph",
-      description:
-        "Assisting a New York Hedge Fund in analyzing and investing in an E-Betting Platform, leading to a multibillion-dollar IPO and resulting in a multifold exit for the fund",
-      navigate: "/insights/casestudies",
-    },
+    
     {
       bgurl: CaseStudy4,
-      title: "Feasibility Analysis for a one of its kind Ocean Race Event",
+      title: "Expansion Strategy and Financial Plan for Healthcare Provider",
       description:
-        "A prominent event and sports management company sought to explore the viability of initiating a greenfield ocean race in Saudi Arabia, requiring a detailed feasibility study and adaptable financial model to make critical planning and operating decisions",
+      "The client, a leading entity in healthcare and dermatology within KSA, sought a comprehensive expansion strategy...",
       navigate: "/insights/casestudy5",
     },
     {
       bgurl: CaseStudy5,
-      title: "Strategic Transformation for a National Real Estate Firm",
+      title: "Enabling Investment in E-Betting Platform Leading to Multibillion-Dollar IPO",
       description:
-        "Desiring a company transformation, the client, a real estate firm, sought a comprehensive strategy revamp across multiple sectors to enhance innovation, customer experience, and profitability",
+        "The client, a New York-based hedge fund, required meticulous due diligence and a robust valuation model...",
       navigate: "/insights/casestudy4",
     },
     {
@@ -54,7 +47,7 @@ const SucessStories = () => {
       title:
         "Fundraising Support and Investor Kit Creation for F&B Fintech Startup",
       description:
-        "An extensive evaluation of the F&B and FinTech sectors was conducted to determine the Total Addressable Market (TAM) in KSA,revealing the startup’s growth potential",
+      "",
       navigate: "/insights/casestudy6",
     },
   ];

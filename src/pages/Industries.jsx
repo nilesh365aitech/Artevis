@@ -754,7 +754,7 @@ const Industries = () => {
         </div>
       )}
 <SucessStories/>
-      <div className=" mt-6 md:ml-20 ">
+      <div className=" mt-6 md:ml-28 ">
         <RecentUpdates />
         <div className="">
           <ContactUs />

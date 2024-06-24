@@ -10,7 +10,7 @@ import { FaCaretUp, FaCaretDown } from "react-icons/fa";
 import ContactUs from "../components/ContactUs";
 import Services from "../section/Services";
 import SucessStories from "../components/SucessStories";
-import servicesbg from '../assets/servicesbg.png'
+import servicesbg from "../assets/servicesbg.png";
 
 export default function MainServices() {
   const [expandedSections, setExpandedSections] = useState({});
@@ -73,7 +73,7 @@ export default function MainServices() {
   return (
     <>
       <div
-        className="bg-black text-white h-[80vh] md:h-[70vh] pb-10 mb-4 relative"
+        className="bg-black text-white h-[95vh] md:h-[70vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${servicesbg})`,
           backgroundSize: "cover",
@@ -221,7 +221,7 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className=" pb-4">
+      <div className=" md:px-16 pb-4">
         <div className="  px-16 py-24 ">
           <h2
             style={{ color: "#000F89" }}
@@ -256,14 +256,13 @@ export default function MainServices() {
               </div>
             ))}
           </div>
-         
         </div>
-        <SucessStories/>
+        <SucessStories />
       </div>
-<div className="md:ml-20" >
-<ContactUs />
-</div>
-     
+      <div className="md:ml-20">
+        <ContactUs />
+      </div>
+
       <Footer />
     </>
   );
