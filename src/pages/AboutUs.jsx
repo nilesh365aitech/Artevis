@@ -14,7 +14,8 @@ const AboutUs = () => {
   return (
     <>
       <div
-        className="bg-black text-white h-[100vh] md:h-[74vh] pb-10 mb-4 relative "
+
+        className="bg-black text-white h-[100vh] sm:h-[90vh] md:h-[84vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${AboutUsbg})`,
           backgroundSize: "cover",
@@ -23,35 +24,37 @@ const AboutUs = () => {
       >
         <Navbar />
 
-        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[70%]">
+        <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[60%]">
           <p
-            className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl"
-            style={{ color: "red" }}
+            className="ml-4 sm:ml-[5.7rem] font-bold text-lg md:text-2xl lg:text-3xl"
+            style={{ color: "#CC2027" }}
           >
             Who we are
           </p>
-          <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-14">
+          <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-[5.7rem] ">
             About Artevis
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
            Artevis Consulting is an offshore Management Consulting and Investment Advisory firm at the vanguard of business and financial strategies. We specialize in equipping CXOs, Investment Teams, and Board Members with the insights needed for strategic decision-making and long-term value creation. Founded by experts with over a decade of experience in global strategy, private equity, and finance, we provide customized solutions to global clients, utilizing the cost efficiencies of an offshore model to drive success and operational excellence.
+
           </p>
         </div>
       </div>
       <Stats />
       
+
       <img
         src={Illuminate}
         alt="Img"
         className="md:w-full h-64 md:h-full mx-auto "
       />
 
-      <div className="  mt-10 ">
+      <div className="  mt-24">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 font-semibold ml-28">
           Leadership
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 ml-[5.4rem]">
           <div
             className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
@@ -64,12 +67,16 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
-              <p className="text-lg md:text-xl font-semibold">Gautam Chhabra</p>
-              <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1 flex items-center">
-                Co-Founder and Managing Director
-                <img alt="1" src={LinkedInLogo} className="ml-5 h-4"></img>
+
+              <p className="text-lg md:text-[32px] font-semibold">
+                Gautam Chhabra
               </p>
-              <p className="text-sm md:text-base">
+              <p className="font-semibold text-base md:text-[24px] text-[#CC2027] my-1 flex items-center">
+                Co-Founder and Managing Director
+                <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
+              </p>
+              <p className="text-sm md:text-[18px]">
+
                 Engineer and an MBA by education, Gautam has deep interest in
                 Strategy and Private Equity. He brings over a decade of global
                 advisory experience in offering strategic insights that drive
@@ -89,12 +96,15 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
-              <p className="text-lg md:text-xl font-semibold">Suraj Nayak</p>
-              <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1 flex items-center">
-                Co-Founder and Director
-                <img alt="1" src={LinkedInLogo} className="ml-5 h-4"></img>
+
+              <p className="text-lg md:text-[32px] font-semibold">
+                Suraj Nayak
               </p>
-              <p className="text-sm md:text-base">
+              <p className="font-semibold text-base md:text-[24px] text-[#CC2027] my-1 flex items-center">
+                Co-Founder and Director
+                <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
+              </p>
+              <p className="text-sm md:text-[18px]">
                 Suraj specializes in investment and transaction advisory,
                 offering strategic counsel on deal terms, valuations, and
                 overall opportunity analysis. He has a strong track record of
@@ -105,7 +115,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 py-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900 mb-6">
           Our Expertise
         </h1>

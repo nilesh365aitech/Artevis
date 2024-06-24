@@ -97,7 +97,7 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto ml-4 md:ml-20 px-4 py-20">
+      <div className="max-w-5xl mx-auto ml-4 md:ml-[5.2rem] px-4 py-20">
         <h2 className="text-3xl font-semibold text-[#1E227F]">
           Core Service Offerings
         </h2>
@@ -117,10 +117,10 @@ export default function MainServices() {
         style={{ backgroundImage: `url(${ServiceBuilding})` }}
         className="bg-[#1E227F] text-white bg-no-repeat bg-right-bottom p-5 bg-cover lg:bg-contain"
       >
-        <h1 className="text-[32px] font-[600] md:ml-10 md:mt-3 md:mb-5 mb-4">
+        <h1 className="text-[32px] font-[600] md:ml-[1.5rem] md:mt-3 md:mb-5 mb-4">
           Management Consulting
         </h1>
-        <p className="text-[16px] mb-4 md:ml-10 lg:mr-[33rem] ">
+        <p className="text-[16px] mb-4 md:ml-[1.5rem] lg:mr-[33rem] ">
           Empower your business with our management consulting services,
           designed to maximize value through in-depth financial, economic, and
           strategic guidance. We specialize in crafting and implementing
@@ -128,7 +128,7 @@ export default function MainServices() {
           strategy execution, ensuring your organization's objectives are met
           with precision and insight.
         </p>
-        <div className="grid grid-cols-1 md:ml-10 lg:mr-[33rem] md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:ml-[1.5rem] lg:mr-[30rem] md:grid-cols-3 gap-2">
           <ul className="text-sm lg:text-[16px]">
             <li className="pb-2">• Corporate & Business Strategy</li>
             <li className="pb-2">• Project Design & Development</li>
@@ -223,6 +223,8 @@ export default function MainServices() {
 
       <div className=" md:px-16 pb-4">
         <div className="  px-16 py-24 ">
+
+
           <h2
             style={{ color: "#000F89" }}
             className="text-2xl font-semibold text-blue-900 mb-4"

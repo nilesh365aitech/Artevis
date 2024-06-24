@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <div className="relative py-4 px-2 sm:p-6 pt-6 ml-2  mx-auto">
+    <div className="relative py-4 px-2 sm:py-6 pt-6 ml-2  mx-auto">
       <div className="w-[75%]">
       <h2 className="text-xl sm:text-2xl md:text-3xl text-blue-800 font-semibold mb-4">
         About Us

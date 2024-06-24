@@ -41,7 +41,7 @@ const IndiAbout = () => {
             }}
           >
             <Navbar />
-            <div className="w-full md:w-1/2 bg-white text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 p-4 md:p-6">
+            <div className="w-full md:w-[60%] bg-white text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 p-4 md:p-6 md:pl-24">
               <div className="flex flex-col md:flex-row items-center justify-center">
                 <div className="p-3">
                   <img
@@ -67,7 +67,7 @@ const IndiAbout = () => {
             </div>
           </div>
           <div className="max-w-7xl mx-auto flex flex-col gap-8 mb-10">
-            <div className="ml-5 mr-5">
+            <div className="ml-3 mr-5 mt-20">
               <h1 className="text-[26px] font-[600] text-[#1E227F]">
                 About{" "}
                 {`${id}` == "Gautam Chhabra" ? "GautamChabra" : "SurajNayak"}
@@ -80,13 +80,13 @@ const IndiAbout = () => {
                 ))}
               </p>
             </div>
-            <div className="ml-5 mr-5">
+            <div className="ml-3 mr-5">
               <h1 className="text-[21px] font-[600] text-[#000000]">
                 Educational Background
               </h1>
               <p className="my-3">{indiResponse[0].educationalbackground}</p>
             </div>
-            <div className="ml-5 mr-5">
+            <div className="ml-3 mr-5">
               <h1 className="text-[21px] font-[600] text-[#000000]">
                 Global Impact
               </h1>
@@ -97,8 +97,7 @@ const IndiAbout = () => {
         </div>
       )}
 
-      <div className="md:ml-20">
-        {" "}
+      <div className="ml-8">
         <ContactUs />
       </div>
       <Footer />
