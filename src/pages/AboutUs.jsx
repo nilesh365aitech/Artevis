@@ -14,6 +14,7 @@ const AboutUs = () => {
   return (
     <>
       <div
+
         className="bg-black text-white h-[100vh] sm:h-[90vh] md:h-[84vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${AboutUsbg})`,
@@ -33,16 +34,15 @@ const AboutUs = () => {
           <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-[5.7rem] ">
             About Artevis
           </h1>
-          <p className="ml-4 sm:ml-[5.7rem] pr-10 text-base mt-5 mb-5 text-blue-900">
-            We are dedicated to empowering businesses with tailored solutions
-            that <br /> drive sustainable growth and operational excellence,
-            ensuring our clients <br /> thrive in a competitive landscape. Our
-            expertise spans across Strategic Planning, <br /> Investment
-            Advisory, and Management Consultancy.
+          <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
+           Artevis Consulting is an offshore Management Consulting and Investment Advisory firm at the vanguard of business and financial strategies. We specialize in equipping CXOs, Investment Teams, and Board Members with the insights needed for strategic decision-making and long-term value creation. Founded by experts with over a decade of experience in global strategy, private equity, and finance, we provide customized solutions to global clients, utilizing the cost efficiencies of an offshore model to drive success and operational excellence.
+
           </p>
         </div>
       </div>
       <Stats />
+      
+
       <img
         src={Illuminate}
         alt="Img"
@@ -67,6 +67,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
+
               <p className="text-lg md:text-[32px] font-semibold">
                 Gautam Chhabra
               </p>
@@ -75,6 +76,7 @@ const AboutUs = () => {
                 <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
               </p>
               <p className="text-sm md:text-[18px]">
+
                 Engineer and an MBA by education, Gautam has deep interest in
                 Strategy and Private Equity. He brings over a decade of global
                 advisory experience in offering strategic insights that drive
@@ -94,6 +96,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
+
               <p className="text-lg md:text-[32px] font-semibold">
                 Suraj Nayak
               </p>
