@@ -1,21 +1,18 @@
-
-import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import CaseStudy1 from "../assets/Case Study 1.png";
 import CaseStudy2 from "../assets/Case Study 2.png";
 import CaseStudy3 from "../assets/Case Study 3.png";
 import CaseStudy4 from "../assets/Case Study 4.png";
 
 export default function Work() {
-  const navigate = useNavigate();
   return (
     <div className="">
-      <div className="container mx-auto    py-8">
-        <h1 className="text-3xl font-semibold mb-10  sm:ml-[3rem] text-blue-900 ">
+      <div className="  px-2   py-8">
+        <h1 className="text-3xl font-semibold mb-7  sm:ml-10 text-blue-900 md:ml-32 ">
           Our Work
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-20 mb-10 mt-2 gap-8 sm:pr-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-32 md:mr-52 mb-10 mt-2 gap-8">
           <div className="mb-4">
             <img src={CaseStudy1} alt="Case Study 1" className="w-full" />
             <h2 className="text-xl font-semibold mt-4 ">
@@ -25,19 +22,15 @@ export default function Work() {
               company for launch of a greenfield...
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button
-                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
-                onClick={() => navigate("/insights/casestudies")}
-              >
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Start Ups
               </button>
               <Link
                 to={"/insights/casestudy3"}
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
-                onClick={() => navigate("/insights/casestudies")}
               >
                 Read More
-                <svg
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
@@ -63,19 +56,15 @@ export default function Work() {
             Desiring a company transformation, the client, a real estate firm, sought a comprehensive strategy revamp...
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button
-                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
-                onClick={() => navigate("/insights/casestudieed")}
-              >
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Real Estate
               </button>
               <a
                 href="#"
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6 py-1"
-                onClick={() => navigate("/insights/casestudieed")}
               >
                 Read More
-                <svg
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
@@ -101,19 +90,15 @@ export default function Work() {
             The client, a leading entity in healthcare and dermatology within KSA, sought a comprehensive expansion strategy...
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button
-                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
-                onClick={() => navigate("/insights/casestudy6")}
-              >
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Start Ups
               </button>
               <Link
                 to={"/insights/casestudy5"}
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6  py-1"
-                onClick={() => navigate("/insights/casestudy6")}
               >
                 Read More
-                <svg
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="red"
                   viewBox="0 0 24 24"
@@ -139,16 +124,12 @@ export default function Work() {
             The client, a New York-based hedge fund, required meticulous due diligence and a robust valuation model...
             </p>
             <div className="flex justify-between mt-8 items-center">
-              <button
-                className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full"
-                onClick={() => navigate("/insights/casestudy4")}
-              >
+              <button className="bg-red-100 text-red-600 px-2 py-1 sm:px-4 sm:py-2 rounded-full">
                 Hedge Fund
               </button>
               <Link
               to={"/insights/casestudy3"}
                 className="text-red-600 hover:text-blue-900 flex items-center mr-6"
-                onClick={() => navigate("/insights/casestudy4")}
               >
                 Read More
                 <svg

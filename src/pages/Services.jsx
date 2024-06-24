@@ -73,7 +73,7 @@ export default function MainServices() {
   return (
     <>
       <div
-        className="bg-black text-white h-[95vh] md:h-[70vh] pb-10 mb-4 relative"
+        className="bg-black text-white h-[110vh] md:h-[70vh] pb-10 mb-4 relative"
         style={{
           backgroundImage: `url(${servicesbg})`,
           backgroundSize: "cover",
@@ -82,13 +82,13 @@ export default function MainServices() {
       >
         <Navbar />
         <div className="sm:w-[90%] xl:w-[70%] w-[70%] py-8 px-3 bg-gray-100 min-h-fit text-black mt-20 flex flex-col gap-4 pt-9 rounded-sm border-r-8 border-red-600">
-          <p className="ml-4 sm:ml-14 font-bold" style={{ color: "#FF6347" }}>
+          <p className="ml-4 sm:ml-8 font-bold" style={{ color: "#CC2027" }}>
             Who we are
           </p>
-          <h1 className="text-2xl md:text-4xl font-bold ml-4 sm:ml-14">
+          <h1 className="text-2xl md:text-4xl font-bold ml-4 sm:ml-8">
             Empower Businesses through Expertise and Support
           </h1>
-          <p className="ml-4 sm:ml-14 pr-10 text-base sm:text-lg md:text-xl">
+          <p className="ml-4 sm:ml-8 pr-10 text-base sm:text-lg md:text-xl">
             Artevis Consulting is a pioneering offshore management consulting
             and investment advisory firm. Our mission is clear: to equip CXOs,
             Investment Teams, and board members with essential insights for
@@ -97,7 +97,7 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto ml-4 md:ml-[5.2rem] px-4 py-20">
+      <div className="max-w-5xl mx-auto ml-3 md:ml-[3rem] px-4 py-20 sm:px-0">
         <h2 className="text-3xl font-semibold text-[#1E227F]">
           Core Service Offerings
         </h2>
@@ -221,8 +221,8 @@ export default function MainServices() {
         </div>
       </div>
 
-      <div className=" md:px-16 pb-4">
-        <div className="  px-16 py-24 ">
+      <div className="  pb-4">
+        <div className="  sm:px-10 py-24 px-5">
 
 
           <h2
@@ -259,9 +259,12 @@ export default function MainServices() {
             ))}
           </div>
         </div>
+        <div className="sm:ml-[-6.3rem]">
+
         <SucessStories />
+        </div>
       </div>
-      <div className="md:ml-20">
+      <div className="md:ml-8">
         <ContactUs />
       </div>
 

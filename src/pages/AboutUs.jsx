@@ -15,7 +15,7 @@ const AboutUs = () => {
     <>
       <div
 
-        className="bg-black text-white h-[100vh] sm:h-[90vh] md:h-[84vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[120vh] sm:h-[90vh] md:h-[84vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${AboutUsbg})`,
           backgroundSize: "cover",
@@ -34,7 +34,7 @@ const AboutUs = () => {
           <h1 className="text-2xl sm:text-3xl mt-3 md:text-4xl font-semibold ml-4 sm:ml-[5.7rem] ">
             About Artevis
           </h1>
-          <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
+          <p className="ml-4 sm:ml-24 pr-10 text-base mt-5 mb-5 text-blue-900">
            Artevis Consulting is an offshore Management Consulting and Investment Advisory firm at the vanguard of business and financial strategies. We specialize in equipping CXOs, Investment Teams, and Board Members with the insights needed for strategic decision-making and long-term value creation. Founded by experts with over a decade of experience in global strategy, private equity, and finance, we provide customized solutions to global clients, utilizing the cost efficiencies of an offshore model to drive success and operational excellence.
 
           </p>
@@ -50,11 +50,11 @@ const AboutUs = () => {
       />
 
       <div className="  mt-24">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 font-semibold ml-28">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 font-semibold sm:ml-28 ml-5">
           Leadership
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 ml-[5.4rem]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 sm:ml-[5.4rem]">
           <div
             className="flex flex-col items-center justify-center md:flex-row sm:items-center hover:cursor-pointer md:bg-white  bg-gray-100 hover:bg-gray-200 transition-all p-4"
             onClick={() => navigate(`/aboutus/Gautam Chhabra`)}
@@ -115,7 +115,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 py-12">
+      <div className="max-w-7xl mx-auto px-5  sm:px-6 lg:px-5 py-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900 mb-6">
           Our Expertise
         </h1>
