@@ -6,9 +6,9 @@ import BottomRight from "../assets/bottom third.png";
 const RecentUpdates = () => {
   return (
     <>
-      <div className="lg:mx-20 mx-4">
+      <div className="mx-[4rem] ">
         <div className="pb-4">
-          <h1 className="text-3xl ml-3 font-semibold text-blue-900 pb-2 text-start">
+          <h1 className="text-3xl font-semibold text-blue-900 pb-2 text-start">
             Recent Updates
           </h1>
         </div>
@@ -110,7 +110,7 @@ const RecentUpdates = () => {
             <img
               src={BottomRight}
               alt="Building"
-              className="w-fit h-72 object-cover"
+              className="w-fit h-[20.2rem] object-cover"
             />
           </div>
         </div>
