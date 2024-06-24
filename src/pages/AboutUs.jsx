@@ -67,12 +67,12 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
-              <p className="text-lg md:text-xl font-semibold">Gautam Chhabra</p>
-              <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1 flex items-center">
+              <p className="text-lg md:text-[32px] font-semibold">Gautam Chhabra</p>
+              <p className="font-semibold text-base md:text-[24px] text-[#CC2027] my-1 flex items-center">
               Co-Founder and Managing Director
-                <img alt="1" src={LinkedInLogo} className="ml-5 h-4"></img>
+                <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
               </p>
-              <p className="text-sm md:text-base">
+              <p className="text-sm md:text-[18px]">
               Engineer and an MBA by education, Gautam has deep interest in Strategy and Private Equity. He brings over a decade of global advisory experience in offering strategic insights that drive growth, innovation, and productivity for organizations. 
 
               </p>
@@ -90,12 +90,12 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
-              <p className="text-lg md:text-xl font-semibold">Suraj Nayak</p>
-              <p className="font-semibold text-base md:text-lg text-[#CC2027] my-1 flex items-center">
+              <p className="text-lg md:text-[32px] font-semibold">Suraj Nayak</p>
+              <p className="font-semibold text-base md:text-[24px] text-[#CC2027] my-1 flex items-center">
               Co-Founder and Director
-                <img alt="1" src={LinkedInLogo} className="ml-5 h-4"></img>
+                <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
               </p>
-              <p className="text-sm md:text-base">
+              <p className="text-sm md:text-[18px]">
               Suraj specializes in investment and transaction advisory, offering strategic counsel on deal terms, valuations, and overall opportunity analysis. He has a strong track record of formulating and implementing strategies across various sectors. 
 
               </p>
@@ -104,7 +104,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 py-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900 mb-6">
           Our Expertise
         </h1>
