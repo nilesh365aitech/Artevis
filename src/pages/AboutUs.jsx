@@ -11,11 +11,10 @@ import Stats from "../components/Stats";
 const AboutUs = () => {
   const navigate = useNavigate();
 
-
   return (
     <>
       <div
-        className="bg-black text-white h-[78vh] md:h-[74vh] pb-10 mb-4 relative "
+        className="bg-black text-white h-[100vh] sm:h-[90vh] md:h-[74vh] pb-10 mb-4 relative "
         style={{
           backgroundImage: `url(${AboutUsbg})`,
           backgroundSize: "cover",
@@ -27,7 +26,7 @@ const AboutUs = () => {
         <div className="sm:w-[84%] w-[90%] py-5 px-3 bg-white min-h-fit text-black mt-20 flex flex-col gap-2 pt-9 rounded-sm border-r-8 border-red-600 lg:w-[70%]">
           <p
             className="ml-4 sm:ml-14 font-bold text-lg md:text-2xl lg:text-3xl"
-            style={{ color: "red" }}
+            style={{ color: "#CC2027" }}
           >
             Who we are
           </p>
@@ -35,21 +34,22 @@ const AboutUs = () => {
             About Artevis
           </h1>
           <p className="ml-4 sm:ml-14 pr-10 text-base mt-5 mb-5 text-blue-900">
-
-          We are dedicated to empowering businesses with tailored solutions that <br /> drive sustainable growth and operational excellence, ensuring our clients <br /> thrive in a competitive landscape. Our expertise spans across Strategic  Planning, <br /> Investment Advisory, and Management Consultancy.
-
-
+            We are dedicated to empowering businesses with tailored solutions
+            that <br /> drive sustainable growth and operational excellence,
+            ensuring our clients <br /> thrive in a competitive landscape. Our
+            expertise spans across Strategic Planning, <br /> Investment
+            Advisory, and Management Consultancy.
           </p>
         </div>
       </div>
-<Stats/>
+      <Stats />
       <img
         src={Illuminate}
         alt="Img"
         className="md:w-full h-64 md:h-full mx-auto "
       />
 
-      <div className="  mt-10 ">
+      <div className="  mt-24">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 font-semibold ml-28">
           Leadership
         </h1>
@@ -67,14 +67,18 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
-              <p className="text-lg md:text-[32px] font-semibold">Gautam Chhabra</p>
+              <p className="text-lg md:text-[32px] font-semibold">
+                Gautam Chhabra
+              </p>
               <p className="font-semibold text-base md:text-[24px] text-[#CC2027] my-1 flex items-center">
-              Co-Founder and Managing Director
+                Co-Founder and Managing Director
                 <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
               </p>
               <p className="text-sm md:text-[18px]">
-              Engineer and an MBA by education, Gautam has deep interest in Strategy and Private Equity. He brings over a decade of global advisory experience in offering strategic insights that drive growth, innovation, and productivity for organizations. 
-
+                Engineer and an MBA by education, Gautam has deep interest in
+                Strategy and Private Equity. He brings over a decade of global
+                advisory experience in offering strategic insights that drive
+                growth, innovation, and productivity for organizations.
               </p>
             </div>
           </div>
@@ -90,14 +94,18 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col w-full ml-4">
-              <p className="text-lg md:text-[32px] font-semibold">Suraj Nayak</p>
+              <p className="text-lg md:text-[32px] font-semibold">
+                Suraj Nayak
+              </p>
               <p className="font-semibold text-base md:text-[24px] text-[#CC2027] my-1 flex items-center">
-              Co-Founder and Director
+                Co-Founder and Director
                 <img alt="1" src={LinkedInLogo} className="ml-5 h-5 w-5"></img>
               </p>
               <p className="text-sm md:text-[18px]">
-              Suraj specializes in investment and transaction advisory, offering strategic counsel on deal terms, valuations, and overall opportunity analysis. He has a strong track record of formulating and implementing strategies across various sectors. 
-
+                Suraj specializes in investment and transaction advisory,
+                offering strategic counsel on deal terms, valuations, and
+                overall opportunity analysis. He has a strong track record of
+                formulating and implementing strategies across various sectors.
               </p>
             </div>
           </div>
@@ -139,7 +147,10 @@ const AboutUs = () => {
               Geographical Expertise
             </h2>
             <p className="mt-2 text-sm sm:text-base md:text-lg font-base">
-            With profound knowledge of the US and Middle Eastern markets, particularly KSA and UAE, combined with extensive real estate and technology experience, we provide insights that drive unparalleled success.
+              With profound knowledge of the US and Middle Eastern markets,
+              particularly KSA and UAE, combined with extensive real estate and
+              technology experience, we provide insights that drive unparalleled
+              success.
             </p>
           </div>
           <div className="w-full md:w-3/4 md:ml-10 h-auto">
